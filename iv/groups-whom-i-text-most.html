@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="./bower_components/nvd3/src/nv.d3.css" rel="stylesheet">
+<script src="./bower_components/d3/d3.min.js"></script>
+<script src="./bower_components/nvd3/nv.d3.min.js"></script>
+
+</head>
+<body>
+
+
+
+<h2>pieChart</h2>
+
+<div id="pieChart"><svg style="width:400px;height:400px;"></svg></div>
+
+
+<script>
+    nv.addGraph(function() {
+        var chart = nv.models.pieChart();
+        chart.x(function(d) { return d.label })
+            .y(function(d) { return d.value });
+        chart.width(400);
+        chart.height(400);
+
+        chart.margin({top: 30, right: 60, bottom: 20, left: 60})
+        chart.tooltipContent(function(key, y, e, graph) {
+            var x = String(key);
+            var y =  String(y)  + ' cal';
+            tooltip_str = '<center><b>'+x+'</b></center>' + y;
+            return tooltip_str;
+        });
+        chart.showLegend(true);
+        chart.showLabels(true);
+        d3.select('#pieChart svg')
+            .datum(data_pieChart[0].values)
+            .transition().duration(500)
+            .attr('width', 400)
+.attr('height', 400)
+            .call(chart);
+
+    return chart;
+});data_pieChart=[{"values": [{"value": 2329, "label": "F"}, {"value": 729, "label": "FAMILY"}, {"value": 378, "label": "GROUP"}, {"value": 104, "label": "IDK"}, {"value": 2063, "label": "M"}, {"value": 11, "label": "MOM"}], "key": "Serie 1"}];
+</script>
+
+</body>

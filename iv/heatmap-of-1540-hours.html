@@ -1,0 +1,64 @@
+<html>
+<body>
+
+<script type="text/javascript" src="//d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.min.js"> </script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.css" />
+
+
+<div id="cal-heatmap">
+</div>
+<div id="onClick-placeholder"> 
+</div>
+
+<script type="text/javascript"> 
+var cal = new CalHeatMap();
+cal.init({
+    domain: "day",
+    subDomain: "hour",
+//    subDomainTextFormat: "%d",
+    data: "data/textsbyhour.json",
+    
+    rowLimit: 1,
+    cellSize: 15,
+    domainGutter: 0,
+    verticalOrientation: true,
+    label: {
+        position: "left",
+        offset: {
+            x: 20,
+            y: 12
+        },
+        width: 110
+    },
+    start: new Date(2013, 11),
+    range: 100,
+    legend: [20, 40, 60, 80],
+    legendHorizontalPosition: "right",
+    // onClick: function(date, nb) {
+    //     $("#onClick-placeholder").html("You just clicked <br/>on <b>" +
+    //         date + "</b> <br/>with <b>" +
+    //         (nb === null ? "unknown" : nb) + "</b> messages"
+    //     );
+    // },
+    legendColors: {
+        empty: "#ededed",
+        min: "#adffee",
+        max: "#000000"
+    }
+});
+</script>
+<style type="text/css">
+
+.subdomain-text {
+    fill: white;
+}
+
+#onClick-placeholder {
+   color: blue;
+}
+
+</style>
+</body>
+</html>

@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="../src/nv.d3.css" rel="stylesheet" type="text/css">
+<style>
+@import url("../src/nv.d3.css");
+
+body {
+  overflow-y:scroll;
+}
+text {
+  font: 12px sans-serif;
+}
+#chart1 {	
+  background: rgba(255,255,255);
+  height: 500px;  
+  min-width: 100px;
+  max-width: 1000px;
+  min-height: 100px;
+  max-height: 555px;
+}
+</style>
+</head>
+
+<body>
+  <div id="chart1">
+    <svg></svg>
+  </div>
+</body>
+
+<script src="../lib/d3.v2.js"></script>
+<script src="../nv.d3.js"></script>
+<script src="../src/utils.js"></script>
+<script src="../src/models/axis.js"></script>
+<script src="../src/tooltip.js"></script>
+<script src="../src/models/legend.js"></script>
+<script src="../src/models/axis.js"></script>
+<script src="../src/models/scatter.js"></script>
+<script src="../src/models/stackedArea.js"></script>
+<script src="../src/models/stackedAreaChart.js"></script>
+<script>
+
+var c_ppm= [
+{
+"key" : "Low Stakes" ,
+"values" : [
+
+  [1,805],
+  [2,1001.62],
+  [3,1860.45],
+  [4,4275.63],
+  [5,3581.33],
+  [6,5767.9],
+  [7,6565.91],
+  [8,7267.95],
+  [9,6873.95]
+
+]
+},
+
+{
+"key" : "Mid Stakes" ,
+"values" : [
+
+  [1,1560],
+  [2,686.99],
+  [3,-1797.68],
+  [4,2297.87],
+  [5,912.87],
+  [6,4044.85],
+  [7,2348.18],
+  [8,4257.89],
+  [9,3498.89]
+]
+},
+{
+"key" : "High Stakes" ,
+"values" : [
+
+  [1,-2135.67],
+  [2,-2136.59],
+  [3,562.16],
+  [4,1865.51],
+  [5,1299.93],
+  [6,3987.67],
+  [7,4371.32],
+  [8,4795.43],
+  [9,6453.68]
+]
+}
+];
+
+
+var colors = d3.scale.ordinal()
+    .domain(d3.range(3))
+    .range(["#00FF86",
+"#FF75DD",
+"#00D7FC"
+]);
+
+
+keyColor = function(d, i) {return colors(d.key)};
+
+nv.addGraph(function() {
+  var chart = nv.models.stackedAreaChart()
+                .x(function(d) { return d[0] })
+                .y(function(d) { return d[1] })
+                .color(keyColor)
+                //.clipEdge(true);
+
+  chart.xAxis
+     .tickFormat(function(d) { return 'Week ' + d3.format(',.0f')(d) });
+
+  chart.yAxis
+      .tickFormat(d3.format(',.2f'));
+
+  d3.select('#chart1 svg')
+    .datum(c_ppm)
+      .transition().duration(500).call(chart);
+
+  nv.utils.windowResize(chart.update);
+
+  return chart;
+});
+</script>
+</html>

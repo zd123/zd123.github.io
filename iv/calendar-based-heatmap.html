@@ -1,0 +1,51 @@
+<html>
+<body>
+
+<script type="text/javascript" src="//d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.min.js"> </script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.css" />
+
+
+<div id="cal-heatmap">
+</div>
+<div id="onClick-placeholder"> 
+</div>
+
+<script type="text/javascript"> 
+var cal = new CalHeatMap();
+cal.init({
+    domain: "month",
+    subDomain: "x_day",
+    subDomainTextFormat: "%d",
+    data: "data/shit.json",
+    start: new Date(2013, 10),
+    cellSize: 20,
+    range: 12,
+    legend: [20, 40, 60, 80],
+    onClick: function(date, nb) {
+        $("#onClick-placeholder").html("You just clicked <br/>on <b>" +
+            date + "</b> <br/>with <b>" +
+            (nb === null ? "unknown" : nb) + "</b> messages"
+        );
+    },
+    legendColors: {
+        empty: "#ededed",
+        min: "#adffee",
+        max: "#d40b7c"
+    }
+});
+</script>
+<style type="text/css">
+
+.subdomain-text {
+    fill: white;
+}
+
+#onClick-placeholder {
+   color: blue;
+}
+
+</style>
+</body>
+</html>

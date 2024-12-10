@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Force Directed Radial Graph</title>
+    <script type="text/javascript" src="d3.v2.min.js"></script>
+<style>
+
+#chart {
+	
+  background-color: #000000;
+background: -moz-radial-gradient(center, ellipse cover, rgba(85,90,95,1) 0%, rgba(28,30,32,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(85,90,95,1)), color-stop(100%,rgba(28,30,32,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(85,90,95,1) 0%,rgba(28,30,32,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(85,90,95,1) 0%,rgba(28,30,32,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(85,90,95,1) 0%,rgba(28,30,32,1) 100%);
+background: radial-gradient(center, ellipse cover, rgba(85,90,95,1) 0%,rgba(28,30,32,1) 100%);
+
+}
+
+</style>
+
+    <!-- NOTE: Use "px" for font, instead of "em", because of bug in Chrome during transitions. -->
+  </head>
+  <body>
+
+    <div id="chart"></div>
+
+    <script type="text/javascript">
+
+var focalNodeID = "INNOVATION";
+
+var nodeSet = [
+{"id":"Barbara A. Barlow","ModularityClass":0,"Degree":1},
+{"id":"Joyce C. Pressley","ModularityClass":0,"Degree":1},
+{"id":"Charles DiMaggio","ModularityClass":0,"Degree":1},
+{"id":"Thelma Mielenz","ModularityClass":0,"Degree":1},
+{"id":"Athanasios Zavras","ModularityClass":0,"Degree":1},
+{"id":"Andrew Kanter","ModularityClass":0,"Degree":1},
+{"id":"Anne Paxton","ModularityClass":0,"Degree":1},
+{"id":"Stephen Arpadi","ModularityClass":0,"Degree":1},
+{"id":"Nicolle Gatto","ModularityClass":0,"Degree":1},
+{"id":"Mary Travis Bassett","ModularityClass":0,"Degree":1},
+{"id":"Lorna E. Thorpe","ModularityClass":0,"Degree":1},
+{"id":"Ulka Campbell","ModularityClass":0,"Degree":1},
+{"id":"John May","ModularityClass":0,"Degree":1},
+{"id":"Hannah Wunsch","ModularityClass":0,"Degree":1},
+{"id":"Ernest Drucker","ModularityClass":0,"Degree":1},
+{"id":"Denis Nash","ModularityClass":0,"Degree":1},
+{"id":"Linda Fried","ModularityClass":0,"Degree":1},
+{"id":"Michaeline Bresnahan","ModularityClass":1,"Degree":3},
+{"id":"Deborah S. Hasin","ModularityClass":1,"Degree":3},
+{"id":"Nicole Schupf","ModularityClass":1,"Degree":3},
+{"id":"Alan Brown","ModularityClass":1,"Degree":3},
+{"id":"Dale C. Hesdorffer","ModularityClass":3,"Degree":2},
+{"id":"Sharon B. Schwartz","ModularityClass":4,"Degree":3},
+{"id":"Magdalena Cerdá","ModularityClass":2,"Degree":4},
+{"id":"Christina Hoven","ModularityClass":1,"Degree":3},
+{"id":"Bruce P. Dohrenwend","ModularityClass":3,"Degree":3},
+{"id":"Myrna M. Weissman","ModularityClass":3,"Degree":2},
+{"id":"Mitchell Elkind","ModularityClass":3,"Degree":2},
+{"id":"Elan Louis","ModularityClass":1,"Degree":2},
+{"id":"Katherine Keyes Wild","ModularityClass":4,"Degree":4},
+{"id":"Sandro Galea","ModularityClass":2,"Degree":4},
+{"id":"Richard Mayeux","ModularityClass":3,"Degree":2},
+{"id":"Ping Wu","ModularityClass":4,"Degree":3},
+{"id":"Renee D. Goodwin","ModularityClass":1,"Degree":2},
+{"id":"Ruth Ottman","ModularityClass":2,"Degree":3},
+{"id":"Madelyn S. Gould","ModularityClass":3,"Degree":2},
+{"id":"Daniel J. Pilowsky","ModularityClass":1,"Degree":2},
+{"id":"Cande Ananth","ModularityClass":2,"Degree":1},
+{"id":"Richard Deckelbaum","ModularityClass":2,"Degree":1},
+{"id":"Jennie Kline","ModularityClass":2,"Degree":1},
+{"id":"L.H. Lumey","ModularityClass":2,"Degree":1},
+{"id":"Pam Factor-Litvak","ModularityClass":2,"Degree":1},
+{"id":"Karestan Koenen","ModularityClass":3,"Degree":3},
+{"id":"Lisa Bates","ModularityClass":4,"Degree":2},
+{"id":"Raz Gross","ModularityClass":2,"Degree":1},
+{"id":"Joyce Pressley","ModularityClass":2,"Degree":1},
+{"id":"R. Graham Barr","ModularityClass":2,"Degree":1},
+{"id":"Hans Wibrand Hoek","ModularityClass":2,"Degree":1},
+{"id":"Louise Kuhn","ModularityClass":2,"Degree":1},
+{"id":"Andrew Rundle","ModularityClass":2,"Degree":1},
+{"id":"Ian Lipkin","ModularityClass":2,"Degree":1},
+{"id":"Patricia Cohen","ModularityClass":2,"Degree":1},
+{"id":"Gina Lovasi","ModularityClass":4,"Degree":2},
+{"id":"Mary Beth Terry","ModularityClass":2,"Degree":1},
+{"id":"Francine Cournos","ModularityClass":2,"Degree":1},
+{"id":"Richard Neugebauer","ModularityClass":2,"Degree":1},
+{"id":"Eliecer Valencia","ModularityClass":2,"Degree":1},
+{"id":"Daniel Pilowsky","ModularityClass":2,"Degree":1},
+{"id":"Patricia R. Cohen","ModularityClass":3,"Degree":1},
+{"id":"W. Allen Hauser","ModularityClass":3,"Degree":1},
+{"id":"Lloyd Sederer","ModularityClass":3,"Degree":1},
+{"id":"Pamela Collins","ModularityClass":3,"Degree":1},
+{"id":"Joseph H.W. Lee","ModularityClass":3,"Degree":1},
+{"id":"Charlotte Ann Stueve","ModularityClass":3,"Degree":1},
+{"id":"John P. Doyle","ModularityClass":3,"Degree":1},
+{"id":"Dana March","ModularityClass":4,"Degree":2},
+{"id":"Mervyn W. Susser","ModularityClass":3,"Degree":1},
+{"id":"Cynthia Driver","ModularityClass":3,"Degree":1},
+{"id":"Larkin McReynolds","ModularityClass":3,"Degree":1},
+{"id":"Dan B. Herman","ModularityClass":3,"Degree":1},
+{"id":"Yuval Y. Neria","ModularityClass":3,"Degree":1},
+{"id":"Bruce G. Link","ModularityClass":4,"Degree":1},
+{"id":"Debbie Barrington","ModularityClass":4,"Degree":1},
+{"id":"Sharkira Suglia","ModularityClass":4,"Degree":1},
+{"id":"Lawrence H. Yang","ModularityClass":4,"Degree":1},
+{"id":"Luisa N. Borrell","ModularityClass":4,"Degree":1},
+{"id":"Mervyn Susser","ModularityClass":4,"Degree":1},
+{"id":"Jeffrey Fagan","ModularityClass":4,"Degree":1},
+{"id":"Bonnie Kerker","ModularityClass":4,"Degree":1},
+{"id":"Parisa Tehranafir","ModularityClass":4,"Degree":1},
+{"id":"Crystal Fuller","ModularityClass":4,"Degree":1},
+{"id":"Tiffany Gary-Webb","ModularityClass":4,"Degree":1},
+{"id":"Catherine Stayton","ModularityClass":4,"Degree":1},
+{"id":"INNOVATION","ModularityClass":0,"Degree":22},
+{"id":"Leslie Davidson","ModularityClass":0,"Degree":3},
+{"id":"CHRONIC","ModularityClass":1,"Degree":22},
+{"id":"Ezra Susser","ModularityClass":1,"Degree":5},
+{"id":"Lifecourse","ModularityClass":2,"Degree":33},
+{"id":"Guohua Li","ModularityClass":0,"Degree":2},
+{"id":"PYSCH","ModularityClass":3,"Degree":36},
+{"id":"Bruce Link","ModularityClass":0,"Degree":4},
+{"id":"SOCIAL","ModularityClass":4,"Degree":27},
+{"id":"Zena Stein","ModularityClass":0,"Degree":3}
+];
+
+
+var linkSet = [
+{"sourceId":"INNOVATION","targetId":"Barbara A. Barlow","ModularityClass":0},
+{"sourceId":"INNOVATION","targetId":"Joyce C. Pressley","ModularityClass":0},
+{"sourceId":"INNOVATION","targetId":"Charles DiMaggio","ModularityClass":0},
+{"sourceId":"INNOVATION","targetId":"Thelma Mielenz","ModularityClass":0},
+{"sourceId":"INNOVATION","targetId":"Athanasios Zavras","ModularityClass":0},
+{"sourceId":"INNOVATION","targetId":"Andrew Kanter","ModularityClass":0},
+{"sourceId":"INNOVATION","targetId":"Anne Paxton","ModularityClass":0},
+{"sourceId":"INNOVATION","targetId":"Stephen Arpadi","ModularityClass":0},
+{"sourceId":"INNOVATION","targetId":"Nicolle Gatto","ModularityClass":0},
+{"sourceId":"INNOVATION","targetId":"Mary Travis Bassett","ModularityClass":0},
+{"sourceId":"INNOVATION","targetId":"Lorna E. Thorpe","ModularityClass":0},
+{"sourceId":"INNOVATION","targetId":"Ulka Campbell","ModularityClass":0},
+{"sourceId":"INNOVATION","targetId":"John May","ModularityClass":0},
+{"sourceId":"INNOVATION","targetId":"Hannah Wunsch","ModularityClass":0},
+{"sourceId":"INNOVATION","targetId":"Ernest Drucker","ModularityClass":0},
+{"sourceId":"INNOVATION","targetId":"Denis Nash","ModularityClass":0},
+{"sourceId":"INNOVATION","targetId":"Linda Fried","ModularityClass":0},
+{"sourceId":"INNOVATION","targetId":"Leslie Davidson","ModularityClass":0},
+{"sourceId":"INNOVATION","targetId":"Ezra Susser","ModularityClass":0},
+{"sourceId":"INNOVATION","targetId":"Guohua Li","ModularityClass":0},
+{"sourceId":"INNOVATION","targetId":"Bruce Link","ModularityClass":0},
+{"sourceId":"INNOVATION","targetId":"Zena Stein","ModularityClass":0},
+{"sourceId":"CHRONIC","targetId":"Michaeline Bresnahan","ModularityClass":1},
+{"sourceId":"CHRONIC","targetId":"Deborah S. Hasin","ModularityClass":1},
+{"sourceId":"CHRONIC","targetId":"Nicole Schupf","ModularityClass":1},
+{"sourceId":"CHRONIC","targetId":"Alan Brown","ModularityClass":1},
+{"sourceId":"CHRONIC","targetId":"Dale C. Hesdorffer","ModularityClass":1},
+{"sourceId":"CHRONIC","targetId":"Sharon B. Schwartz","ModularityClass":1},
+{"sourceId":"CHRONIC","targetId":"Magdalena Cerdá","ModularityClass":1},
+{"sourceId":"CHRONIC","targetId":"Christina Hoven","ModularityClass":1},
+{"sourceId":"CHRONIC","targetId":"Bruce P. Dohrenwend","ModularityClass":1},
+{"sourceId":"CHRONIC","targetId":"Myrna M. Weissman","ModularityClass":1},
+{"sourceId":"CHRONIC","targetId":"Mitchell Elkind","ModularityClass":1},
+{"sourceId":"CHRONIC","targetId":"Elan Louis","ModularityClass":1},
+{"sourceId":"CHRONIC","targetId":"Katherine Keyes Wild","ModularityClass":1},
+{"sourceId":"CHRONIC","targetId":"Sandro Galea","ModularityClass":1},
+{"sourceId":"CHRONIC","targetId":"Richard Mayeux","ModularityClass":1},
+{"sourceId":"CHRONIC","targetId":"Ping Wu","ModularityClass":1},
+{"sourceId":"CHRONIC","targetId":"Renee D. Goodwin","ModularityClass":1},
+{"sourceId":"CHRONIC","targetId":"Ruth Ottman","ModularityClass":1},
+{"sourceId":"CHRONIC","targetId":"Madelyn S. Gould","ModularityClass":1},
+{"sourceId":"CHRONIC","targetId":"Daniel J. Pilowsky","ModularityClass":1},
+{"sourceId":"CHRONIC","targetId":"Ezra Susser","ModularityClass":1},
+{"sourceId":"CHRONIC","targetId":"Bruce Link","ModularityClass":1},
+{"sourceId":"Lifecourse","targetId":"Michaeline Bresnahan","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Nicole Schupf","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Alan Brown","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Magdalena Cerdá","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Katherine Keyes Wild","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Sandro Galea","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Ruth Ottman","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Cande Ananth","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Richard Deckelbaum","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Jennie Kline","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"L.H. Lumey","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Pam Factor-Litvak","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Karestan Koenen","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Lisa Bates","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Raz Gross","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Joyce Pressley","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"R. Graham Barr","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Hans Wibrand Hoek","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Louise Kuhn","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Andrew Rundle","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Ian Lipkin","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Patricia Cohen","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Gina Lovasi","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Mary Beth Terry","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Francine Cournos","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Richard Neugebauer","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Eliecer Valencia","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Daniel Pilowsky","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Leslie Davidson","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Ezra Susser","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Guohua Li","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Bruce Link","ModularityClass":2},
+{"sourceId":"Lifecourse","targetId":"Zena Stein","ModularityClass":2},
+{"sourceId":"PYSCH","targetId":"Michaeline Bresnahan","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Deborah S. Hasin","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Nicole Schupf","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Alan Brown","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Dale C. Hesdorffer","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Sharon B. Schwartz","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Magdalena Cerdá","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Christina Hoven","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Bruce P. Dohrenwend","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Myrna M. Weissman","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Mitchell Elkind","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Elan Louis","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Katherine Keyes Wild","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Sandro Galea","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Richard Mayeux","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Ping Wu","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Renee D. Goodwin","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Ruth Ottman","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Madelyn S. Gould","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Daniel J. Pilowsky","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Karestan Koenen","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Patricia R. Cohen","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"W. Allen Hauser","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Lloyd Sederer","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Pamela Collins","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Joseph H.W. Lee","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Charlotte Ann Stueve","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"John P. Doyle","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Dana March","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Mervyn W. Susser","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Cynthia Driver","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Larkin McReynolds","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Dan B. Herman","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Yuval Y. Neria","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Ezra Susser","ModularityClass":3},
+{"sourceId":"PYSCH","targetId":"Bruce Link","ModularityClass":3},
+{"sourceId":"SOCIAL","targetId":"Deborah S. Hasin","ModularityClass":4},
+{"sourceId":"SOCIAL","targetId":"Sharon B. Schwartz","ModularityClass":4},
+{"sourceId":"SOCIAL","targetId":"Magdalena Cerdá","ModularityClass":4},
+{"sourceId":"SOCIAL","targetId":"Christina Hoven","ModularityClass":4},
+{"sourceId":"SOCIAL","targetId":"Bruce P. Dohrenwend","ModularityClass":4},
+{"sourceId":"SOCIAL","targetId":"Katherine Keyes Wild","ModularityClass":4},
+{"sourceId":"SOCIAL","targetId":"Sandro Galea","ModularityClass":4},
+{"sourceId":"SOCIAL","targetId":"Ping Wu","ModularityClass":4},
+{"sourceId":"SOCIAL","targetId":"Karestan Koenen","ModularityClass":4},
+{"sourceId":"SOCIAL","targetId":"Lisa Bates","ModularityClass":4},
+{"sourceId":"SOCIAL","targetId":"Gina Lovasi","ModularityClass":4},
+{"sourceId":"SOCIAL","targetId":"Dana March","ModularityClass":4},
+{"sourceId":"SOCIAL","targetId":"Bruce G. Link","ModularityClass":4},
+{"sourceId":"SOCIAL","targetId":"Debbie Barrington","ModularityClass":4},
+{"sourceId":"SOCIAL","targetId":"Sharkira Suglia","ModularityClass":4},
+{"sourceId":"SOCIAL","targetId":"Lawrence H. Yang","ModularityClass":4},
+{"sourceId":"SOCIAL","targetId":"Luisa N. Borrell","ModularityClass":4},
+{"sourceId":"SOCIAL","targetId":"Mervyn Susser","ModularityClass":4},
+{"sourceId":"SOCIAL","targetId":"Jeffrey Fagan","ModularityClass":4},
+{"sourceId":"SOCIAL","targetId":"Bonnie Kerker","ModularityClass":4},
+{"sourceId":"SOCIAL","targetId":"Parisa Tehranafir","ModularityClass":4},
+{"sourceId":"SOCIAL","targetId":"Crystal Fuller","ModularityClass":4},
+{"sourceId":"SOCIAL","targetId":"Tiffany Gary-Webb","ModularityClass":4},
+{"sourceId":"SOCIAL","targetId":"Catherine Stayton","ModularityClass":4},
+{"sourceId":"SOCIAL","targetId":"Leslie Davidson","ModularityClass":4},
+{"sourceId":"SOCIAL","targetId":"Ezra Susser","ModularityClass":4},
+{"sourceId":"SOCIAL","targetId":"Zena Stein","ModularityClass":4}
+];
+
+
+    </script>
+
+    <script type="text/javascript">
+
+      var width = 960,
+          height = 700,
+          centerNodeSize = 50;
+
+      var svgCanvas = d3.select("#chart").append("svg:svg")
+          .attr("width", width)
+          .attr("height", height);
+
+      var node_hash = [];
+      var type_hash = [];
+
+      // Create a hash that allows access to each node by its id
+      nodeSet.forEach(function(d, i) {
+        node_hash[d.id] = d;
+        type_hash[d.type] = d.ModularityClass;
+      });
+      
+      // Append the source object node and the target object node to each link
+      linkSet.forEach(function(d, i) {
+        d.source = node_hash[d.sourceId];
+        d.target = node_hash[d.targetId];
+        d.linkType = node_hash[d.ModularityClass];
+        if (d.sourceId == focalNodeID)
+	  { d.direction = "OUT"; }
+        else
+	  { d.direction = "IN"; }
+      });
+
+      // Create a force layout and bind Nodes and Links
+      var force = d3.layout.force()
+      	  .size([width, height])
+          .charge(-500)
+          .friction(0.95)
+          .gravity(0.05)
+          .linkDistance(50)
+          .nodes(nodeSet)
+          .links(linkSet)
+          .size([width, height])
+/*           .linkDistance( function(d) { if (width < height) { return width*1/3; } else { return height*1/3 } } ) // Controls edge length */
+          .on("tick", tick)
+          .start();
+          
+  var nodeColors = d3.scale.ordinal()
+  		.domain(d3.range(5))
+  	    .range(["#00FF86","#FF75DD","#00D7FC","#ff6666", "#cc00cc"]);
+  		
+/*
+var nodeColors = d3.scale.ordinal()
+			.range(colorbrewer.RdBu[5]);
+*/
+  
+  		
+      // Draw lines for Links between Nodes
+      var link = svgCanvas.selectAll(".gLink")
+          .data(force.links())
+        .enter().append("g")
+	  .attr("class", "gLink")
+        .append("line")
+          .attr("class", "link")
+          .style("stroke", function(d) { return nodeColors(d.ModularityClass); })   // this one is mine and it seemed to work
+          .attr("x1", function(d) { return d.source.x; })
+          .attr("y1", function(d) { return d.source.y; })
+          .attr("x2", function(d) { return d.target.x; })
+          .attr("y2", function(d) { return d.target.y; });
+
+      // Create Nodes
+      var node = svgCanvas.selectAll(".node")
+          .data(force.nodes())
+        .enter().append("g")
+          .attr("class", "node")
+          .on("mouseover", nodeMouseover)
+          .on("mouseout", nodeMouseout)
+          .call(force.drag);
+
+      // Append circles to Nodes
+      node.append("circle")
+          .attr("x", function(d) { return d.x; })
+          .attr("y", function(d) { return d.y; })
+/*           .attr("r", function(d) { return (d.Degree); }) */
+		  .attr("r", function(d) { if (d.Degree < 5) { return ((d.Degree) + 5); } else { return d.Degree; } }) // YOUR A FUCHING GENIUOUS!!!
+
+/*           .style("fill", "White") // Make the nodes hollow looking */
+          .style("fill", function(d) { return nodeColors(d.ModularityClass); })   // this one is mine and it seemed to work
+          .style("stroke-width", 0) // Give the node strokes some thickness
+          .style("stroke", "White")
+          .call(force.drag);
+
+      // Append text to Nodes
+      node.append("a")
+          .attr("xlink:href", function(d) { return d.hlink; })
+          .append("text")
+          .attr("text-align", "center") 
+          .attr("x", function(d) { if (d.id==focalNodeID) { return 0; } else {return 0;} } )
+          .attr("y", function(d) { if (d.Degree > 5) { return 0; } else {return -10;} } )            
+          .attr("text-anchor", function(d) { if (d.id==focalNodeID) {return "middle";} else {return "middle";} })
+          .attr("font-family", "Arial, Helvetica, sans-serif")
+          .style("font", "bold 10px Arial")
+          .style("fill", "white")
+/*           .style("fill", function(d) { return nodeColors(d.ModularityClass); })   // tthis changes the text color to the modclass */
+          .attr("dy", ".15em")
+          .text(function(d) { return d.id; });
+
+      // Append text to Link edges
+      var linkText = svgCanvas.selectAll(".gLink")
+          .data(force.links())
+          .append("text")
+          .attr("font-family", "Arial, Helvetica, sans-serif")
+          .attr("x", function(d) {
+	      if (d.target.x > d.source.x) { return (d.source.x + (d.target.x - d.source.x)/2); }
+	      else { return (d.target.x + (d.source.x - d.target.x)/2); }
+	  })
+          .attr("y", function(d) {
+	      if (d.target.y > d.source.y) { return (d.source.y + (d.target.y - d.source.y)/2); }
+	      else { return (d.target.y + (d.source.y - d.target.y)/2); }
+	  })
+	  .attr("fill", "Maroon")
+          .style("font", "normal 12px Arial")
+          .attr("dy", ".35em");
+ /*          .text(function(d) { return d.targetId + d.sourceId; }); // this appends the linkType */
+
+
+      function tick() {
+        link
+          .attr("x1", function(d) { return d.source.x; })
+          .attr("y1", function(d) { return d.source.y; })
+          .attr("x2", function(d) { return d.target.x; })
+          .attr("y2", function(d) { return d.target.y; });
+      
+        node
+          .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+
+        linkText
+	  .attr("x", function(d) {
+	      if (d.target.x > d.source.x) { return (d.source.x + (d.target.x - d.source.x)/2); }
+	      else { return (d.target.x + (d.source.x - d.target.x)/2); }
+	  })
+	  .attr("y", function(d) {
+	      if (d.target.y > d.source.y) { return (d.source.y + (d.target.y - d.source.y)/2); }
+	      else { return (d.target.y + (d.source.y - d.target.y)/2); }
+	  });
+      }
+
+      function nodeMouseover() {
+        d3.select(this).select("circle").transition()
+            .duration(125)
+	    .attr("r", function(d,i) { if(d.id==focalNodeID) {return 65;} else {return ((d.Degree) + 5) * 2;} } );
+	    
+	    d3.select(this).select("text").transition()
+        .duration(250)
+	    .style("font", "bold 20px Arial")
+	    .attr("fill", "Black");
+      }
+
+      function nodeMouseout() {
+        d3.select(this).select("circle").transition()
+            .duration(500)
+	    .attr("r", function(d,i) { if(d.id==focalNodeID) {return d.Degree;} else {return ((d.Degree) + 5);} } );
+	d3.select(this).select("text").transition()
+        .duration(250)
+	    .style("font", "normal 10px Arial")
+	    .attr("fill", function(d) { return nodeColors(d.ModularityClass); });
+      }
+
+
+    </script>
+
+  </body>
+
+</html>

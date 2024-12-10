@@ -1,0 +1,645 @@
+<!DOCTYPE html>  
+<html>
+<head>
+		<meta charset="utf-8">		
+		<title>TGIF</title>
+		<meta name="description" content="Zack DeSario's data visualization resume and desires.">
+		<meta name="author" content="Zack DeSario">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+			
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/zacks.css">
+		<link href="src/nv.d3.css" rel="stylesheet" type="text/css">
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<script src="processing.js" type="text/javascript">
+		</script>
+		
+		<script type="text/javascript">
+		// convenience function to fetch ID of sketch html element
+		function getProcessingSketchID () { return 'seed_mahir'; }
+		</script>
+		
+		<script language="javascript" type="text/javascript">
+			var iFrameID1 = "IFrame1";
+			var newPage1 = "http://zackdesario.com/t1/";
+			function ChangePage1() 
+			{
+			var iFrameObject = document.getElementById(iFrameID1);
+			iFrameObject.src = newPage1;
+			}
+		</script>
+		
+		<script language="javascript" type="text/javascript">
+			var iFrameID2 = "IFrame2";
+			var newPage2 = "http://zackdesario.com/the_real_deal/d3_poker_charts/one/index.html";
+			function ChangePage2() 
+			{
+			var iFrameObject = document.getElementById(iFrameID2);
+			iFrameObject.src = newPage2;
+			}
+		</script>
+		
+		<script language="javascript" type="text/javascript">
+			var iFrameID3 = "IFrame3";
+			var newPage3 = "http://zackdesario.com/the_real_deal/d3_poker_charts/two/index.html";
+			function ChangePage3() 
+			{
+			var iFrameObject = document.getElementById(iFrameID3);
+			iFrameObject.src = newPage3;
+			}
+		</script>
+		
+		<script language="javascript" type="text/javascript">
+			var iFrameID4 = "IFrame4";
+			var newPage4 = "http://zackdesario.com/the_real_deal/d3_poker_charts/three/index.html";
+			function ChangePage4() 
+			{
+			var iFrameObject = document.getElementById(iFrameID4);
+			iFrameObject.src = newPage4;
+			}
+		</script>
+
+		<script language="javascript" type="text/javascript">
+			var iFrameIDAll = "IFrameAll";
+			var newPageAll = "http://zackdesario.com/the_real_deal/d3_poker_charts/all/index.html";
+			function ChangePageAll() 
+			{
+			var iFrameObject = document.getElementById(iFrameIDAll);
+			iFrameObject.src = newPageAll;
+			}
+		</script>
+		
+<script>
+	// If the query includes 'print-pdf' we'll use the PDF print sheet
+	document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+</script>
+<!--[if lt IE 9]>
+<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<body>	
+<div class="reveal">
+<div class="state-background"></div>
+<div class="slides"> <!-- Any section element inside of this container is displayed as a slide -->
+
+<section> <!-- SLIDE ONE: PROCESSING SKETCH-->
+<div>
+<canvas id="seed_mahir" data-processing-sources="seed_mahir.pde">
+<p>Your browser does not support the canvas tag.</p>
+</canvas>
+</div>
+<noscript>
+<p>JavaScript is required to view the contents of this page.</p>
+</noscript>
+</section>
+
+<section> <!-- INTRO HELLO -->
+	<p>My name is Zack, <br>and I would like to apply for the design technologist position at SEED.</p>
+	<br>
+	<br>
+	<p>I built this little site to tell you why.</p>
+	<br>
+	<br>
+	<br>
+	<!--
+	<a href="#/"> <img class="keys" src="arrows/left_key.png"></a>  &nbsp  &nbsp   
+	<a href="#/2"> <img class="keys" src="arrows/right_key.png"></a>
+	-->
+
+	<p style="font-size:14px; letter-spacing: 1.3px; line-height:22px;">YOU CAN NAVIGATE USING THE ARROW KEYS.<br>
+	HIT ESCAPE FOR A BIRDS EYE VIEW.</p>
+
+
+</section>			
+ 
+<section data-state="coolcyan"> <!--THE STORY -->
+<h1>THE STORY</h1>
+<br>
+<p>I am a psychology degree holding, graphic designing, professional online poker playing, data designer. Creating successful designs requires insights from diverse fields. My hands on experience allow me to bridge these once isolated fields.</p>
+<br>
+<p style="font-size:14px; letter-spacing: 1px;"> [ IN ADDITION, I JUST LOVE SCIENCE AND DISCOVERY. ] </p>
+</section>
+
+<section> <!--GEPHI EPI MAP -->
+<h4 style="margin-top:-50px;">My interests surround mapping relationships based on a mathematical interpretation of recorded behavior (aka data).</h4>
+<iframe style="padding-bottom:10px;" width="900" height="600" src="http://zackdesario.com/gephi_js/" frameborder="0" allowfullscreen scrolling="no"></iframe>
+<p class="zCaption" style="font-size:20px; white-space:nowrap; font-weight:400;"> MAPPING FACULTY DYNAMICS OF THE EPIDEMIOLOGY DEPARTMENT AT COLUMBIA UNIVERSITY.</p>
+<p class="prettyCaption" style="color:rgb(0,0,0);"> { <i>Created with R, Gephi, and JavaScript</i> }</p>
+</section>
+
+<section data-state="doubleRainbow"> <!--EQUITY ANALYSIS -->
+<h4 style="letter-spacing:1px; line-height: 1;">Using an equity analysis algorithm developed at M.I.T. and robust datamining techniques, I was able to create a mathematically profitable strategy.</h4>
+<p>
+<img src="poker_pics/hem_pa.png" alt="Poker Analysis Review">
+</p>
+</section>
+
+<section data-state="forLinda"> <!-- 5TH PLACE -->
+<h4 style="letter-spacing:1px; line-height: 1;">A year and a half after my very first game I was ranked fifth most profitable player in the world for high stakes 9-Man Single Table SuperTurbo Tournments.</h4>
+<img src="poker_pics/money_fight.jpeg">
+</section>
+
+<section data-state="bluewave"> <!--THINK IN NEW WAYS -->
+<h4 style="letter-spacing:1px; line-height: 1; white-space:nowrap;">Moreover, poker enabled me to think of data and how to use it in ways I couldn't before.</h4>
+<img class="whiteShadow" src="poker_pics/titicaca.jpg">
+</section>
+
+<section> <!-- 3 MILLION HANDS-->
+<h4 style="letter-spacing:1px; line-height: 1;">
+ With over 3,000,000 hands played, I've been able to interact with it in a way noboday really has before. There nunances and qualities of hidden in plain sight.</h4>
+<p><iframe width="853" height="480" src="http://www.youtube.com/embed/pkhQ0PtcvaU?rel=0" frameborder="0" ></iframe> </p>
+</section>
+
+
+ 
+<section> <!-- START TOOLS OF THE TRADE -->
+<h1>The Tools</h1>
+<p class="zP"> Currently, I enjoy using d3, Processing, R, Gephi, and some of Google's visualization tools in combination with Adobe Ps, Ai, Br, and Id. </p>
+<br>
+<p>
+<img  style="width:75px; height:75px;" src="data_viz_icons/Ps.png">
+<img  style="width:75px; height:75px;" src="data_viz_icons/Ai.png">
+<img  style="width:75px; height:75px;" src="data_viz_icons/Br.png">
+<img  style="width:75px; height:75px;" src="data_viz_icons/Id.png">
+<img  style="width:75px; height:75px;" src="data_viz_icons/d3_icon.png">
+<img  style="width:75px; height:75px;" src="data_viz_icons/gephi.png">
+<img  style="width:75px; height:75px;" class="noShadow" src="data_viz_icons/processing.png">
+<img  style="width:75px; height:75px;" class="noShadow" src="data_viz_icons/r.png">
+<br>
+<p class="zCaption" style="font-size:10px; letter-spacing:1px;"> 
+<img class="noShadow" src="data_viz_icons/apps.png">
+[ A SCREENSHOT OF MY TOOLBAR ] </p>
+</p>
+</section>
+ 
+ 
+
+ 
+<section data-state="blackness"> <!-- PLANES -->
+<iframe style="padding-bottom:50px;" width="853" height="480" src="http://www.youtube.com/embed/96c1HwCLl7U?rel=0" frameborder="0" allowfullscreen=""></iframe>
+<p class="zP">Upon discovering Processing, I also discovered that Jer Throp lives only 10 blocks away. I took all three of his workshops. At the end we created this visualization of the air traffic at Denver Airport over a 24hr period.</p>
+</section>
+
+	<section> <!-- all four -->
+	<h4 style="letter-spacing:1px; line-height: 1; margin:0 0 0 0;">A nine week sample from my poker database.</h4> <input class="classname" type="button" value="CLICK TO ACTIVATE D3 CHARTS" onclick="return ChangePageAll()"/>
+
+	<iframe id="IFrameAll" src="" width="853px" height="1000px" style="padding-top:10px;"  frameborder="0" allowfullscreen scrolling="no"> <p>Your browser cannot view iFrames</p>  
+	</iframe>	
+
+	<p style="float:right; color:#222222;" class="zCaption"> BUILT WITH <a href="https://github.com/mbostock/d3/wiki" target="_blank" style="color:#222222;" title="click to open in new window"> D3js </a></p>
+</section>
+	
+	<section> <!-- D3 AREA CHART -->
+		<section id="d3chart">
+			<h4 style="letter-spacing:1px; line-height: 1; margin:0 0 0 0;">A 9 week sample taken from my poker database broken down by each stake.</h4>
+			<input class="classname" type="button" value="CLICK TO ACTIVATE CHART" onclick="return ChangePage3()"/>
+			
+			<iframe id="IFrame3" src="" width="853px" height="500px"  frameborder="0"  scrolling="no"> <p>Your browser cannot view iFrames</p>  
+			</iframe>	
+			
+			<p style="float:right; color:#222222;" class="zCaption"> BUILT WITH <a href="https://github.com/mbostock/d3/wiki" target="_blank" style="color:#222222;" title="click to open in new window"> D3js </a></p>
+			
+			<p><a href="#/d3Bar"><img class="keys" src="arrows/down_key.png"> </a></p>			
+		</section>	
+		
+
+		<section id="d3Bar">  <!-- POKER CHART 1: BAR GRAPH BROKEN DOWN BY STAKES -->			
+			<h3>BAR GRAPH BREAKING DOWN THE </h3>
+			
+			<iframe id="IFrame2" width="853px" height="500px"  src="" frameborder="0"  scrolling="no"> 
+			<p>Your browser cannot view iFrames</p> 
+			</iframe>
+			
+			<input class="classname" type="button" value="CLICK TO ACTIVATE AWESOMENESS" onclick="return ChangePage2()" />
+			
+		<p> <a href="#/d32Bars"> <img class="keys" src="arrows/down_key.png"> </a></p>		
+		</section>
+		
+		<section id="d32Bars"> <!-- POKER CHART 3: AMOUNT OF GAMES PLAYED PER WEEK -->
+				
+			<iframe id="IFrame4" src="" width="853px" height="400px" frameborder="0"   scrolling="no"> 
+			<p>Your browser cannot view iFrames</p> 
+			</iframe>
+			
+			<input class="classname" type="button" value="AMOUNT OF GAMES PLAYED PER WEEK" onclick="return ChangePage4()" />
+			
+		</section>
+
+	</section>
+<!-- @END of d3js CHARTS -->
+
+
+<section id="hey"> <!-- DATA DESIGN INTRO PAGE 1 -->
+	<iframe id="IFrame1" src="" width="853px" height="500px" frameborder="0" allowfullscreen scrolling="no">
+	<p>Your browser cannot view iFrames</p>
+	</iframe>
+	<input type="button" value="hey, click me" onclick="return ChangePage1()" />
+</section>
+
+<section>   <!-- BEGIN DD STAK-->
+	<section id="dd_grid">
+		<a href="#/easy_maps"> <img class="ztwenty" src="dd/easy_maps.jpg"> </a> 
+		<a href="#/plumgut"><img class="ztwenty" src="dd/plumgut.jpg"> </a>
+		<a href="#/ross_sprial" ><img class="ztwenty" src="dd/ross_sprial.jpg"> </a>
+		<a href="#/semantic_heat_map"><img class="ztwenty" src="dd/semantic_heat_map.jpg"> </a>
+		<a href="#/mayor_tracker"> <img class="ztwenty" src="dd/mayor_tracker.jpg"> </a>
+		<a href="#/ross"><img class="ztwenty" src="dd/ross.png"> </a>
+		<a href="#/epi_flower"> <img class="ztwenty" src="dd/epi_flower.jpg"> </a>
+		<a href="#/johno"> <img class="ztwenty" src="dd/johno.jpg"> </a>
+		<a href="#/pragma_01"> <img class="ztwenty" src="dd/pragma_01.jpg"> </a>
+		<a href="#/pragma_02"> <img class="ztwenty" src="dd/pragma_02.jpg"> </a>
+		<a href="#/pragma_03"><img class="ztwenty" src="dd/pragma_03.jpg"> </a>
+		<a href="#/pragma_04"><img class="ztwenty" src="dd/pragma_04.jpg"> </a>
+		<a href="#/pragma_05"><img class="ztwenty" src="dd/pragma_05.jpg"> </a>
+	</section> <!-- @END OF DD GRID SLIDE -->
+	
+	<section id="easy_maps" data-state="whitewall">
+		<a href="#/dd_grid" class="image">
+			<iframe width="455px" height="356px" src='https://zd123.cartodb.com/tables/mayor_2013_donation_table/embed_map' frameborder="0" allowfullscreen> </iframe> 
+		</a>
+	</section>
+
+	<section id="epi_flower"  data-state="whitewall">
+		<a href="#/dd_grid"> <img width="" height="" src="dd/epi_flower.jpg"></a>
+	</section>
+
+	<section id="johno"  data-state="whitewall">
+		<a href="#/dd_grid"> <img width="" height="" src="dd/johno.jpg"></a>
+	</section>
+
+	<section id="mayor_tracker" data-state="whitewall">
+	<a href="#/dd_grid"> <img src="dd/mayor_tracker.jpg"></a>
+	</section>
+
+	<section id="ross" data-state="whitewall">
+	<a href="#/dd_grid"> <img src="dd/ross.jpg"></a>
+	</section>
+
+	<section id="semantic_heat_map" data-state="whitewall">
+	<a href="#/dd_grid"> <img src="dd/semantic_heat_map.jpg"></a>
+	</section>
+	
+	<section id="pragma_01" data-state="whitewall">
+	<a href="#/dd_grid"> <img src="dd/pragma_01.jpg"></a>
+	</section>
+	
+	<section id="pragma_02" data-state="whitewall">
+	<a href="#/dd_grid"> <img src="dd/pragma_02.jpg"></a>
+	</section>
+	
+	<section id="pragma_03" data-state="whitewall">
+	<a href="#/dd_grid"> <img src="dd/pragma_03.jpg"></a>
+	</section>
+	
+	<section id="pragma_04" data-state="whitewall">
+	<a href="#/dd_grid"> <img src="dd/pragma_04.jpg"></a>
+	</section>
+	
+	<section id="pragma_05" data-state="whitewall">
+	<a href="#/dd_grid"> <img src="dd/pragma_05.jpg"></a>
+	</section>
+	
+	<section id="plumgut" data-state="whitewall">
+	<a href="#/dd_grid"> <img src="dd/plumgut.jpg"></a>
+	</section>
+	
+	<section id="ross_sprial" data-state="whitewall">
+	<a href="#/dd_grid"> <img src="dd/ross_sprial.jpg"></a>
+	</section>
+	
+</section> 
+<!-- @END OF DD GRID STAK -->
+
+
+<section data-state="whitewall"> <!-- PHOTO INTRO PAGE -->
+
+	<h2 style="font-size:24px; color:black; margin-top:-50px;">Since you can play poker from anywhere with an internet connection. <br>I took the liberty to take pictures and travel the world.</h2>
+	<a><img src="slide_show_pics/buddy.jpg"></a>
+	<p style="font-size:0.3em; color:black; text-align:center; letter-spacing:1px;"> <br><b> [ THALIAND, 2010 ] </b></p>
+</section>
+
+<section> <!-- BEGIN OF PHOTO STAK-->
+		<section id="grid" >
+		<div>
+			
+			<a href="#/awesome"> <img class="ztwenty" src="slide_show_pics/awesome.jpg"> </a> 
+			<a href="#/river_man"> <img class="ztwenty" src="slide_show_pics/river_man.jpg"> </a>
+			<a href="#/cambo_man"> <img class="ztwenty"  src="slide_show_pics/cambo_man.jpg"> </a><br>
+			
+			<a href="#/lukey"> <img class="ztwenty"  src="slide_show_pics/lukey.jpg"> </a>
+			<a href="#/motobike"> <img class="ztwenty" src="slide_show_pics/motobike.jpg"> </a> 		
+			<a href="#/ol_faithful_two"> <img class="ztwenty" src="slide_show_pics/ol_faithful_two.jpg"> </a><br>
+
+			<a href="#/oz_overview"> <img class="ztwenty" src="slide_show_pics/oz_overview.jpg"> </a> 
+			<a href="#/clouds"> <img class="ztwenty" src="slide_show_pics/clouds.jpg"> </a>
+			<a href="#/passport_man"> <img class="ztwenty" src="slide_show_pics/passport_man.jpg"> </a> <br>
+			
+			<a href="#/west_oz"><img class="ztwenty" src="slide_show_pics/west_oz.jpg"> </a>	
+			<a href="#/skate_dude_air"> <img class="ztwenty" src="slide_show_pics/skate_dude_air.jpg"> </a>			
+			<a href="#/skate_dude_walk"> <img class="ztwenty" src="slide_show_pics/skate_dude_walk.jpg"> </a>			
+			
+		</div>			
+		</section>
+	
+		<section id="awesome" >
+		<p style="font-size:0.5em; color:white;">I lived on this farm in the fall. It was across the street from where Jackson Pollock used to paint.</p>
+			<a href="#/grid"> <img width="" height="" src="slide_show_pics/awesome.jpg"></a>
+		<p style="font-size:0.3em; color:white; text-align:center; letter-spacing:1px;"> <br><b> [ EAST HAMPTON, NY. FALL 2010 ] </b></p>
+		</section>
+		
+		<section id="river_man" >
+		<p style="font-size:0.5em; color:white;">Laos is like Thaliand, but 50 years ago.</p>
+			<a href="#/grid"> <img width="" height="" src="slide_show_pics/river_man.jpg"></a>
+		<p style="font-size:0.3em; color:white; text-align:center; letter-spacing:1px;"> <br><b> [ Mung Nui, Laos. MAY 2010 ] </b></p>
+		</section>
+		
+		<section id="cambo_man" >
+		<a href="#/grid"> <img src="slide_show_pics/cambo_man.jpg"></a>
+		</section>
+
+		<section id="lukey" >
+		<p style="font-size:0.5em; color:white;">My brother going with the flow at Yellowstone National park.</p>
+		<a href="#/grid"> <img width="" height="" src="slide_show_pics/lukey.jpg"></a>
+		<p style="font-size:0.3em; color:white; text-align:center; letter-spacing:1px;"> <br><b> [ WYOMING. SEPT 2010 ] </b></p>
+		</section>
+		
+		<section id="motobike" >
+		<a href="#/grid"> <img src="slide_show_pics/motobike.jpg"></a>
+		</section>
+		
+		<section id="moantains_web" >
+		<a href="#/grid"> <img src="slide_show_pics/moantains_web.jpg"></a>
+		</section>
+		<section id="west_oz" >
+		<p style="font-size:0.6em; color:white;">West Oz is great for surfing and seeing kangaroos.</p>
+		<a href="#/grid"> <img src="slide_show_pics/west_oz.jpg"></a>
+		<p style="font-size:0.3em; color:white; text-align:center; letter-spacing:1px;"> <br> <b> [ MARGARET RIVER, AUSTRALIA. MAY 2009 ]</b></p>
+		</section>
+
+
+		<section id="oz_overview" >
+		<a href="#/grid"> <img src="slide_show_pics/oz_overview.jpg"></a>
+		</section>
+		
+		<section id="clouds" >
+		<a href="#/grid"> <img src="slide_show_pics/clouds.jpg"></a>
+		</section>
+		
+		<section id="passport_man" >
+		<a href="#/grid"> <img src="slide_show_pics/passport_man.jpg"></a>
+		</section>
+		
+		<section id="ol_faithful_two" >
+		<a href="#/grid"> <img src="slide_show_pics/ol_faithful_two.jpg"></a>
+		</section>
+		
+		<section id="pretty_sunset" >
+		<a href="#/grid"> <img src="slide_show_pics/pretty_sunset.jpg"></a>
+		</section>
+		
+		<section id="skate_dude_air" >
+		<a href="#/grid"> <img src="slide_show_pics/skate_dude_air.jpg"></a>
+		</section>
+		
+		<section id="skate_dude_walk" >
+		<a href="#/grid"> <img src="slide_show_pics/skate_dude_walk.jpg"></a>
+		</section>
+		
+		<section id="roof" >
+		<a href="#/grid"> <img src="slide_show_pics/roof.jpg"></a>
+		</section>
+
+</section> 
+<!-- @END OF PHOTO STAK -->
+
+<section> <!-- BEGIN OF POKER FUNNY STAK-->
+		<section id="funny" >
+		
+			<a href="#/iceman1941nor" ><img style="width:33%; height:33%;" src="funnysharkscopes/iceman1941nor.png"></a>
+			<a href="#/ceejigga"> <img style= "width:33%; height:33%;" src="funnysharkscopes/ceejigga.png"> </a>
+			<a href="#/ME"><img style= "width="33%" height="33%"" src="funnysharkscopes/me_aka_msc.png"> </a>			
+			<a href="#/ebk77"> <img style= "width="33%" height="33%"" src="funnysharkscopes/ebk77.png"> </a>
+			<a href="#/herby1956" ><img style= "width="33%" height="33%"" src="funnysharkscopes/herby1956.png"> </a>
+			<a href="#/brd22"> <img style= "width="33%" height="33%"" src="funnysharkscopes/brd22.png"> </a>
+			<a href="#/j j jackson" ><img style= "width="33%" height="33%"" src="funnysharkscopes/j j jackson.png"> </a> 		
+			<a href="#/Natasha1959" ><img style= "width="33%" height="33%"" src="funnysharkscopes/Natasha1959.png"> </a>
+			<a href="#/jsport21"> <img style= "width="33%" height="33%"" src="funnysharkscopes/jsport21.png"> </a> 			
+		
+		</section>
+		
+		<section id="funny_two">
+		<div>
+			<a href="#/lord jps"> <img style= "width="25%" height="25%"" src="funnysharkscopes/lord jps.png"> </a>
+			<a href="#/luvtobet"> <img style= "width="25%" height="25%"" src="funnysharkscopes/luvtobet.png"> </a>
+			<a href="#/maxxx72alba"><img style= "width="25%" height="25%"" src="funnysharkscopes/maxxx72alba.png"> </a> 		
+			<a href="#/mymymadrose"><img style= "width="25%" height="25%"" src="funnysharkscopes/mymymadrose.png"> </a>
+			<a href="#/namlon"><img style= "width="25%" height="25%"" src="funnysharkscopes/namlon.png"> </a>
+			<a href="#/richman2" ><img style= "width="25%" height="25%"" src="funnysharkscopes/richman2.png"> </a> 	
+		</div>
+		</section>
+		
+		<section id="ceejigga" >
+		<p style="font-size:0.5em; color:white;">ceejigga</p>
+		<a href="#/funny"> <img width="" height="" src="funnysharkscopes/ceejigga.png"></a>
+		<p style="font-size:0.3em; color:white; text-align:center; letter-spacing:1px;"> <br><b> [ EAST HAMPTON, NY. FALL 2010 ] </b></p>
+		</section>
+		
+		<section id="ebk77" >
+		<p style="font-size:0.5em; color:white;">EBK77</p>
+			<a href="#/funny"> <img width="" height="" src="funnysharkscopes/ebk77.png"></a>
+		<p style="font-size:0.3em; color:white; text-align:center; letter-spacing:1px;"> <br><b> </b></p>
+		</section>
+		
+		<section id="herby1956" >
+		<a href="#/funny"> <img src="funnysharkscopes/herby1956.png"></a>
+		</section>
+
+		<section id="brd22" >
+		<p style="font-size:0.5em; color:white;">BRD22</p>
+		<a href="#/funny"> <img width="" height="" src="funnysharkscopes/brd22.png"></a>
+		<p style="font-size:0.3em; color:white; text-align:center; letter-spacing:1px;"> <br><b> </b></p>
+		</section>
+		
+		<section id="j j jackson" >
+		<a href="#/funny"> <img src="funnysharkscopes/j j jackson.png"></a>
+		</section>
+		
+		<section id="iceman1941nor" >
+		<a href="#/funny"> <img src="funnysharkscopes/iceman1941nor.png"></a>
+		</section>
+		
+		<section id="Natasha1959" >
+		<p style="font-size:0.6em; color:white;"></p>
+		<a href="#/funny"> <img src="funnysharkscopes/Natasha1959.png"></a>
+		<p style="font-size:0.3em; color:white; text-align:center; letter-spacing:1px;"> <br> <b> </b></p>
+		</section>
+		
+		<section id="jsport21" >
+		<a href="#/funny"> <img src="funnysharkscopes/jsport21.png"></a>
+		</section>
+		
+		<section id="ME" >
+		<a href="#/funny"> <img src="funnysharkscopes/me_aka_msc.png"></a>
+		</section>
+		
+		
+		<section id="lord jps" >
+		<a href="#/funny_two"> <img src="funnysharkscopes/lord jps.png"></a>
+		</section>
+		
+		<section id="luvtobet" >
+		<a href="#/funny_two"> <img src="funnysharkscopes/luvtobet.png"></a>
+		</section>
+		
+		<section id="namlon" >
+		<a href="#/funny_two"> <img src="funnysharkscopes/namlon.png"></a>
+		</section>
+		
+		<section id="maxxx72alba" >
+		<a href="#/funny_two"> <img src="funnysharkscopes/maxxx72alba.png"></a>
+		</section>
+
+		<section id="mymymadrose" >
+		<a href="#/funny_two"> <img src="funnysharkscopes/mymymadrose.png"></a>
+		</section>
+		
+		<section id="richman2" >
+		<a href="#/funny_two"> <img src="funnysharkscopes/richman2.png"></a>
+		</section>
+		
+		
+	</section> 
+<!-- @END OF FUNY POKERSTAK -->
+
+<section data-state="allWhite"> <!-- PHOTO INTRO PAGE -->
+
+	<h2 style="font-size:24px; color:black; margin-top:-50px;">Since you can play poker from anywhere with an internet connection. <br>I took the liberty to take pictures and travel the world.</h2>
+	<a><img class="noShadow" src="gd/vox_covers.jpg"></a>
+	<p style="font-size:0.3em; color:black; text-align:center; letter-spacing:1px;"> <br><b> [ THALIAND, 2010 ] </b></p>
+</section>
+
+<section> <!-- BEGIN GD STAK --> 
+	<section id="gd">
+		<p>
+		<a href="#/whaling_opening"> <img class="zthreethree" src="gd/whaling_opening.jpg"> </a> 	
+		<a href="#/whaling_inside"> <img class="zthreethree" src="gd/whaling_inside.jpg"> </a>							
+		<a href="#/surfing"> <img class="zthreethree" src="gd/surfing.jpg"> </a>			
+		<a href="#/dragon_spread"> <img class="zthreethree" src="gd/dragon_spread.jpg"> </a> 
+		<a href="#/grey_gardens"> <img class="zthreethree" src="gd/grey_gardens.jpg"> </a>					
+		</p>
+	</section> <!-- @END OF PHOTO GRID SLIDE -->
+
+	<section id="whaling_opening"> 
+	<p style="font-size:0.5em; color:black;"></p>
+	<a href="#/gd">
+	<img width="" height="" src="gd/whaling_opening.jpg">
+	</a>
+	<p style="font-size:0.3em; color:black; text-align:center;"> <br><b> </b></p>
+	</section>
+
+	<section id="whaling_inside"> 
+	<p style="font-size:0.5em; color:black;"></p>
+	<a href="#/gd">
+	<img width="" height="" src="gd/whaling_inside.jpg">
+	</a>
+	</section>
+
+	<section id="surfing"> 
+	<p style="font-size:0.5em; color:black;"></p>
+	<a href="#/gd">
+	<img width="" height="" src="gd/surfing.jpg">
+	</a>
+	</section>
+
+	<section id="dragon_spread"> 
+	<p style="font-size:0.5em; color:black;"></p>
+	<a href="#/gd">
+	<img width="" height="" src="gd/dragon_spread.jpg">
+	</a>
+	</section>
+
+	<section id="grey_gardens"> 
+	<p style="font-size:0.5em; color:black;"></p>
+	<a href="#/gd">
+	<img width="" height="" src="gd/grey_gardens.jpg">
+	</a>
+	</section>
+
+</section> 
+<!-- @END OF GD STAK -->
+			
+				<section>
+					<h2>Fragmented Views</h2>
+					<p>Hit the next arrow...</p>
+					<p class="fragment">... to step through ...</p>
+					<ol>
+						<li class="fragment"><code>any type</code></li>
+						<li class="fragment"><em>of view</em></li>
+						<li class="fragment"><strong>fragments</strong></li>
+					</ol>
+				</section>
+				
+				<section>
+					<h2>Stellar Links</h2>
+					<ul>
+						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
+						<li><a href="http://hakim.se/projects/reveal-js">Leave feedback on my site</a></li>
+						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
+					</ul>
+				</section>
+				
+				<section>
+					<h1>THE END</h1>
+					<h3>BY Hakim El Hattab / hakim.se</h3>
+				</section>
+			</div>
+
+			<!-- The navigational controls UI -->
+			<aside class="controls">
+				<a class="left" href="#">&#x25C4;</a>
+				<a class="right" href="#">&#x25BA;</a>
+				<a class="up" href="#">&#x25B2;</a>
+				<a class="down" href="#">&#x25BC;</a>
+			</aside>
+
+			<!-- Presentation progress bar -->
+			<div class="progress"><span></span></div>
+			
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+			
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				mouseWheel: false,
+				theme: Reveal.getQueryHash().theme || 'default', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/socket.io/socket.io.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+					{ src: 'plugin/speakernotes/client.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+				]
+			});
+			
+		</script>
+
+	</body>
+</html>
