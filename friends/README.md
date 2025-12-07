@@ -10,13 +10,13 @@ Added configuration options with config.js
 
 #### Raphaël Velt (main developer, french and english versions)
 
-* http://raphaelve.lt/
-* Twitter: [@raphv](http://twitter.com/raphv)
+* https://raphaelve.lt/
+* Twitter: [@raphv](https://twitter.com/raphv)
 
 #### Vicenzo Cosenza (italian translation)
 
-* http://www.vincos.it/
-* Twitter: [@vincos](http://twitter.com/vincos)
+* https://www.vincos.it/
+* Twitter: [@vincos](https://twitter.com/vincos)
 
 #### Eduardo Ramos Ibáñez (spanish translation)
 

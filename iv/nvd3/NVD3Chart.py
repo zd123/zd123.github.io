@@ -145,7 +145,7 @@ class NVD3Chart:
         self.chart_attr = kwargs.get("chart_attr", {})
         self.assets_directory = kwargs.get('assets_directory', './bower_components/')
 
-        #CDN http://cdnjs.com/libraries/nvd3/ needs to make sure it's up to date
+        #CDN https://cdnjs.com/libraries/nvd3/ needs to make sure it's up to date
         self.header_css = [
             '<link href="%s" rel="stylesheet">\n' % h for h in
             (

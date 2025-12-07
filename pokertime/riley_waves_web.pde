@@ -1,4 +1,4 @@
-/* OpenProcessing Tweak of *@*http://www.openprocessing.org/sketch/9315*@* */
+/* OpenProcessing Tweak of *@*https://www.openprocessing.org/sketch/9315*@* */
 /* !do not delete the line above, required for linking your tweak if you re-upload */
 
 public static final int WIDTH = 1020;

@@ -165,7 +165,7 @@ Vector3 - 3D vector
 
     Computes Manhattan length of this vector
 
-    http://en.wikipedia.org/wiki/Taxicab_geometry
+    https://en.wikipedia.org/wiki/Taxicab_geometry
 
     :returns: length
     :rtype: float

@@ -4,7 +4,7 @@
 // Copyright (c) 2007 John Fraser.
 //
 // Original Markdown Copyright (c) 2004-2005 John Gruber
-//   <http://daringfireball.net/projects/markdown/>
+//   <https://daringfireball.net/projects/markdown/>
 //
 // Redistributable under a BSD-style open source license.
 // See license.txt for more information.
@@ -15,7 +15,7 @@
 //				T C A
 //				T K B
 //
-//   <http://www.attacklab.net/>
+//   <https://www.attacklab.net/>
 //
 
 //
@@ -388,7 +388,7 @@ var _RunSpanGamut = function(text) {
 	text = _DoImages(text);
 	text = _DoAnchors(text);
 
-	// Make links out of things like `<http://example.com/>`
+	// Make links out of things like `<https://example.com/>`
 	// Must come after _DoAnchors(), because you can use < and >
 	// delimiters in inline links like [this](<url>).
 	text = _DoAutoLinks(text);
@@ -710,7 +710,7 @@ var _DoLists = function(text) {
 //
 
 	// attacklab: add sentinel to hack around khtml/safari bug:
-	// http://bugs.webkit.org/show_bug.cgi?id=11231
+	// https://bugs.webkit.org/show_bug.cgi?id=11231
 	text += "~0";
 
 	// Re-usable pattern to match any entirel ul or ol list:
@@ -1132,7 +1132,7 @@ var _EncodeAmpsAndAngles = function(text) {
 // Smart processing for ampersands and angle brackets that need to be encoded.
 
 	// Ampersand-encoding based entirely on Nat Irons's Amputator MT plugin:
-	//   http://bumppo.net/projects/amputator/
+	//   https://bumppo.net/projects/amputator/
 	text = text.replace(/&(?!#?[xX]?(?:[0-9a-fA-F]+|\w+);)/g,"&amp;");
 
 	// Encode naked <'s
@@ -1205,7 +1205,7 @@ var _EncodeEmailAddress = function(addr) {
 //	   &#64;&#101;x&#x61;&#109;&#x70;&#108;&#x65;&#x2E;&#99;&#111;&#109;</a>
 //
 //  Based on a filter by Matthew Wickline, posted to the BBEdit-Talk
-//  mailing list: <http://tinyurl.com/yu7ue>
+//  mailing list: <https://tinyurl.com/yu7ue>
 //
 
 	// attacklab: why can't javascript speak hex?

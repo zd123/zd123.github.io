@@ -3041,7 +3041,7 @@ function utf8Slice (buf, start, end) {
   return decodeCodePointsArray(res)
 }
 
-// Based on http://stackoverflow.com/a/22747272/680742, the browser with
+// Based on https://stackoverflow.com/a/22747272/680742, the browser with
 // the lowest limit is Chrome, with 0x10000 args.
 // We go 1 magnitude less, for safety
 var MAX_ARGUMENTS_LENGTH = 0x1000
@@ -3811,7 +3811,7 @@ function numberIsNaN (obj) {
 
 },{"base64-js":16,"ieee754":79}],21:[function(require,module,exports){
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
-// Distributed under an MIT license: http://codemirror.net/LICENSE
+// Distributed under an MIT license: https://codemirror.net/LICENSE
 
 (function(mod) {
   if (typeof exports == "object" && typeof module == "object") // CommonJS
@@ -3970,7 +3970,7 @@ function numberIsNaN (obj) {
 
 },{"../../lib/codemirror":24}],22:[function(require,module,exports){
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
-// Distributed under an MIT license: http://codemirror.net/LICENSE
+// Distributed under an MIT license: https://codemirror.net/LICENSE
 
 (function(mod) {
   if (typeof exports == "object" && typeof module == "object") // CommonJS
@@ -4405,7 +4405,7 @@ function numberIsNaN (obj) {
 
 },{"../../lib/codemirror":24}],23:[function(require,module,exports){
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
-// Distributed under an MIT license: http://codemirror.net/LICENSE
+// Distributed under an MIT license: https://codemirror.net/LICENSE
 
 // Because sometimes you need to mark the selected *text*.
 //
@@ -4526,13 +4526,13 @@ function numberIsNaN (obj) {
 
 },{"../../lib/codemirror":24}],24:[function(require,module,exports){
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
-// Distributed under an MIT license: http://codemirror.net/LICENSE
+// Distributed under an MIT license: https://codemirror.net/LICENSE
 
-// This is CodeMirror (http://codemirror.net), a code editor
+// This is CodeMirror (https://codemirror.net), a code editor
 // implemented in JavaScript on top of the browser's DOM.
 //
 // You can find some technical background for some of the code below
-// at http://marijnhaverbeke.nl/blog/#cm-internals .
+// at https://marijnhaverbeke.nl/blog/#cm-internals .
 
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
@@ -5461,7 +5461,7 @@ function getBidiPartAt(order, ch, sticky) {
 }
 
 // Bidirectional ordering algorithm
-// See http://unicode.org/reports/tr9/tr9-13.html for the algorithm
+// See https://unicode.org/reports/tr9/tr9-13.html for the algorithm
 // that this (partially) implements.
 
 // One-char codes used for character types:
@@ -10017,7 +10017,7 @@ function changeLine(doc, handle, changeType, op) {
 // It also indexes by height, and is used to convert between height
 // and line object, and to find the total height of the document.
 //
-// See also http://marijnhaverbeke.nl/blog/codemirror-line-tree.html
+// See also https://marijnhaverbeke.nl/blog/codemirror-line-tree.html
 
 function LeafChunk(lines) {
   var this$1 = this;
@@ -14205,7 +14205,7 @@ return CodeMirror$1;
 
 },{}],25:[function(require,module,exports){
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
-// Distributed under an MIT license: http://codemirror.net/LICENSE
+// Distributed under an MIT license: https://codemirror.net/LICENSE
 
 (function(mod) {
   if (typeof exports == "object" && typeof module == "object") // CommonJS
@@ -15583,10 +15583,10 @@ function useColors() {
     return true;
   }
 
-  // is webkit? http://stackoverflow.com/a/16459606/376773
+  // is webkit? https://stackoverflow.com/a/16459606/376773
   // document is undefined in react-native: https://github.com/facebook/react-native/pull/1632
   return (typeof document !== 'undefined' && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance) ||
-    // is firebug? http://stackoverflow.com/a/398120/376773
+    // is firebug? https://stackoverflow.com/a/398120/376773
     (typeof window !== 'undefined' && window.console && (window.console.firebug || (window.console.exception && window.console.table))) ||
     // is firefox >= v31?
     // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
@@ -18109,7 +18109,7 @@ module.exports = function (opts) {
   var xdomain = opts.xdomain;
 
   // scheme must be same when usign XDomainRequest
-  // http://blogs.msdn.com/b/ieinternals/archive/2010/05/13/xdomainrequest-restrictions-limitations-and-workarounds.aspx
+  // https://blogs.msdn.com/b/ieinternals/archive/2010/05/13/xdomainrequest-restrictions-limitations-and-workarounds.aspx
   var xscheme = opts.xscheme;
 
   // XDomainRequest has a flow of not sending cookie, therefore it should be disabled as a default.
@@ -18198,10 +18198,10 @@ function useColors() {
     return false;
   }
 
-  // is webkit? http://stackoverflow.com/a/16459606/376773
+  // is webkit? https://stackoverflow.com/a/16459606/376773
   // document is undefined in react-native: https://github.com/facebook/react-native/pull/1632
   return (typeof document !== 'undefined' && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance) ||
-    // is firebug? http://stackoverflow.com/a/398120/376773
+    // is firebug? https://stackoverflow.com/a/398120/376773
     (typeof window !== 'undefined' && window.console && (window.console.firebug || (window.console.exception && window.console.table))) ||
     // is firefox >= v31?
     // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
@@ -18589,7 +18589,7 @@ if (global && global.ArrayBuffer) {
  * Check if we are running an android browser. That requires us to use
  * ArrayBuffer with polling transports...
  *
- * http://ghinda.net/jpeg-blob-ajax-android/
+ * https://ghinda.net/jpeg-blob-ajax-android/
  */
 
 var isAndroid = typeof navigator !== 'undefined' && /Android/i.test(navigator.userAgent);
@@ -19589,7 +19589,7 @@ module.exports = function (constraints, cb) {
             }
         } else {
             // if we get an error object make sure '.name' property is set
-            // according to spec: http://dev.w3.org/2011/webrtc/editor/getusermedia.html#navigatorusermediaerror-and-navigatorusermediaerrorcallback
+            // according to spec: https://dev.w3.org/2011/webrtc/editor/getusermedia.html#navigatorusermediaerror-and-navigatorusermediaerrorcallback
             error = err;
             if (!error.name) {
                 // this is likely chrome which
@@ -20064,7 +20064,7 @@ SDPUtils.parseRtpEncodingParameters = function(mediaSection) {
   return encodingParameters;
 };
 
-// parses http://draft.ortc.org/#rtcrtcpparameters*
+// parses https://draft.ortc.org/#rtcrtcpparameters*
 SDPUtils.parseRtcpParameters = function(mediaSection) {
   var rtcpParameters = {};
 
@@ -22223,7 +22223,7 @@ module.exports = function() {
       };
 
   if (browserDetails.version < 41) {
-    // Work around http://bugzil.la/1169665
+    // Work around https://bugzil.la/1169665
     var orgEnumerateDevices =
         navigator.mediaDevices.enumerateDevices.bind(navigator.mediaDevices);
     navigator.mediaDevices.enumerateDevices = function() {
@@ -25800,7 +25800,7 @@ arguments[4][62][0].apply(exports,arguments)
 !function(t,r){"object"==typeof exports&&"object"==typeof module?module.exports=r():"function"==typeof define&&define.amd?define([],r):"object"==typeof exports?exports.Meyda=r():t.Meyda=r()}(this,function(){return function(t){function r(n){if(e[n])return e[n].exports;var o=e[n]={i:n,l:!1,exports:{}};return t[n].call(o.exports,o,o.exports,r),o.l=!0,o.exports}var e={};return r.m=t,r.c=e,r.i=function(t){return t},r.d=function(t,e,n){r.o(t,e)||Object.defineProperty(t,e,{configurable:!1,enumerable:!0,get:n})},r.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return r.d(e,"a",e),e},r.o=function(t,r){return Object.prototype.hasOwnProperty.call(t,r)},r.p="",r(r.s=23)}([function(t,r,e){"use strict";function n(t){if(Array.isArray(t)){for(var r=0,e=Array(t.length);r<t.length;r++)e[r]=t[r];return e}return Array.from(t)}function o(t){for(;t%2==0&&t>1;)t/=2;return 1===t}function i(t,r){for(var e=[],n=0;n<Math.min(t.length,r.length);n++)e[n]=t[n]*r[n];return e}function a(t,r){if("rect"!==r){if(""!==r&&r||(r="hanning"),g[r]||(g[r]={}),!g[r][t.length])try{g[r][t.length]=b[r](t.length)}catch(t){throw new Error("Invalid windowing function")}t=i(t,g[r][t.length])}return t}function u(t,r,e){for(var n=new Float32Array(t),o=0;o<n.length;o++)n[o]=o*r/e,n[o]=13*Math.atan(n[o]/1315.8)+3.5*Math.atan(Math.pow(n[o]/7518,2));return n}function c(t){return Float32Array.from(t)}function f(t){return 700*(Math.exp(t/1125)-1)}function l(t){return 1125*Math.log(1+t/700)}function s(t,r,e){for(var n=new Float32Array(t+2),o=new Float32Array(t+2),i=r/2,a=l(0),u=l(i),c=u-a,s=c/(t+1),p=Array(t+2),m=0;m<n.length;m++)n[m]=m*s,o[m]=f(n[m]),p[m]=Math.floor((e+1)*o[m]/r);for(var y=Array(t),h=0;h<y.length;h++){y[h]=Array.apply(null,new Array(e/2+1)).map(Number.prototype.valueOf,0);for(var b=p[h];b<p[h+1];b++)y[h][b]=(b-p[h])/(p[h+1]-p[h]);for(var g=p[h+1];g<p[h+2];g++)y[h][g]=(p[h+2]-g)/(p[h+2]-p[h+1])}return y}function p(t,r){return Math.log2(16*t/r)}function m(t){var r=t[0].map(function(){return 0}),e=t.reduce(function(t,r){return r.forEach(function(r,e){t[e]+=Math.pow(r,2)}),t},r).map(Math.sqrt);return t.map(function(t,r){return t.map(function(t,r){return t/(e[r]||1)})})}function y(t,r,e){var o=arguments.length>3&&void 0!==arguments[3]?arguments[3]:5,i=arguments.length>4&&void 0!==arguments[4]?arguments[4]:2,a=!(arguments.length>5&&void 0!==arguments[5])||arguments[5],u=arguments.length>6&&void 0!==arguments[6]?arguments[6]:440,c=Math.floor(e/2)+1,f=new Array(e).fill(0).map(function(n,o){return t*p(r*o/e,u)});f[0]=f[1]-1.5*t;var l=f.slice(1).map(function(t,r){return Math.max(t-f[r])},1).concat([1]),s=Math.round(t/2),y=new Array(t).fill(0).map(function(r,e){return f.map(function(r){return(10*t+s+r-e)%t-s})}),h=y.map(function(t,r){return t.map(function(t,e){return Math.exp(-.5*Math.pow(2*y[r][e]/l[e],2))})});if(h=m(h),i){var b=f.map(function(r){return Math.exp(-.5*Math.pow((r/t-o)/i,2))});h=h.map(function(t){return t.map(function(t,r){return t*b[r]})})}return a&&(h=[].concat(n(h.slice(3)),n(h.slice(0,3)))),h.map(function(t){return t.slice(0,c)})}function h(t,r,e){if(t.length<r)throw new Error("Buffer is too short for frame length");if(e<1)throw new Error("Hop length cannot be less that 1");if(r<1)throw new Error("Frame length cannot be less that 1");var n=1+Math.floor((t.length-r)/e);return new Array(n).fill(0).map(function(n,o){return t.slice(o*e,o*e+r)})}r.b=o,r.a=a,r.c=u,r.f=c,r.d=s,r.e=y,r.g=h;var b=e(25),g={}},function(t,r,e){"use strict";function n(t,r){for(var e=0,n=0,o=0;o<r.length;o++)e+=Math.pow(o,t)*Math.abs(r[o]),n+=r[o];return e/n}r.a=n},function(t,r,e){"use strict";var n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t};r.a=function(t){if("object"!==n(t.ampSpectrum)||"object"!==n(t.barkScale))throw new TypeError;var r=new Float32Array(24),e=0,o=t.ampSpectrum,i=new Int32Array(25);i[0]=0;for(var a=t.barkScale[o.length-1]/24,u=1,c=0;c<o.length;c++)for(;t.barkScale[c]>a;)i[u++]=c,a=u*t.barkScale[o.length-1]/24;i[24]=o.length-1;for(var f=0;f<24;f++){for(var l=0,s=i[f];s<i[f+1];s++)l+=o[s];r[f]=Math.pow(l,.23)}for(var p=0;p<r.length;p++)e+=r[p];return{specific:r,total:e}}},function(t,r,e){"use strict";var n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t};r.a=function(){if("object"!==n(arguments[0].ampSpectrum))throw new TypeError;for(var t=new Float32Array(arguments[0].ampSpectrum.length),r=0;r<t.length;r++)t[r]=Math.pow(arguments[0].ampSpectrum[r],2);return t}},function(t,r,e){"use strict";Object.defineProperty(r,"__esModule",{value:!0}),e.d(r,"buffer",function(){return v}),e.d(r,"complexSpectrum",function(){return w}),e.d(r,"amplitudeSpectrum",function(){return x});var n=e(13),o=e(9),i=e(20),a=e(14),u=e(18),c=e(15),f=e(21),l=e(19),s=e(17),p=e(22),m=e(2),y=e(12),h=e(11),b=e(10),g=e(8),S=e(3),d=e(16);e.d(r,"rms",function(){return n.a}),e.d(r,"energy",function(){return o.a}),e.d(r,"spectralSlope",function(){return i.a}),e.d(r,"spectralCentroid",function(){return a.a}),e.d(r,"spectralRolloff",function(){return u.a}),e.d(r,"spectralFlatness",function(){return c.a}),e.d(r,"spectralSpread",function(){return f.a}),e.d(r,"spectralSkewness",function(){return l.a}),e.d(r,"spectralKurtosis",function(){return s.a}),e.d(r,"zcr",function(){return p.a}),e.d(r,"loudness",function(){return m.a}),e.d(r,"perceptualSpread",function(){return y.a}),e.d(r,"perceptualSharpness",function(){return h.a}),e.d(r,"powerSpectrum",function(){return S.a}),e.d(r,"mfcc",function(){return b.a}),e.d(r,"chroma",function(){return g.a}),e.d(r,"spectralFlux",function(){return d.a});var v=function(t){return t.signal},w=function(t){return t.complexSpectrum},x=function(t){return t.ampSpectrum}},function(t,r){var e;e=function(){return this}();try{e=e||Function("return this")()||(0,eval)("this")}catch(t){"object"==typeof window&&(e=window)}t.exports=e},function(t,r,e){"use strict";Object.defineProperty(r,"__esModule",{value:!0});var n=e(0),o=e(4),i=e(28),a=(e.n(i),e(24)),u="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},c={audioContext:null,spn:null,bufferSize:512,sampleRate:44100,melBands:26,chromaBands:12,callback:null,windowingFunction:"hanning",featureExtractors:o,EXTRACTION_STARTED:!1,_featuresToExtract:[],windowing:n.a,_errors:{notPow2:new Error("Meyda: Buffer size must be a power of 2, e.g. 64 or 512"),featureUndef:new Error("Meyda: No features defined."),invalidFeatureFmt:new Error("Meyda: Invalid feature format"),invalidInput:new Error("Meyda: Invalid input."),noAC:new Error("Meyda: No AudioContext specified."),noSource:new Error("Meyda: No source node specified.")},createMeydaAnalyzer:function(t){return new a.a(t,c)},extract:function(t,r,e){if(!r)throw this._errors.invalidInput;if("object"!=(void 0===r?"undefined":u(r)))throw this._errors.invalidInput;if(!t)throw this._errors.featureUndef;if(!n.b(r.length))throw this._errors.notPow2;void 0!==this.barkScale&&this.barkScale.length==this.bufferSize||(this.barkScale=n.c(this.bufferSize,this.sampleRate,this.bufferSize)),void 0!==this.melFilterBank&&this.barkScale.length==this.bufferSize&&this.melFilterBank.length==this.melBands||(this.melFilterBank=n.d(this.melBands,this.sampleRate,this.bufferSize)),void 0!==this.chromaFilterBank&&this.chromaFilterBank.length==this.chromaBands||(this.chromaFilterBank=n.e(this.chromaBands,this.sampleRate,this.bufferSize)),void 0===r.buffer?this.signal=n.f(r):this.signal=r;var o=f(r,this.windowingFunction,this.bufferSize);if(this.signal=o.windowedSignal,this.complexSpectrum=o.complexSpectrum,this.ampSpectrum=o.ampSpectrum,e){var i=f(e,this.windowingFunction,this.bufferSize);this.previousSignal=i.windowedSignal,this.previousComplexSpectrum=i.complexSpectrum,this.previousAmpSpectrum=i.ampSpectrum}if("object"===(void 0===t?"undefined":u(t))){for(var a={},c=0;c<t.length;c++)a[t[c]]=this.featureExtractors[t[c]]({ampSpectrum:this.ampSpectrum,chromaFilterBank:this.chromaFilterBank,complexSpectrum:this.complexSpectrum,signal:this.signal,bufferSize:this.bufferSize,sampleRate:this.sampleRate,barkScale:this.barkScale,melFilterBank:this.melFilterBank,previousSignal:this.previousSignal,previousAmpSpectrum:this.previousAmpSpectrum,previousComplexSpectrum:this.previousComplexSpectrum});return a}if("string"==typeof t)return this.featureExtractors[t]({ampSpectrum:this.ampSpectrum,chromaFilterBank:this.chromaFilterBank,complexSpectrum:this.complexSpectrum,signal:this.signal,bufferSize:this.bufferSize,sampleRate:this.sampleRate,barkScale:this.barkScale,melFilterBank:this.melFilterBank,previousSignal:this.previousSignal,previousAmpSpectrum:this.previousAmpSpectrum,previousComplexSpectrum:this.previousComplexSpectrum});throw this._errors.invalidFeatureFmt}},f=function(t,r,o){var a={};void 0===t.buffer?a.signal=n.f(t):a.signal=t,a.windowedSignal=n.a(a.signal,r),a.complexSpectrum=e.i(i.fft)(a.windowedSignal),a.ampSpectrum=new Float32Array(o/2);for(var u=0;u<o/2;u++)a.ampSpectrum[u]=Math.sqrt(Math.pow(a.complexSpectrum.real[u],2)+Math.pow(a.complexSpectrum.imag[u],2));return a};r.default=c,"undefined"!=typeof window&&(window.Meyda=c)},function(t,r,e){"use strict";(function(r){/*!
  * The buffer module from node.js, for the browser.
  *
- * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
+ * @author   Feross Aboukhadijeh <feross@feross.org> <https://feross.org>
  * @license  MIT
  */
 function n(t,r){if(t===r)return 0;for(var e=t.length,n=r.length,o=0,i=Math.min(e,n);o<i;++o)if(t[o]!==r[o]){e=t[o],n=r[o];break}return e<n?-1:n<e?1:0}function o(t){return r.Buffer&&"function"==typeof r.Buffer.isBuffer?r.Buffer.isBuffer(t):!(null==t||!t._isBuffer)}function i(t){return Object.prototype.toString.call(t)}function a(t){return!o(t)&&("function"==typeof r.ArrayBuffer&&("function"==typeof ArrayBuffer.isView?ArrayBuffer.isView(t):!!t&&(t instanceof DataView||!!(t.buffer&&t.buffer instanceof ArrayBuffer))))}function u(t){if(v.isFunction(t)){if(E)return t.name;var r=t.toString(),e=r.match(M);return e&&e[1]}}function c(t,r){return"string"==typeof t?t.length<r?t:t.slice(0,r):t}function f(t){if(E||!v.isFunction(t))return v.inspect(t);var r=u(t);return"[Function"+(r?": "+r:"")+"]"}function l(t){return c(f(t.actual),128)+" "+t.operator+" "+c(f(t.expected),128)}function s(t,r,e,n,o){throw new _.AssertionError({message:e,actual:t,expected:r,operator:n,stackStartFunction:o})}function p(t,r){t||s(t,!0,r,"==",_.ok)}function m(t,r,e,u){if(t===r)return!0;if(o(t)&&o(r))return 0===n(t,r);if(v.isDate(t)&&v.isDate(r))return t.getTime()===r.getTime();if(v.isRegExp(t)&&v.isRegExp(r))return t.source===r.source&&t.global===r.global&&t.multiline===r.multiline&&t.lastIndex===r.lastIndex&&t.ignoreCase===r.ignoreCase;if(null!==t&&"object"==typeof t||null!==r&&"object"==typeof r){if(a(t)&&a(r)&&i(t)===i(r)&&!(t instanceof Float32Array||t instanceof Float64Array))return 0===n(new Uint8Array(t.buffer),new Uint8Array(r.buffer));if(o(t)!==o(r))return!1;u=u||{actual:[],expected:[]};var c=u.actual.indexOf(t);return-1!==c&&c===u.expected.indexOf(r)||(u.actual.push(t),u.expected.push(r),h(t,r,e,u))}return e?t===r:t==r}function y(t){return"[object Arguments]"==Object.prototype.toString.call(t)}function h(t,r,e,n){if(null===t||void 0===t||null===r||void 0===r)return!1;if(v.isPrimitive(t)||v.isPrimitive(r))return t===r;if(e&&Object.getPrototypeOf(t)!==Object.getPrototypeOf(r))return!1;var o=y(t),i=y(r);if(o&&!i||!o&&i)return!1;if(o)return t=x.call(t),r=x.call(r),m(t,r,e);var a,u,c=A(t),f=A(r);if(c.length!==f.length)return!1;for(c.sort(),f.sort(),u=c.length-1;u>=0;u--)if(c[u]!==f[u])return!1;for(u=c.length-1;u>=0;u--)if(a=c[u],!m(t[a],r[a],e,n))return!1;return!0}function b(t,r,e){m(t,r,!0)&&s(t,r,e,"notDeepStrictEqual",b)}function g(t,r){if(!t||!r)return!1;if("[object RegExp]"==Object.prototype.toString.call(r))return r.test(t);try{if(t instanceof r)return!0}catch(t){}return!Error.isPrototypeOf(r)&&!0===r.call({},t)}function S(t){var r;try{t()}catch(t){r=t}return r}function d(t,r,e,n){var o;if("function"!=typeof r)throw new TypeError('"block" argument must be a function');"string"==typeof e&&(n=e,e=null),o=S(r),n=(e&&e.name?" ("+e.name+").":".")+(n?" "+n:"."),t&&!o&&s(o,e,"Missing expected exception"+n);var i="string"==typeof n,a=!t&&v.isError(o),u=!t&&o&&!e;if((a&&i&&g(o,e)||u)&&s(o,e,"Got unwanted exception"+n),t&&o&&e&&!g(o,e)||!t&&o)throw o}var v=e(33),w=Object.prototype.hasOwnProperty,x=Array.prototype.slice,E=function(){return"foo"===function(){}.name}(),_=t.exports=p,M=/\s*function\s+([^\(\s]*)\s*/;_.AssertionError=function(t){this.name="AssertionError",this.actual=t.actual,this.expected=t.expected,this.operator=t.operator,t.message?(this.message=t.message,this.generatedMessage=!1):(this.message=l(this),this.generatedMessage=!0);var r=t.stackStartFunction||s;if(Error.captureStackTrace)Error.captureStackTrace(this,r);else{var e=new Error;if(e.stack){var n=e.stack,o=u(r),i=n.indexOf("\n"+o);if(i>=0){var a=n.indexOf("\n",i+1);n=n.substring(a+1)}this.stack=n}}},v.inherits(_.AssertionError,Error),_.fail=s,_.ok=p,_.equal=function(t,r,e){t!=r&&s(t,r,e,"==",_.equal)},_.notEqual=function(t,r,e){t==r&&s(t,r,e,"!=",_.notEqual)},_.deepEqual=function(t,r,e){m(t,r,!1)||s(t,r,e,"deepEqual",_.deepEqual)},_.deepStrictEqual=function(t,r,e){m(t,r,!0)||s(t,r,e,"deepStrictEqual",_.deepStrictEqual)},_.notDeepEqual=function(t,r,e){m(t,r,!1)&&s(t,r,e,"notDeepEqual",_.notDeepEqual)},_.notDeepStrictEqual=b,_.strictEqual=function(t,r,e){t!==r&&s(t,r,e,"===",_.strictEqual)},_.notStrictEqual=function(t,r,e){t===r&&s(t,r,e,"!==",_.notStrictEqual)},_.throws=function(t,r,e){d(!0,t,r,e)},_.doesNotThrow=function(t,r,e){d(!1,t,r,e)},_.ifError=function(t){if(t)throw t};var A=Object.keys||function(t){var r=[];for(var e in t)w.call(t,e)&&r.push(e);return r}}).call(r,e(5))},function(t,r,e){"use strict";function n(t){if(Array.isArray(t)){for(var r=0,e=Array(t.length);r<t.length;r++)e[r]=t[r];return e}return Array.from(t)}var o=(e(0),"function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t});r.a=function(t){if("object"!==o(t.ampSpectrum))throw new TypeError("Valid ampSpectrum is required to generate chroma");if("object"!==o(t.chromaFilterBank))throw new TypeError("Valid chromaFilterBank is required to generate chroma");var r=t.chromaFilterBank.map(function(r,e){return t.ampSpectrum.reduce(function(t,e,n){return t+e*r[n]},0)}),e=Math.max.apply(Math,n(r));return e?r.map(function(t){return t/e}):r}},function(t,r,e){"use strict";var n=e(7),o=(e.n(n),"function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t});r.a=function(){if("object"!==o(arguments[0].signal))throw new TypeError;for(var t=0,r=0;r<arguments[0].signal.length;r++)t+=Math.pow(Math.abs(arguments[0].signal[r]),2);return t}},function(t,r,e){"use strict";var n=e(3),o=(e(0),"function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t}),i=e(26);r.a=function(t){if("object"!==o(t.ampSpectrum))throw new TypeError("Valid ampSpectrum is required to generate MFCC");if("object"!==o(t.melFilterBank))throw new TypeError("Valid melFilterBank is required to generate MFCC");for(var r=e.i(n.a)(t),a=t.melFilterBank.length,u=Array(a),c=new Float32Array(a),f=0;f<c.length;f++){u[f]=new Float32Array(t.bufferSize/2),c[f]=0;for(var l=0;l<t.bufferSize/2;l++)u[f][l]=t.melFilterBank[f][l]*r[l],c[f]+=u[f][l];c[f]=Math.log(c[f]+1)}var s=Array.prototype.slice.call(c);return i(s).slice(0,13)}},function(t,r,e){"use strict";var n=e(2),o="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t};r.a=function(){if("object"!==o(arguments[0].signal))throw new TypeError;for(var t=e.i(n.a)(arguments[0]),r=t.specific,i=0,a=0;a<r.length;a++)i+=a<15?(a+1)*r[a+1]:.066*Math.exp(.171*(a+1));return i*=.11/t.total}},function(t,r,e){"use strict";var n=e(2),o="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t};r.a=function(){if("object"!==o(arguments[0].signal))throw new TypeError;for(var t=e.i(n.a)(arguments[0]),r=0,i=0;i<t.specific.length;i++)t.specific[i]>r&&(r=t.specific[i]);return Math.pow((t.total-r)/t.total,2)}},function(t,r,e){"use strict";var n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t};r.a=function(t){if("object"!==n(t.signal))throw new TypeError;for(var r=0,e=0;e<t.signal.length;e++)r+=Math.pow(t.signal[e],2);return r/=t.signal.length,r=Math.sqrt(r)}},function(t,r,e){"use strict";var n=e(1),o="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t};r.a=function(){if("object"!==o(arguments[0].ampSpectrum))throw new TypeError;return e.i(n.a)(1,arguments[0].ampSpectrum)}},function(t,r,e){"use strict";var n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t};r.a=function(){if("object"!==n(arguments[0].ampSpectrum))throw new TypeError;for(var t=0,r=0,e=0;e<arguments[0].ampSpectrum.length;e++)t+=Math.log(arguments[0].ampSpectrum[e]),r+=arguments[0].ampSpectrum[e];return Math.exp(t/arguments[0].ampSpectrum.length)*arguments[0].ampSpectrum.length/r}},function(t,r,e){"use strict";var n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t};r.a=function(t){if("object"!==n(t.signal)||"object"!=n(t.previousSignal))throw new TypeError;for(var r=0,e=-t.bufferSize/2;e<signal.length/2-1;e++)x=Math.abs(t.signal[e])-Math.abs(t.previousSignal[e]),r+=(x+Math.abs(x))/2;return r}},function(t,r,e){"use strict";var n=e(1),o="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t};r.a=function(){if("object"!==o(arguments[0].ampSpectrum))throw new TypeError;var t=arguments[0].ampSpectrum,r=e.i(n.a)(1,t),i=e.i(n.a)(2,t),a=e.i(n.a)(3,t),u=e.i(n.a)(4,t);return(-3*Math.pow(r,4)+6*r*i-4*r*a+u)/Math.pow(Math.sqrt(i-Math.pow(r,2)),4)}},function(t,r,e){"use strict";var n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t};r.a=function(){if("object"!==n(arguments[0].ampSpectrum))throw new TypeError;for(var t=arguments[0].ampSpectrum,r=arguments[0].sampleRate/(2*(t.length-1)),e=0,o=0;o<t.length;o++)e+=t[o];for(var i=.99*e,a=t.length-1;e>i&&a>=0;)e-=t[a],--a;return(a+1)*r}},function(t,r,e){"use strict";var n=e(1),o="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t};r.a=function(t){if("object"!==o(t.ampSpectrum))throw new TypeError;var r=e.i(n.a)(1,t.ampSpectrum),i=e.i(n.a)(2,t.ampSpectrum),a=e.i(n.a)(3,t.ampSpectrum);return(2*Math.pow(r,3)-3*r*i+a)/Math.pow(Math.sqrt(i-Math.pow(r,2)),3)}},function(t,r,e){"use strict";var n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t};r.a=function(t){if("object"!==n(t.ampSpectrum))throw new TypeError;for(var r=0,e=0,o=new Float32Array(t.ampSpectrum.length),i=0,a=0,u=0;u<t.ampSpectrum.length;u++){r+=t.ampSpectrum[u];var c=u*t.sampleRate/t.bufferSize;o[u]=c,i+=c*c,e+=c,a+=c*t.ampSpectrum[u]}return(t.ampSpectrum.length*a-e*r)/(r*(i-Math.pow(e,2)))}},function(t,r,e){"use strict";var n=e(1),o="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t};r.a=function(t){if("object"!==o(t.ampSpectrum))throw new TypeError;return Math.sqrt(e.i(n.a)(2,t.ampSpectrum)-Math.pow(e.i(n.a)(1,t.ampSpectrum),2))}},function(t,r,e){"use strict";var n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t};r.a=function(){if("object"!==n(arguments[0].signal))throw new TypeError;for(var t=0,r=0;r<arguments[0].signal.length;r++)(arguments[0].signal[r]>=0&&arguments[0].signal[r+1]<0||arguments[0].signal[r]<0&&arguments[0].signal[r+1]>=0)&&t++;return t}},function(t,r,e){t.exports=e(6).default},function(t,r,e){"use strict";function n(t,r){if(!(t instanceof r))throw new TypeError("Cannot call a class as a function")}e.d(r,"a",function(){return u});var o=e(0),i=e(4),a=function(){function t(t,r){for(var e=0;e<r.length;e++){var n=r[e];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(t,n.key,n)}}return function(r,e,n){return e&&t(r.prototype,e),n&&t(r,n),r}}(),u=function(){function t(r,e){var a=this;if(n(this,t),this._m=e,!r.audioContext)throw this._m.errors.noAC;if(r.bufferSize&&!o.b(r.bufferSize))throw this._m._errors.notPow2;if(!r.source)throw this._m._errors.noSource;this._m.audioContext=r.audioContext,this._m.bufferSize=r.bufferSize||this._m.bufferSize||256,this._m.hopSize=r.hopSize||this._m.hopSize||this._m.bufferSize,this._m.sampleRate=r.sampleRate||this._m.audioContext.sampleRate||44100,this._m.callback=r.callback,this._m.windowingFunction=r.windowingFunction||"hanning",this._m.featureExtractors=i,this._m.EXTRACTION_STARTED=r.startImmediately||!1,this._m.spn=this._m.audioContext.createScriptProcessor(this._m.bufferSize,1,1),this._m.spn.connect(this._m.audioContext.destination),this._m._featuresToExtract=r.featureExtractors||[],this._m.barkScale=o.c(this._m.bufferSize,this._m.sampleRate,this._m.bufferSize),this._m.melFilterBank=o.d(this._m.melBands,this._m.sampleRate,this._m.bufferSize),this._m.inputData=null,this._m.previousInputData=null,this._m.frame=null,this._m.previousFrame=null,this.setSource(r.source),this._m.spn.onaudioprocess=function(t){if(null!==a._m.inputData&&(a._m.previousInputData=a._m.inputData),a._m.inputData=t.inputBuffer.getChannelData(0),a._m.previousInputData){var r=new Float32Array(a._m.previousInputData.length+a._m.inputData.length-a._m.hopSize);r.set(a._m.previousInputData.slice(a._m.hopSize)),r.set(a._m.inputData,a._m.previousInputData.length-a._m.hopSize)}else var r=a._m.inputData;o.g(r,a._m.bufferSize,a._m.hopSize).forEach(function(t){a._m.frame=t;var r=a._m.extract(a._m._featuresToExtract,a._m.frame,a._m.previousFrame);"function"==typeof a._m.callback&&a._m.EXTRACTION_STARTED&&a._m.callback(r),a._m.previousFrame=a._m.frame})}}return a(t,[{key:"start",value:function(t){this._m._featuresToExtract=t||this._m._featuresToExtract,this._m.EXTRACTION_STARTED=!0}},{key:"stop",value:function(){this._m.EXTRACTION_STARTED=!1}},{key:"setSource",value:function(t){t.connect(this._m.spn)}},{key:"get",value:function(t){return this._m.inputData?this._m.extract(t||this._m._featuresToExtract,this._m.inputData,this._m.previousInputData):null}}]),t}()},function(t,r,e){"use strict";function n(t){for(var r=new Float32Array(t),e=2*Math.PI/(t-1),n=2*e,o=0;o<t/2;o++)r[o]=.42-.5*Math.cos(o*e)+.08*Math.cos(o*n);for(var i=t/2;i>0;i--)r[t-i]=r[i-1];return r}function o(t){for(var r=Math.PI/(t-1),e=new Float32Array(t),n=0;n<t;n++)e[n]=Math.sin(r*n);return e}function i(t){for(var r=new Float32Array(t),e=0;e<t;e++)r[e]=.5-.5*Math.cos(2*Math.PI*e/(t-1));return r}function a(t){for(var r=new Float32Array(t),e=0;e<t;e++)r[e]=.54-.46*Math.cos(2*Math.PI*(e/t-1));return r}Object.defineProperty(r,"__esModule",{value:!0}),r.blackman=n,r.sine=o,r.hanning=i,r.hamming=a},function(t,r,e){t.exports=e(27)},function(t,r){function e(t,r){var e=t.length;return r=r||2,cosMap&&cosMap[e]||n(e),t.map(function(){return 0}).map(function(n,o){return r*t.reduce(function(t,r,n,i){return t+r*cosMap[e][n+o*e]},0)})}cosMap=null;var n=function(t){cosMap=cosMap||{},cosMap[t]=new Array(t*t);for(var r=Math.PI/t,e=0;e<t;e++)for(var n=0;n<t;n++)cosMap[t][n+e*t]=Math.cos(r*(n+.5)*e)};t.exports=e},function(t,r,e){"use strict";var n=e(29),o=function(t){var r={};void 0===t.real||void 0===t.imag?r=n.constructComplexArray(t):(r.real=t.real.slice(),r.imag=t.imag.slice());var e=r.real.length,o=Math.log2(e);if(Math.round(o)!=o)throw new Error("Input size must be a power of 2.");if(r.real.length!=r.imag.length)throw new Error("Real and imaginary components must have the same length.");for(var i=n.bitReverseArray(e),a={real:[],imag:[]},u=0;u<e;u++)a.real[i[u]]=r.real[u],a.imag[i[u]]=r.imag[u];for(var c=0;c<e;c++)r.real[c]=a.real[c],r.imag[c]=a.imag[c];for(var f=1;f<=o;f++)for(var l=Math.pow(2,f),s=0;s<l/2;s++)for(var p=n.euler(s,l),m=0;m<e/l;m++){var y=l*m+s,h=l*m+s+l/2,b={real:r.real[y],imag:r.imag[y]},g={real:r.real[h],imag:r.imag[h]},S=n.multiply(p,g),d=n.subtract(b,S);r.real[h]=d.real,r.imag[h]=d.imag;var v=n.add(S,b);r.real[y]=v.real,r.imag[y]=v.imag}return r},i=function(t){if(void 0===t.real||void 0===t.imag)throw new Error("IFFT only accepts a complex input.");for(var r=t.real.length,e={real:[],imag:[]},i=0;i<r;i++){var a={real:t.real[i],imag:t.imag[i]},u=n.conj(a);e.real[i]=u.real,e.imag[i]=u.imag}var c=o(e);return e.real=c.real.map(function(t){return t/r}),e.imag=c.imag.map(function(t){return t/r}),e};t.exports={fft:o,ifft:i}},function(t,r,e){"use strict";function n(t){if(Array.isArray(t)){for(var r=0,e=Array(t.length);r<t.length;r++)e[r]=t[r];return e}return Array.from(t)}var o={},i={},a=function(t){var r={};r.real=void 0===t.real?t.slice():t.real.slice();var e=r.real.length;return void 0===i[e]&&(i[e]=Array.apply(null,Array(e)).map(Number.prototype.valueOf,0)),r.imag=i[e].slice(),r},u=function(t){if(void 0===o[t]){for(var r=(t-1).toString(2).length,e="0".repeat(r),i={},a=0;a<t;a++){var u=a.toString(2);u=e.substr(u.length)+u,u=[].concat(n(u)).reverse().join(""),i[a]=parseInt(u,2)}o[t]=i}return o[t]},c=function(t,r){return{real:t.real*r.real-t.imag*r.imag,imag:t.real*r.imag+t.imag*r.real}},f=function(t,r){return{real:t.real+r.real,imag:t.imag+r.imag}},l=function(t,r){return{real:t.real-r.real,imag:t.imag-r.imag}},s=function(t,r){var e=-2*Math.PI*t/r;return{real:Math.cos(e),imag:Math.sin(e)}},p=function(t){return t.imag*=-1,t};t.exports={bitReverseArray:u,multiply:c,add:f,subtract:l,euler:s,conj:p,constructComplexArray:a}},function(t,r){function e(){throw new Error("setTimeout has not been defined")}function n(){throw new Error("clearTimeout has not been defined")}function o(t){if(l===setTimeout)return setTimeout(t,0);if((l===e||!l)&&setTimeout)return l=setTimeout,setTimeout(t,0);try{return l(t,0)}catch(r){try{return l.call(null,t,0)}catch(r){return l.call(this,t,0)}}}function i(t){if(s===clearTimeout)return clearTimeout(t);if((s===n||!s)&&clearTimeout)return s=clearTimeout,clearTimeout(t);try{return s(t)}catch(r){try{return s.call(null,t)}catch(r){return s.call(this,t)}}}function a(){h&&m&&(h=!1,m.length?y=m.concat(y):b=-1,y.length&&u())}function u(){if(!h){var t=o(a);h=!0;for(var r=y.length;r;){for(m=y,y=[];++b<r;)m&&m[b].run();b=-1,r=y.length}m=null,h=!1,i(t)}}function c(t,r){this.fun=t,this.array=r}function f(){}var l,s,p=t.exports={};!function(){try{l="function"==typeof setTimeout?setTimeout:e}catch(t){l=e}try{s="function"==typeof clearTimeout?clearTimeout:n}catch(t){s=n}}();var m,y=[],h=!1,b=-1;p.nextTick=function(t){var r=new Array(arguments.length-1);if(arguments.length>1)for(var e=1;e<arguments.length;e++)r[e-1]=arguments[e];y.push(new c(t,r)),1!==y.length||h||o(u)},c.prototype.run=function(){this.fun.apply(null,this.array)},p.title="browser",p.browser=!0,p.env={},p.argv=[],p.version="",p.versions={},p.on=f,p.addListener=f,p.once=f,p.off=f,p.removeListener=f,p.removeAllListeners=f,p.emit=f,p.prependListener=f,p.prependOnceListener=f,p.listeners=function(t){return[]},p.binding=function(t){throw new Error("process.binding is not supported")},p.cwd=function(){return"/"},p.chdir=function(t){throw new Error("process.chdir is not supported")},p.umask=function(){return 0}},function(t,r){"function"==typeof Object.create?t.exports=function(t,r){t.super_=r,t.prototype=Object.create(r.prototype,{constructor:{value:t,enumerable:!1,writable:!0,configurable:!0}})}:t.exports=function(t,r){t.super_=r;var e=function(){};e.prototype=r.prototype,t.prototype=new e,t.prototype.constructor=t}},function(t,r){t.exports=function(t){return t&&"object"==typeof t&&"function"==typeof t.copy&&"function"==typeof t.fill&&"function"==typeof t.readUInt8}},function(t,r,e){(function(t,n){function o(t,e){var n={seen:[],stylize:a};return arguments.length>=3&&(n.depth=arguments[2]),arguments.length>=4&&(n.colors=arguments[3]),h(e)?n.showHidden=e:e&&r._extend(n,e),w(n.showHidden)&&(n.showHidden=!1),w(n.depth)&&(n.depth=2),w(n.colors)&&(n.colors=!1),w(n.customInspect)&&(n.customInspect=!0),n.colors&&(n.stylize=i),c(n,t,n.depth)}function i(t,r){var e=o.styles[r];return e?"["+o.colors[e][0]+"m"+t+"["+o.colors[e][1]+"m":t}function a(t,r){return t}function u(t){var r={};return t.forEach(function(t,e){r[t]=!0}),r}function c(t,e,n){if(t.customInspect&&e&&A(e.inspect)&&e.inspect!==r.inspect&&(!e.constructor||e.constructor.prototype!==e)){var o=e.inspect(n,t);return d(o)||(o=c(t,o,n)),o}var i=f(t,e);if(i)return i;var a=Object.keys(e),h=u(a);if(t.showHidden&&(a=Object.getOwnPropertyNames(e)),M(e)&&(a.indexOf("message")>=0||a.indexOf("description")>=0))return l(e);if(0===a.length){if(A(e)){var b=e.name?": "+e.name:"";return t.stylize("[Function"+b+"]","special")}if(x(e))return t.stylize(RegExp.prototype.toString.call(e),"regexp");if(_(e))return t.stylize(Date.prototype.toString.call(e),"date");if(M(e))return l(e)}var g="",S=!1,v=["{","}"];if(y(e)&&(S=!0,v=["[","]"]),A(e)){g=" [Function"+(e.name?": "+e.name:"")+"]"}if(x(e)&&(g=" "+RegExp.prototype.toString.call(e)),_(e)&&(g=" "+Date.prototype.toUTCString.call(e)),M(e)&&(g=" "+l(e)),0===a.length&&(!S||0==e.length))return v[0]+g+v[1];if(n<0)return x(e)?t.stylize(RegExp.prototype.toString.call(e),"regexp"):t.stylize("[Object]","special");t.seen.push(e);var w;return w=S?s(t,e,n,h,a):a.map(function(r){return p(t,e,n,h,r,S)}),t.seen.pop(),m(w,g,v)}function f(t,r){if(w(r))return t.stylize("undefined","undefined");if(d(r)){var e="'"+JSON.stringify(r).replace(/^"|"$/g,"").replace(/'/g,"\\'").replace(/\\"/g,'"')+"'";return t.stylize(e,"string")}return S(r)?t.stylize(""+r,"number"):h(r)?t.stylize(""+r,"boolean"):b(r)?t.stylize("null","null"):void 0}function l(t){return"["+Error.prototype.toString.call(t)+"]"}function s(t,r,e,n,o){for(var i=[],a=0,u=r.length;a<u;++a)z(r,String(a))?i.push(p(t,r,e,n,String(a),!0)):i.push("");return o.forEach(function(o){o.match(/^\d+$/)||i.push(p(t,r,e,n,o,!0))}),i}function p(t,r,e,n,o,i){var a,u,f;if(f=Object.getOwnPropertyDescriptor(r,o)||{value:r[o]},f.get?u=f.set?t.stylize("[Getter/Setter]","special"):t.stylize("[Getter]","special"):f.set&&(u=t.stylize("[Setter]","special")),z(n,o)||(a="["+o+"]"),u||(t.seen.indexOf(f.value)<0?(u=b(e)?c(t,f.value,null):c(t,f.value,e-1),u.indexOf("\n")>-1&&(u=i?u.split("\n").map(function(t){return"  "+t}).join("\n").substr(2):"\n"+u.split("\n").map(function(t){return"   "+t}).join("\n"))):u=t.stylize("[Circular]","special")),w(a)){if(i&&o.match(/^\d+$/))return u;a=JSON.stringify(""+o),a.match(/^"([a-zA-Z_][a-zA-Z_0-9]*)"$/)?(a=a.substr(1,a.length-2),a=t.stylize(a,"name")):(a=a.replace(/'/g,"\\'").replace(/\\"/g,'"').replace(/(^"|"$)/g,"'"),a=t.stylize(a,"string"))}return a+": "+u}function m(t,r,e){var n=0;return t.reduce(function(t,r){return n++,r.indexOf("\n")>=0&&n++,t+r.replace(/\u001b\[\d\d?m/g,"").length+1},0)>60?e[0]+(""===r?"":r+"\n ")+" "+t.join(",\n  ")+" "+e[1]:e[0]+r+" "+t.join(", ")+" "+e[1]}function y(t){return Array.isArray(t)}function h(t){return"boolean"==typeof t}function b(t){return null===t}function g(t){return null==t}function S(t){return"number"==typeof t}function d(t){return"string"==typeof t}function v(t){return"symbol"==typeof t}function w(t){return void 0===t}function x(t){return E(t)&&"[object RegExp]"===T(t)}function E(t){return"object"==typeof t&&null!==t}function _(t){return E(t)&&"[object Date]"===T(t)}function M(t){return E(t)&&("[object Error]"===T(t)||t instanceof Error)}function A(t){return"function"==typeof t}function j(t){return null===t||"boolean"==typeof t||"number"==typeof t||"string"==typeof t||"symbol"==typeof t||void 0===t}function T(t){return Object.prototype.toString.call(t)}function F(t){return t<10?"0"+t.toString(10):t.toString(10)}function k(){var t=new Date,r=[F(t.getHours()),F(t.getMinutes()),F(t.getSeconds())].join(":");return[t.getDate(),R[t.getMonth()],r].join(" ")}function z(t,r){return Object.prototype.hasOwnProperty.call(t,r)}var O=/%[sdj%]/g;r.format=function(t){if(!d(t)){for(var r=[],e=0;e<arguments.length;e++)r.push(o(arguments[e]));return r.join(" ")}for(var e=1,n=arguments,i=n.length,a=String(t).replace(O,function(t){if("%%"===t)return"%";if(e>=i)return t;switch(t){case"%s":return String(n[e++]);case"%d":return Number(n[e++]);case"%j":try{return JSON.stringify(n[e++])}catch(t){return"[Circular]"}default:return t}}),u=n[e];e<i;u=n[++e])b(u)||!E(u)?a+=" "+u:a+=" "+o(u);return a},r.deprecate=function(e,o){function i(){if(!a){if(n.throwDeprecation)throw new Error(o);n.traceDeprecation?console.trace(o):console.error(o),a=!0}return e.apply(this,arguments)}if(w(t.process))return function(){return r.deprecate(e,o).apply(this,arguments)};if(!0===n.noDeprecation)return e;var a=!1;return i};var B,D={};r.debuglog=function(t){if(w(B)&&(B=n.env.NODE_DEBUG||""),t=t.toUpperCase(),!D[t])if(new RegExp("\\b"+t+"\\b","i").test(B)){var e=n.pid;D[t]=function(){var n=r.format.apply(r,arguments);console.error("%s %d: %s",t,e,n)}}else D[t]=function(){};return D[t]},r.inspect=o,o.colors={bold:[1,22],italic:[3,23],underline:[4,24],inverse:[7,27],white:[37,39],grey:[90,39],black:[30,39],blue:[34,39],cyan:[36,39],green:[32,39],magenta:[35,39],red:[31,39],yellow:[33,39]},o.styles={special:"cyan",number:"yellow",boolean:"yellow",undefined:"grey",null:"bold",string:"green",date:"magenta",regexp:"red"},r.isArray=y,r.isBoolean=h,r.isNull=b,r.isNullOrUndefined=g,r.isNumber=S,r.isString=d,r.isSymbol=v,r.isUndefined=w,r.isRegExp=x,r.isObject=E,r.isDate=_,r.isError=M,r.isFunction=A,r.isPrimitive=j,r.isBuffer=e(32);var R=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];r.log=function(){console.log("%s - %s",k(),r.format.apply(r,arguments))},r.inherits=e(31),r._extend=function(t,r){if(!r||!E(r))return t;for(var e=Object.keys(r),n=e.length;n--;)t[e[n]]=r[e[n]];return t}}).call(r,e(5),e(30))}])});
@@ -26088,9 +26088,9 @@ exports.y = mouseRelativeY
  * <p>Methods and properties shown in black are part of the p5.js core, items in
  * blue are part of the p5.dom library. You will need to include an extra file
  * in order to access the blue functions. See the
- * <a href='http://p5js.org/libraries/#using-a-library'>using a library</a>
+ * <a href='https://p5js.org/libraries/#using-a-library'>using a library</a>
  * section for information on how to include this library. p5.dom comes with
- * <a href='http://p5js.org/download'>p5 complete</a> or you can download the single file
+ * <a href='https://p5js.org/download'>p5 complete</a> or you can download the single file
  * <a href='https://raw.githubusercontent.com/lmccart/p5.js/master/lib/addons/p5.dom.js'>
  * here</a>.</p>
  * <p>See <a href='https://github.com/processing/p5.js/wiki/Beyond-the-canvas'>tutorial: beyond the canvas</a>
@@ -26395,7 +26395,7 @@ exports.y = mouseRelativeY
    * @return {Object|p5.Element} pointer to p5.Element holding created node
    * @example
    * <div class='norender'><code>
-   * createImg('http://p5js.org/img/asterisk-01.png');
+   * createImg('https://p5js.org/img/asterisk-01.png');
    * </code></div>
    */
   p5.prototype.createImg = function() {
@@ -26438,7 +26438,7 @@ exports.y = mouseRelativeY
    * @return {Object|p5.Element} pointer to p5.Element holding created node
    * @example
    * <div class='norender'><code>
-   * createA('http://p5js.org/', 'this is a link');
+   * createA('https://p5js.org/', 'this is a link');
    * </code></div>
    */
   p5.prototype.createA = function(href, html, target) {
@@ -27129,12 +27129,12 @@ exports.y = mouseRelativeY
    * can be drawn onto the canvas using image().</p>
    * <p>More specific properties of the feed can be passing in a Constraints object.
    * See the
-   * <a href='http://w3c.github.io/mediacapture-main/getusermedia.html#media-track-constraints'> W3C
+   * <a href='https://w3c.github.io/mediacapture-main/getusermedia.html#media-track-constraints'> W3C
    * spec</a> for possible properties. Note that not all of these are supported
    * by all browsers.</p>
    * <p>Security note: A new browser security specification requires that getUserMedia,
    * which is behind createCapture(), only works when you're running the code locally,
-   * or on HTTPS. Learn more <a href='http://stackoverflow.com/questions/34197653/getusermedia-in-chrome-47-without-using-https'>here</a>
+   * or on HTTPS. Learn more <a href='https://stackoverflow.com/questions/34197653/getusermedia-in-chrome-47-without-using-https'>here</a>
    * and <a href='https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia'>here</a>.</p>
    *
    * @method createCapture
@@ -29972,7 +29972,7 @@ module.exports={
             "module": "DOM",
             "file": "src/core/p5.Element.js",
             "line": 11,
-            "description": "<p>Base class for all elements added to a sketch, including canvas,\ngraphics buffers, and other HTML elements. Methods in blue are\nincluded in the core functionality, methods in brown are added\nwith the <a href=\"http://p5js.org/reference/#/libraries/p5.dom\">p5.dom\nlibrary</a>.\nIt is not called directly, but p5.Element\nobjects are created by calling createCanvas, createGraphics,\nor in the p5.dom library, createDiv, createImg, createInput, etc.</p>\n"
+            "description": "<p>Base class for all elements added to a sketch, including canvas,\ngraphics buffers, and other HTML elements. Methods in blue are\nincluded in the core functionality, methods in brown are added\nwith the <a href=\"https://p5js.org/reference/#/libraries/p5.dom\">p5.dom\nlibrary</a>.\nIt is not called directly, but p5.Element\nobjects are created by calling createCanvas, createGraphics,\nor in the p5.dom library, createDiv, createImg, createInput, etc.</p>\n"
         },
         "Rendering": {
             "name": "Rendering",
@@ -30666,7 +30666,7 @@ module.exports={
             "module": "p5.dom",
             "file": "lib/addons/p5.dom.js",
             "line": 2885,
-            "description": "<p><p>The web is much more than just canvas and p5.dom makes it easy to interact\nwith other HTML5 objects, including text, hyperlink, image, input, video,\naudio, and webcam.</p></p>\n<p><p>There is a set of creation methods, DOM manipulation methods, and\nan extended p5.Element that supports a range of HTML elements. See the\n<a href='https://github.com/processing/p5.js/wiki/Beyond-the-canvas'>\nbeyond the canvas tutorial</a> for a full overview of how this addon works.</p>\n<p><p>Methods and properties shown in black are part of the p5.js core, items in\nblue are part of the p5.dom library. You will need to include an extra file\nin order to access the blue functions. See the\n<a href='http://p5js.org/libraries/#using-a-library'>using a library</a>\nsection for information on how to include this library. p5.dom comes with\n<a href='http://p5js.org/download'>p5 complete</a> or you can download the single file\n<a href='https://raw.githubusercontent.com/lmccart/p5.js/master/lib/addons/p5.dom.js'>\nhere</a>.</p></p>\n<p><p>See <a href='https://github.com/processing/p5.js/wiki/Beyond-the-canvas'>tutorial: beyond the canvas</a>\nfor more info on how to use this libary.</a></p>\n",
+            "description": "<p><p>The web is much more than just canvas and p5.dom makes it easy to interact\nwith other HTML5 objects, including text, hyperlink, image, input, video,\naudio, and webcam.</p></p>\n<p><p>There is a set of creation methods, DOM manipulation methods, and\nan extended p5.Element that supports a range of HTML elements. See the\n<a href='https://github.com/processing/p5.js/wiki/Beyond-the-canvas'>\nbeyond the canvas tutorial</a> for a full overview of how this addon works.</p>\n<p><p>Methods and properties shown in black are part of the p5.js core, items in\nblue are part of the p5.dom library. You will need to include an extra file\nin order to access the blue functions. See the\n<a href='https://p5js.org/libraries/#using-a-library'>using a library</a>\nsection for information on how to include this library. p5.dom comes with\n<a href='https://p5js.org/download'>p5 complete</a> or you can download the single file\n<a href='https://raw.githubusercontent.com/lmccart/p5.js/master/lib/addons/p5.dom.js'>\nhere</a>.</p></p>\n<p><p>See <a href='https://github.com/processing/p5.js/wiki/Beyond-the-canvas'>tutorial: beyond the canvas</a>\nfor more info on how to use this libary.</a></p>\n",
             "tag": "main",
             "itemtype": "main"
         },
@@ -30720,7 +30720,7 @@ module.exports={
             "module": "p5.sound",
             "file": "lib/addons/p5.sound.js",
             "line": 12243,
-            "description": "<p>p5.sound extends p5 with <a href=\"http://caniuse.com/audio-api\"\ntarget=\"_blank\">Web Audio</a> functionality including audio input,\nplayback, analysis and synthesis.\n<br/><br/>\n<a href=\"#/p5.SoundFile\"><b>p5.SoundFile</b></a>: Load and play sound files.<br/>\n<a href=\"#/p5.Amplitude\"><b>p5.Amplitude</b></a>: Get the current volume of a sound.<br/>\n<a href=\"#/p5.AudioIn\"><b>p5.AudioIn</b></a>: Get sound from an input source, typically\n  a computer microphone.<br/>\n<a href=\"#/p5.FFT\"><b>p5.FFT</b></a>: Analyze the frequency of sound. Returns\n  results from the frequency spectrum or time domain (waveform).<br/>\n<a href=\"#/p5.Oscillator\"><b>p5.Oscillator</b></a>: Generate Sine,\n  Triangle, Square and Sawtooth waveforms. Base class of\n  <a href=\"#/p5.Noise\">p5.Noise</a> and <a href=\"#/p5.Pulse\">p5.Pulse</a>.\n  <br/>\n<a href=\"#/p5.Env\"><b>p5.Env</b></a>: An Envelope is a series\n  of fades over time. Often used to control an object&#39;s\n  output gain level as an &quot;ADSR Envelope&quot; (Attack, Decay,\n  Sustain, Release). Can also modulate other parameters.<br/>\n<a href=\"#/p5.Delay\"><b>p5.Delay</b></a>: A delay effect with\n  parameters for feedback, delayTime, and lowpass filter.<br/>\n<a href=\"#/p5.Filter\"><b>p5.Filter</b></a>: Filter the frequency range of a\n  sound.\n<br/>\n<a href=\"#/p5.Reverb\"><b>p5.Reverb</b></a>: Add reverb to a sound by specifying\n  duration and decay. <br/>\n<b><a href=\"#/p5.Convolver\">p5.Convolver</a>:</b> Extends\n<a href=\"#/p5.Reverb\">p5.Reverb</a> to simulate the sound of real\n  physical spaces through convolution.<br/>\n<b><a href=\"#/p5.SoundRecorder\">p5.SoundRecorder</a></b>: Record sound for playback\n  / save the .wav file.\n<b><a href=\"#/p5.Phrase\">p5.Phrase</a></b>, <b><a href=\"#/p5.Part\">p5.Part</a></b> and\n<b><a href=\"#/p5.Score\">p5.Score</a></b>: Compose musical sequences.\n<br/><br/>\np5.sound is on <a href=\"https://github.com/therewasaguy/p5.sound/\">GitHub</a>.\nDownload the latest version\n<a href=\"https://github.com/therewasaguy/p5.sound/blob/master/lib/p5.sound.js\">here</a>.</p>\n",
+            "description": "<p>p5.sound extends p5 with <a href=\"https://caniuse.com/audio-api\"\ntarget=\"_blank\">Web Audio</a> functionality including audio input,\nplayback, analysis and synthesis.\n<br/><br/>\n<a href=\"#/p5.SoundFile\"><b>p5.SoundFile</b></a>: Load and play sound files.<br/>\n<a href=\"#/p5.Amplitude\"><b>p5.Amplitude</b></a>: Get the current volume of a sound.<br/>\n<a href=\"#/p5.AudioIn\"><b>p5.AudioIn</b></a>: Get sound from an input source, typically\n  a computer microphone.<br/>\n<a href=\"#/p5.FFT\"><b>p5.FFT</b></a>: Analyze the frequency of sound. Returns\n  results from the frequency spectrum or time domain (waveform).<br/>\n<a href=\"#/p5.Oscillator\"><b>p5.Oscillator</b></a>: Generate Sine,\n  Triangle, Square and Sawtooth waveforms. Base class of\n  <a href=\"#/p5.Noise\">p5.Noise</a> and <a href=\"#/p5.Pulse\">p5.Pulse</a>.\n  <br/>\n<a href=\"#/p5.Env\"><b>p5.Env</b></a>: An Envelope is a series\n  of fades over time. Often used to control an object&#39;s\n  output gain level as an &quot;ADSR Envelope&quot; (Attack, Decay,\n  Sustain, Release). Can also modulate other parameters.<br/>\n<a href=\"#/p5.Delay\"><b>p5.Delay</b></a>: A delay effect with\n  parameters for feedback, delayTime, and lowpass filter.<br/>\n<a href=\"#/p5.Filter\"><b>p5.Filter</b></a>: Filter the frequency range of a\n  sound.\n<br/>\n<a href=\"#/p5.Reverb\"><b>p5.Reverb</b></a>: Add reverb to a sound by specifying\n  duration and decay. <br/>\n<b><a href=\"#/p5.Convolver\">p5.Convolver</a>:</b> Extends\n<a href=\"#/p5.Reverb\">p5.Reverb</a> to simulate the sound of real\n  physical spaces through convolution.<br/>\n<b><a href=\"#/p5.SoundRecorder\">p5.SoundRecorder</a></b>: Record sound for playback\n  / save the .wav file.\n<b><a href=\"#/p5.Phrase\">p5.Phrase</a></b>, <b><a href=\"#/p5.Part\">p5.Part</a></b> and\n<b><a href=\"#/p5.Score\">p5.Score</a></b>: Compose musical sequences.\n<br/><br/>\np5.sound is on <a href=\"https://github.com/therewasaguy/p5.sound/\">GitHub</a>.\nDownload the latest version\n<a href=\"https://github.com/therewasaguy/p5.sound/blob/master/lib/p5.sound.js\">here</a>.</p>\n",
             "tag": "main",
             "itemtype": "main"
         }
@@ -30793,7 +30793,7 @@ module.exports={
             "namespace": "",
             "file": "src/core/p5.Element.js",
             "line": 11,
-            "description": "<p>Base class for all elements added to a sketch, including canvas,\ngraphics buffers, and other HTML elements. Methods in blue are\nincluded in the core functionality, methods in brown are added\nwith the <a href=\"http://p5js.org/reference/#/libraries/p5.dom\">p5.dom\nlibrary</a>.\nIt is not called directly, but p5.Element\nobjects are created by calling createCanvas, createGraphics,\nor in the p5.dom library, createDiv, createImg, createInput, etc.</p>\n",
+            "description": "<p>Base class for all elements added to a sketch, including canvas,\ngraphics buffers, and other HTML elements. Methods in blue are\nincluded in the core functionality, methods in brown are added\nwith the <a href=\"https://p5js.org/reference/#/libraries/p5.dom\">p5.dom\nlibrary</a>.\nIt is not called directly, but p5.Element\nobjects are created by calling createCanvas, createGraphics,\nor in the p5.dom library, createDiv, createImg, createInput, etc.</p>\n",
             "params": [
                 {
                     "name": "elt",
@@ -31382,7 +31382,7 @@ module.exports={
             "namespace": "",
             "file": "lib/addons/p5.sound.js",
             "line": 4828,
-            "description": "<p>p5.Signal is a constant audio-rate signal used by p5.Oscillator\nand p5.Envelope for modulation math.</p>\n\n<p>This is necessary because Web Audio is processed on a seprate clock.\nFor example, the p5 draw loop runs about 60 times per second. But\nthe audio clock must process samples 44100 times per second. If we\nwant to add a value to each of those samples, we can&#39;t do it in the\ndraw loop, but we can do it by adding a constant-rate audio signal.&lt;/p.\n\n<p>This class mostly functions behind the scenes in p5.sound, and returns\na Tone.Signal from the Tone.js library by Yotam Mann.\nIf you want to work directly with audio signals for modular\nsynthesis, check out\n<a href='http://bit.ly/1oIoEng' target=_'blank'>tone.js.</a></p>",
+            "description": "<p>p5.Signal is a constant audio-rate signal used by p5.Oscillator\nand p5.Envelope for modulation math.</p>\n\n<p>This is necessary because Web Audio is processed on a seprate clock.\nFor example, the p5 draw loop runs about 60 times per second. But\nthe audio clock must process samples 44100 times per second. If we\nwant to add a value to each of those samples, we can&#39;t do it in the\ndraw loop, but we can do it by adding a constant-rate audio signal.&lt;/p.\n\n<p>This class mostly functions behind the scenes in p5.sound, and returns\na Tone.Signal from the Tone.js library by Yotam Mann.\nIf you want to work directly with audio signals for modular\nsynthesis, check out\n<a href='https://bit.ly/1oIoEng' target=_'blank'>tone.js.</a></p>",
             "is_constructor": 1,
             "return": {
                 "description": "A Signal object from the Tone.js library",
@@ -31557,7 +31557,7 @@ module.exports={
             "namespace": "",
             "file": "lib/addons/p5.sound.js",
             "line": 6709,
-            "description": "<p>Creates a Pulse object, an oscillator that implements\nPulse Width Modulation.\nThe pulse is created with two oscillators.\nAccepts a parameter for frequency, and to set the\nwidth between the pulses. See <a href=\"\nhttp://p5js.org/reference/#/p5.Oscillator\">\n<code>p5.Oscillator</code> for a full list of methods.</p>\n",
+            "description": "<p>Creates a Pulse object, an oscillator that implements\nPulse Width Modulation.\nThe pulse is created with two oscillators.\nAccepts a parameter for frequency, and to set the\nwidth between the pulses. See <a href=\"\nhttps://p5js.org/reference/#/p5.Oscillator\">\n<code>p5.Oscillator</code> for a full list of methods.</p>\n",
             "extends": "p5.Oscillator",
             "is_constructor": 1,
             "params": [
@@ -31615,7 +31615,7 @@ module.exports={
             "namespace": "",
             "file": "lib/addons/p5.sound.js",
             "line": 7075,
-            "description": "<p>Get audio from an input, i.e. your computer&#39;s microphone.</p>\n\n<p>Turn the mic on/off with the start() and stop() methods. When the mic\nis on, its volume can be measured with getLevel or by connecting an\nFFT object.</p>\n\n<p>If you want to hear the AudioIn, use the .connect() method.\nAudioIn does not connect to p5.sound output by default to prevent\nfeedback.</p>\n\n<p><em>Note: This uses the <a href=\"http://caniuse.com/stream\">getUserMedia/\nStream</a> API, which is not supported by certain browsers. Access in Chrome browser\nis limited to localhost and https, but access over http may be limited.</em></p>",
+            "description": "<p>Get audio from an input, i.e. your computer&#39;s microphone.</p>\n\n<p>Turn the mic on/off with the start() and stop() methods. When the mic\nis on, its volume can be measured with getLevel or by connecting an\nFFT object.</p>\n\n<p>If you want to hear the AudioIn, use the .connect() method.\nAudioIn does not connect to p5.sound output by default to prevent\nfeedback.</p>\n\n<p><em>Note: This uses the <a href=\"https://caniuse.com/stream\">getUserMedia/\nStream</a> API, which is not supported by certain browsers. Access in Chrome browser\nis limited to localhost and https, but access over http may be limited.</em></p>",
             "is_constructor": 1,
             "params": [
                 {
@@ -32058,7 +32058,7 @@ module.exports={
             "namespace": "",
             "file": "lib/addons/p5.sound.js",
             "line": 11283,
-            "description": "<p>PeakDetect works in conjunction with p5.FFT to\nlook for onsets in some or all of the frequency spectrum.\n</p>\n<p>\nTo use p5.PeakDetect, call <code>update</code> in the draw loop\nand pass in a p5.FFT object.\n</p>\n<p>\nYou can listen for a specific part of the frequency spectrum by\nsetting the range between <code>freq1</code> and <code>freq2</code>.\n</p>\n\n<p><code>threshold</code> is the threshold for detecting a peak,\nscaled between 0 and 1. It is logarithmic, so 0.1 is half as loud\nas 1.0.</p>\n\n<p>\nThe update method is meant to be run in the draw loop, and\n<b>frames</b> determines how many loops must pass before\nanother peak can be detected.\nFor example, if the frameRate() = 60, you could detect the beat of a\n120 beat-per-minute song with this equation:\n<code> framesPerPeak = 60 / (estimatedBPM / 60 );</code>\n</p>\n\n<p>\nBased on example contribtued by @b2renger, and a simple beat detection\nexplanation by <a href=\"a\nhref=&quot;http://www.airtightinteractive.com/2013/10/making-audio-reactive-visuals/&quot;\ntarget=&quot;_blank&quot;\">a\nhref=&quot;http://www.airtightinteractive.com/2013/10/making-audio-reactive-visuals/&quot;\ntarget=&quot;_blank&quot;</a>Felix Turner</a>.\n</p>",
+            "description": "<p>PeakDetect works in conjunction with p5.FFT to\nlook for onsets in some or all of the frequency spectrum.\n</p>\n<p>\nTo use p5.PeakDetect, call <code>update</code> in the draw loop\nand pass in a p5.FFT object.\n</p>\n<p>\nYou can listen for a specific part of the frequency spectrum by\nsetting the range between <code>freq1</code> and <code>freq2</code>.\n</p>\n\n<p><code>threshold</code> is the threshold for detecting a peak,\nscaled between 0 and 1. It is logarithmic, so 0.1 is half as loud\nas 1.0.</p>\n\n<p>\nThe update method is meant to be run in the draw loop, and\n<b>frames</b> determines how many loops must pass before\nanother peak can be detected.\nFor example, if the frameRate() = 60, you could detect the beat of a\n120 beat-per-minute song with this equation:\n<code> framesPerPeak = 60 / (estimatedBPM / 60 );</code>\n</p>\n\n<p>\nBased on example contribtued by @b2renger, and a simple beat detection\nexplanation by <a href=\"a\nhref=&quot;https://www.airtightinteractive.com/2013/10/making-audio-reactive-visuals/&quot;\ntarget=&quot;_blank&quot;\">a\nhref=&quot;https://www.airtightinteractive.com/2013/10/making-audio-reactive-visuals/&quot;\ntarget=&quot;_blank&quot;</a>Felix Turner</a>.\n</p>",
             "is_constructor": 1,
             "params": [
                 {
@@ -32190,7 +32190,7 @@ module.exports={
             "namespace": "",
             "file": "lib/addons/p5.sound.js",
             "line": 12243,
-            "description": "<p>A Distortion effect created with a Waveshaper Node,\nwith an approach adapted from\n<a href=\"http://stackoverflow.com/questions/22312841/waveshaper-node-in-webaudio-how-to-emulate-distortion\">Kevin Ennis</a></p>\n<p>This class extends <a href = \"/reference/#/p5.Effect\">p5.Effect</a>.\nMethods <a href = \"/reference/#/p5.Effect/amp\">amp()</a>, <a href = \"/reference/#/p5.Effect/chain\">chain()</a>,\n<a href = \"/reference/#/p5.Effect/drywet\">drywet()</a>, <a href = \"/reference/#/p5.Effect/connect\">connect()</a>, and\n<a href = \"/reference/#/p5.Effect/disconnect\">disconnect()</a> are available.</p>\n",
+            "description": "<p>A Distortion effect created with a Waveshaper Node,\nwith an approach adapted from\n<a href=\"https://stackoverflow.com/questions/22312841/waveshaper-node-in-webaudio-how-to-emulate-distortion\">Kevin Ennis</a></p>\n<p>This class extends <a href = \"/reference/#/p5.Effect\">p5.Effect</a>.\nMethods <a href = \"/reference/#/p5.Effect/amp\">amp()</a>, <a href = \"/reference/#/p5.Effect/chain\">chain()</a>,\n<a href = \"/reference/#/p5.Effect/drywet\">drywet()</a>, <a href = \"/reference/#/p5.Effect/connect\">connect()</a>, and\n<a href = \"/reference/#/p5.Effect/disconnect\">disconnect()</a> are available.</p>\n",
             "extends": "p5.Effect",
             "is_constructor": 1,
             "params": [
@@ -32216,7 +32216,7 @@ module.exports={
         {
             "file": "src/color/color_conversion.js",
             "line": 10,
-            "description": "<p>Conversions adapted from <a href=\"http://www.easyrgb.com/en/math.php\">http://www.easyrgb.com/en/math.php</a>.</p>\n<p>In these functions, hue is always in the range [0,1); all other components\nare in the range [0,1]. &#39;Brightness&#39; and &#39;value&#39; are used interchangeably.</p>\n",
+            "description": "<p>Conversions adapted from <a href=\"https://www.easyrgb.com/en/math.php\">https://www.easyrgb.com/en/math.php</a>.</p>\n<p>In these functions, hue is always in the range [0,1); all other components\nare in the range [0,1]. &#39;Brightness&#39; and &#39;value&#39; are used interchangeably.</p>\n",
             "class": "p5",
             "module": "Conversion",
             "submodule": "Color Conversion"
@@ -34634,7 +34634,7 @@ module.exports={
         {
             "file": "src/core/core.js",
             "line": 49,
-            "description": "<p>Called directly before setup(), the preload() function is used to handle\nasynchronous loading of external files in a blocking way. If a preload \nfunction is defined, setup() will wait until any load calls within have\nfinished. Nothing besides load calls (loadImage, loadJSON, loadFont,\nloadStrings, etc.) should be inside preload function. If asynchronous\nloading is preferred, the load methods can instead be called in setup()\nor anywhere else with the use of a callback parameter.\n<br><br>\nBy default the text &quot;loading...&quot; will be displayed. To make your own\nloading page, include an HTML element with id &quot;p5_loading&quot; in your\npage. More information <a href=\"http://bit.ly/2kQ6Nio\">here</a>.</p>\n",
+            "description": "<p>Called directly before setup(), the preload() function is used to handle\nasynchronous loading of external files in a blocking way. If a preload \nfunction is defined, setup() will wait until any load calls within have\nfinished. Nothing besides load calls (loadImage, loadJSON, loadFont,\nloadStrings, etc.) should be inside preload function. If asynchronous\nloading is preferred, the load methods can instead be called in setup()\nor anywhere else with the use of a callback parameter.\n<br><br>\nBy default the text &quot;loading...&quot; will be displayed. To make your own\nloading page, include an HTML element with id &quot;p5_loading&quot; in your\npage. More information <a href=\"https://bit.ly/2kQ6Nio\">here</a>.</p>\n",
             "itemtype": "method",
             "name": "preload",
             "example": [
@@ -35511,7 +35511,7 @@ module.exports={
             "example": [
                 "\n<div>\n<code>\nvar url;\nvar x = 100;\n\nfunction setup() {\n  fill(0);\n  noStroke();\n  url = getURL();\n}\n\nfunction draw() {\n  background(200);\n  text(url, x, height / 2);\n  x--;\n}\n</code>\n</div>"
             ],
-            "alt": "current url (http://p5js.org/reference/#/p5/getURL) moves right to left.",
+            "alt": "current url (https://p5js.org/reference/#/p5/getURL) moves right to left.",
             "class": "p5",
             "module": "Environment",
             "submodule": "Environment"
@@ -35545,7 +35545,7 @@ module.exports={
                 "type": "Object"
             },
             "example": [
-                "\n<div class='norender notest'>\n<code>\n// Example: http://p5js.org?year=2014&month=May&day=15\n\nfunction setup() {\n  var params = getURLParams();\n  text(params.day, 10, 20);\n  text(params.month, 10, 40);\n  text(params.year, 10, 60);\n}\n</code>\n</div>"
+                "\n<div class='norender notest'>\n<code>\n// Example: https://p5js.org?year=2014&month=May&day=15\n\nfunction setup() {\n  var params = getURLParams();\n  text(params.day, 10, 20);\n  text(params.month, 10, 40);\n  text(params.year, 10, 60);\n}\n</code>\n</div>"
             ],
             "alt": "no display.",
             "class": "p5",
@@ -36099,7 +36099,7 @@ module.exports={
         {
             "file": "src/core/p5.Renderer.js",
             "line": 235,
-            "description": "<p>Helper fxn to measure ascent and descent.\nAdapted from <a href=\"http://stackoverflow.com/a/25355178\">http://stackoverflow.com/a/25355178</a></p>\n",
+            "description": "<p>Helper fxn to measure ascent and descent.\nAdapted from <a href=\"https://stackoverflow.com/a/25355178\">https://stackoverflow.com/a/25355178</a></p>\n",
             "class": "p5.Renderer",
             "module": "Rendering",
             "submodule": "Rendering"
@@ -36260,7 +36260,7 @@ module.exports={
         {
             "file": "src/core/shim.js",
             "line": 70,
-            "description": "<p>shim for Uint8ClampedArray.slice\n(allows arrayCopy to work with pixels[])\nwith thanks to <a href=\"http://halfpapstudios.com/blog/tag/html5-canvas/\">http://halfpapstudios.com/blog/tag/html5-canvas/</a>\nEnumerable set to false to protect for...in from\nUint8ClampedArray.prototype pollution.</p>\n",
+            "description": "<p>shim for Uint8ClampedArray.slice\n(allows arrayCopy to work with pixels[])\nwith thanks to <a href=\"https://halfpapstudios.com/blog/tag/html5-canvas/\">https://halfpapstudios.com/blog/tag/html5-canvas/</a>\nEnumerable set to false to protect for...in from\nUint8ClampedArray.prototype pollution.</p>\n",
             "class": "p5",
             "module": "Rendering"
         },
@@ -37712,7 +37712,7 @@ module.exports={
         {
             "file": "src/events/keyboard.js",
             "line": 74,
-            "description": "<p>The variable keyCode is used to detect special keys such as BACKSPACE,\nDELETE, ENTER, RETURN, TAB, ESCAPE, SHIFT, CONTROL, OPTION, ALT, UP_ARROW,\nDOWN_ARROW, LEFT_ARROW, RIGHT_ARROW.\nYou can also check for custom keys by looking up the keyCode of any key\non a site like this: <a href=\"http://keycode.info/\">keycode.info</a>.</p>\n",
+            "description": "<p>The variable keyCode is used to detect special keys such as BACKSPACE,\nDELETE, ENTER, RETURN, TAB, ESCAPE, SHIFT, CONTROL, OPTION, ALT, UP_ARROW,\nDOWN_ARROW, LEFT_ARROW, RIGHT_ARROW.\nYou can also check for custom keys by looking up the keyCode of any key\non a site like this: <a href=\"https://keycode.info/\">keycode.info</a>.</p>\n",
             "itemtype": "property",
             "name": "keyCode",
             "type": "Integer",
@@ -37778,7 +37778,7 @@ module.exports={
         {
             "file": "src/events/keyboard.js",
             "line": 318,
-            "description": "<p>The keyIsDown() function checks if the key is currently down, i.e. pressed.\nIt can be used if you have an object that moves, and you want several keys\nto be able to affect its behaviour simultaneously, such as moving a\nsprite diagonally. You can put in any number representing the keyCode of\nthe key, or use any of the variable keyCode names listed\n<a href=\"http://p5js.org/reference/#p5/keyCode\">here</a>.</p>\n",
+            "description": "<p>The keyIsDown() function checks if the key is currently down, i.e. pressed.\nIt can be used if you have an object that moves, and you want several keys\nto be able to affect its behaviour simultaneously, such as moving a\nsprite diagonally. You can put in any number representing the keyCode of\nthe key, or use any of the variable keyCode names listed\n<a href=\"https://p5js.org/reference/#p5/keyCode\">here</a>.</p>\n",
             "itemtype": "method",
             "name": "keyIsDown",
             "params": [
@@ -38115,7 +38115,7 @@ module.exports={
         {
             "file": "src/image/filters.js",
             "line": 3,
-            "description": "<p>This module defines the filters for use with image buffers.</p>\n<p>This module is basically a collection of functions stored in an object\nas opposed to modules. The functions are destructive, modifying\nthe passed in canvas rather than creating a copy.</p>\n<p>Generally speaking users of this module will use the Filters.apply method\non a canvas to create an effect.</p>\n<p>A number of functions are borrowed/adapted from\n<a href=\"http://www.html5rocks.com/en/tutorials/canvas/imagefilters/\">http://www.html5rocks.com/en/tutorials/canvas/imagefilters/</a>\nor the java processing implementation.</p>\n",
+            "description": "<p>This module defines the filters for use with image buffers.</p>\n<p>This module is basically a collection of functions stored in an object\nas opposed to modules. The functions are destructive, modifying\nthe passed in canvas rather than creating a copy.</p>\n<p>Generally speaking users of this module will use the Filters.apply method\non a canvas to create an effect.</p>\n<p>A number of functions are borrowed/adapted from\n<a href=\"https://www.html5rocks.com/en/tutorials/canvas/imagefilters/\">https://www.html5rocks.com/en/tutorials/canvas/imagefilters/</a>\nor the java processing implementation.</p>\n",
             "class": "p5",
             "module": "Events"
         },
@@ -38864,7 +38864,7 @@ module.exports={
             "example": [
                 "\n<div><code>\nvar photo, maskImage;\nfunction preload() {\n  photo = loadImage('assets/rockies.jpg');\n  maskImage = loadImage('assets/mask2.png');\n}\n\nfunction setup() {\n  createCanvas(100, 100);\n  photo.mask(maskImage);\n  image(photo, 0, 0);\n}\n</code></div>"
             ],
-            "alt": "image of rocky mountains with white at right\n\n\nhttp://blogs.adobe.com/webplatform/2013/01/28/blending-features-in-canvas/",
+            "alt": "image of rocky mountains with white at right\n\n\nhttps://blogs.adobe.com/webplatform/2013/01/28/blending-features-in-canvas/",
             "class": "p5.Image",
             "module": "Image",
             "submodule": "Image"
@@ -38960,7 +38960,7 @@ module.exports={
                         },
                         {
                             "name": "blendMode",
-                            "description": "<p>the blend mode. either\n    BLEND, DARKEST, LIGHTEST, DIFFERENCE,\n    MULTIPLY, EXCLUSION, SCREEN, REPLACE, OVERLAY, HARD_LIGHT,\n    SOFT_LIGHT, DODGE, BURN, ADD or NORMAL.</p>\n<p>Available blend modes are: normal | multiply | screen | overlay |\n           darken | lighten | color-dodge | color-burn | hard-light |\n           soft-light | difference | exclusion | hue | saturation |\n           color | luminosity</p>\n<p><a href=\"http://blogs.adobe.com/webplatform/2013/01/28/blending-features-in-canvas/\">http://blogs.adobe.com/webplatform/2013/01/28/blending-features-in-canvas/</a></p>\n",
+                            "description": "<p>the blend mode. either\n    BLEND, DARKEST, LIGHTEST, DIFFERENCE,\n    MULTIPLY, EXCLUSION, SCREEN, REPLACE, OVERLAY, HARD_LIGHT,\n    SOFT_LIGHT, DODGE, BURN, ADD or NORMAL.</p>\n<p>Available blend modes are: normal | multiply | screen | overlay |\n           darken | lighten | color-dodge | color-burn | hard-light |\n           soft-light | difference | exclusion | hue | saturation |\n           color | luminosity</p>\n<p><a href=\"https://blogs.adobe.com/webplatform/2013/01/28/blending-features-in-canvas/\">https://blogs.adobe.com/webplatform/2013/01/28/blending-features-in-canvas/</a></p>\n",
                             "type": "Constant"
                         }
                     ]
@@ -39608,7 +39608,7 @@ module.exports={
                 "type": "Object"
             },
             "example": [
-                "\n<div class=\"norender\">\n<code>\n// Given the following CSV file called \"mammals.csv\"\n// located in the project's \"assets\" folder:\n//\n// id,species,name\n// 0,Capra hircus,Goat\n// 1,Panthera pardus,Leopard\n// 2,Equus zebra,Zebra\n\nvar table;\n\nfunction preload() {\n  //my table is comma separated value \"csv\"\n  //and has a header specifying the columns labels\n  table = loadTable('assets/mammals.csv', 'csv', 'header');\n  //the file can be remote\n  //table = loadTable(\"http://p5js.org/reference/assets/mammals.csv\",\n  //                  \"csv\", \"header\");\n}\n\nfunction setup() {\n  //count the columns\n  print(table.getRowCount() + ' total rows in table');\n  print(table.getColumnCount() + ' total columns in table');\n\n  print(table.getColumn('name'));\n  //[\"Goat\", \"Leopard\", \"Zebra\"]\n\n  //cycle through the table\n  for (var r = 0; r < table.getRowCount(); r++)\n    for (var c = 0; c < table.getColumnCount(); c++) {\n      print(table.getString(r, c));\n    }\n}\n</code>\n</div>"
+                "\n<div class=\"norender\">\n<code>\n// Given the following CSV file called \"mammals.csv\"\n// located in the project's \"assets\" folder:\n//\n// id,species,name\n// 0,Capra hircus,Goat\n// 1,Panthera pardus,Leopard\n// 2,Equus zebra,Zebra\n\nvar table;\n\nfunction preload() {\n  //my table is comma separated value \"csv\"\n  //and has a header specifying the columns labels\n  table = loadTable('assets/mammals.csv', 'csv', 'header');\n  //the file can be remote\n  //table = loadTable(\"https://p5js.org/reference/assets/mammals.csv\",\n  //                  \"csv\", \"header\");\n}\n\nfunction setup() {\n  //count the columns\n  print(table.getRowCount() + ' total rows in table');\n  print(table.getColumnCount() + ' total columns in table');\n\n  print(table.getColumn('name'));\n  //[\"Goat\", \"Leopard\", \"Zebra\"]\n\n  //cycle through the table\n  for (var r = 0; r < table.getRowCount(); r++)\n    for (var c = 0; c < table.getColumnCount(); c++) {\n      print(table.getString(r, c));\n    }\n}\n</code>\n</div>"
             ],
             "alt": "randomly generated text from a file, for example \"i smell like butter\"\nrandomly generated text from a file, for example \"i have three feet\"",
             "class": "p5",
@@ -40247,7 +40247,7 @@ module.exports={
         {
             "file": "src/io/p5.Table.js",
             "line": 11,
-            "description": "<p>Table Options</p>\n<p>Generic class for handling tabular data, typically from a\nCSV, TSV, or other sort of spreadsheet file.</p>\n<p>CSV files are\n<a href=\"http://en.wikipedia.org/wiki/Comma-separated_values\">\ncomma separated values</a>, often with the data in quotes. TSV\nfiles use tabs as separators, and usually don&#39;t bother with the\nquotes.</p>\n<p>File names should end with .csv if they&#39;re comma separated.</p>\n<p>A rough &quot;spec&quot; for CSV can be found\n<a href=\"http://tools.ietf.org/html/rfc4180\">here</a>.</p>\n<p>To load files, use the loadTable method.</p>\n<p>To save tables to your computer, use the save method\n or the saveTable method.</p>\n\n<p>Possible options include:</p>\n<ul>\n<li>csv - parse the table as comma-separated values\n<li>tsv - parse the table as tab-separated values\n<li>header - this table has a header (title) row\n</ul>",
+            "description": "<p>Table Options</p>\n<p>Generic class for handling tabular data, typically from a\nCSV, TSV, or other sort of spreadsheet file.</p>\n<p>CSV files are\n<a href=\"https://en.wikipedia.org/wiki/Comma-separated_values\">\ncomma separated values</a>, often with the data in quotes. TSV\nfiles use tabs as separators, and usually don&#39;t bother with the\nquotes.</p>\n<p>File names should end with .csv if they&#39;re comma separated.</p>\n<p>A rough &quot;spec&quot; for CSV can be found\n<a href=\"https://tools.ietf.org/html/rfc4180\">here</a>.</p>\n<p>To load files, use the loadTable method.</p>\n<p>To save tables to your computer, use the save method\n or the saveTable method.</p>\n\n<p>Possible options include:</p>\n<ul>\n<li>csv - parse the table as comma-separated values\n<li>tsv - parse the table as tab-separated values\n<li>header - this table has a header (title) row\n</ul>",
             "class": "p5.Table",
             "module": "IO",
             "submodule": "Table"
@@ -44244,7 +44244,7 @@ module.exports={
         {
             "file": "src/utilities/array_functions.js",
             "line": 189,
-            "description": "<p>Randomizes the order of the elements of an array. Implements\n<a href='http://Bost.Ocks.org/mike/shuffle/' target=_blank>\nFisher-Yates Shuffle Algorithm</a>.</p>\n",
+            "description": "<p>Randomizes the order of the elements of an array. Implements\n<a href='https://Bost.Ocks.org/mike/shuffle/' target=_blank>\nFisher-Yates Shuffle Algorithm</a>.</p>\n",
             "itemtype": "method",
             "name": "shuffle",
             "deprecated": true,
@@ -46809,7 +46809,7 @@ module.exports={
                 "type": "Object|p5.Element"
             },
             "example": [
-                "\n<div class='norender'><code>\ncreateImg('http://p5js.org/img/asterisk-01.png');\n</code></div>"
+                "\n<div class='norender'><code>\ncreateImg('https://p5js.org/img/asterisk-01.png');\n</code></div>"
             ],
             "class": "p5.dom",
             "module": "p5.dom",
@@ -46844,7 +46844,7 @@ module.exports={
                 "type": "Object|p5.Element"
             },
             "example": [
-                "\n<div class='norender'><code>\ncreateA('http://p5js.org/', 'this is a link');\n</code></div>"
+                "\n<div class='norender'><code>\ncreateA('https://p5js.org/', 'this is a link');\n</code></div>"
             ],
             "class": "p5.dom",
             "module": "p5.dom",
@@ -47179,7 +47179,7 @@ module.exports={
         {
             "file": "lib/addons/p5.dom.js",
             "line": 1048,
-            "description": "<p>Creates a new HTML5 &lt;video&gt; element that contains the audio/video\nfeed from a webcam. The element is separate from the canvas and is\ndisplayed by default. The element can be hidden using .hide(). The feed\ncan be drawn onto the canvas using image().</p>\n<p>More specific properties of the feed can be passing in a Constraints object.\nSee the\n<a href='http://w3c.github.io/mediacapture-main/getusermedia.html#media-track-constraints'> W3C\nspec</a> for possible properties. Note that not all of these are supported\nby all browsers.</p>\n<p>Security note: A new browser security specification requires that getUserMedia,\nwhich is behind createCapture(), only works when you&#39;re running the code locally,\nor on HTTPS. Learn more <a href='http://stackoverflow.com/questions/34197653/getusermedia-in-chrome-47-without-using-https'>here</a>\nand <a href='https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia'>here</a>.</p>",
+            "description": "<p>Creates a new HTML5 &lt;video&gt; element that contains the audio/video\nfeed from a webcam. The element is separate from the canvas and is\ndisplayed by default. The element can be hidden using .hide(). The feed\ncan be drawn onto the canvas using image().</p>\n<p>More specific properties of the feed can be passing in a Constraints object.\nSee the\n<a href='https://w3c.github.io/mediacapture-main/getusermedia.html#media-track-constraints'> W3C\nspec</a> for possible properties. Note that not all of these are supported\nby all browsers.</p>\n<p>Security note: A new browser security specification requires that getUserMedia,\nwhich is behind createCapture(), only works when you&#39;re running the code locally,\nor on HTTPS. Learn more <a href='https://stackoverflow.com/questions/34197653/getusermedia-in-chrome-47-without-using-https'>here</a>\nand <a href='https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia'>here</a>.</p>",
             "itemtype": "method",
             "name": "createCapture",
             "params": [
@@ -48042,7 +48042,7 @@ module.exports={
         {
             "file": "lib/addons/p5.sound.js",
             "line": 46,
-            "description": "<p>p5.sound\n<a href=\"https://p5js.org/reference/#/libraries/p5.sound\">https://p5js.org/reference/#/libraries/p5.sound</a></p>\n<p>From the Processing Foundation and contributors\n<a href=\"https://github.com/processing/p5.js-sound/graphs/contributors\">https://github.com/processing/p5.js-sound/graphs/contributors</a></p>\n<p>MIT License (MIT)\n<a href=\"https://github.com/processing/p5.js-sound/blob/master/LICENSE\">https://github.com/processing/p5.js-sound/blob/master/LICENSE</a></p>\n<p>Some of the many audio libraries &amp; resources that inspire p5.sound:</p>\n<ul>\n<li>TONE.js (c) Yotam Mann. Licensed under The MIT License (MIT). <a href=\"https://github.com/TONEnoTONE/Tone.js\">https://github.com/TONEnoTONE/Tone.js</a></li>\n<li>buzz.js (c) Jay Salvat. Licensed under The MIT License (MIT). <a href=\"http://buzz.jaysalvat.com/\">http://buzz.jaysalvat.com/</a></li>\n<li>Boris Smus Web Audio API book, 2013. Licensed under the Apache License <a href=\"http://www.apache.org/licenses/LICENSE-2.0\">http://www.apache.org/licenses/LICENSE-2.0</a></li>\n<li>wavesurfer.js <a href=\"https://github.com/katspaugh/wavesurfer.js\">https://github.com/katspaugh/wavesurfer.js</a></li>\n<li>Web Audio Components by Jordan Santell <a href=\"https://github.com/web-audio-components\">https://github.com/web-audio-components</a></li>\n<li><p>Wilm Thoben&#39;s Sound library for Processing <a href=\"https://github.com/processing/processing/tree/master/java/libraries/sound\">https://github.com/processing/processing/tree/master/java/libraries/sound</a></p>\n<p>Web Audio API: <a href=\"http://w3.org/TR/webaudio/\">http://w3.org/TR/webaudio/</a></p>\n</li>\n</ul>\n",
+            "description": "<p>p5.sound\n<a href=\"https://p5js.org/reference/#/libraries/p5.sound\">https://p5js.org/reference/#/libraries/p5.sound</a></p>\n<p>From the Processing Foundation and contributors\n<a href=\"https://github.com/processing/p5.js-sound/graphs/contributors\">https://github.com/processing/p5.js-sound/graphs/contributors</a></p>\n<p>MIT License (MIT)\n<a href=\"https://github.com/processing/p5.js-sound/blob/master/LICENSE\">https://github.com/processing/p5.js-sound/blob/master/LICENSE</a></p>\n<p>Some of the many audio libraries &amp; resources that inspire p5.sound:</p>\n<ul>\n<li>TONE.js (c) Yotam Mann. Licensed under The MIT License (MIT). <a href=\"https://github.com/TONEnoTONE/Tone.js\">https://github.com/TONEnoTONE/Tone.js</a></li>\n<li>buzz.js (c) Jay Salvat. Licensed under The MIT License (MIT). <a href=\"https://buzz.jaysalvat.com/\">https://buzz.jaysalvat.com/</a></li>\n<li>Boris Smus Web Audio API book, 2013. Licensed under the Apache License <a href=\"https://www.apache.org/licenses/LICENSE-2.0\">https://www.apache.org/licenses/LICENSE-2.0</a></li>\n<li>wavesurfer.js <a href=\"https://github.com/katspaugh/wavesurfer.js\">https://github.com/katspaugh/wavesurfer.js</a></li>\n<li>Web Audio Components by Jordan Santell <a href=\"https://github.com/web-audio-components\">https://github.com/web-audio-components</a></li>\n<li><p>Wilm Thoben&#39;s Sound library for Processing <a href=\"https://github.com/processing/processing/tree/master/java/libraries/sound\">https://github.com/processing/processing/tree/master/java/libraries/sound</a></p>\n<p>Web Audio API: <a href=\"https://w3.org/TR/webaudio/\">https://w3.org/TR/webaudio/</a></p>\n</li>\n</ul>\n",
             "class": "p5.sound",
             "module": "p5.sound",
             "submodule": "p5.sound"
@@ -48050,7 +48050,7 @@ module.exports={
         {
             "file": "lib/addons/p5.sound.js",
             "line": 212,
-            "description": "<p>Returns the Audio Context for this sketch. Useful for users\nwho would like to dig deeper into the <a target='_blank' href=\n'http://webaudio.github.io/web-audio-api/'>Web Audio API\n</a>.</p>",
+            "description": "<p>Returns the Audio Context for this sketch. Useful for users\nwho would like to dig deeper into the <a target='_blank' href=\n'https://webaudio.github.io/web-audio-api/'>Web Audio API\n</a>.</p>",
             "itemtype": "method",
             "name": "getAudioContext",
             "return": {
@@ -48200,7 +48200,7 @@ module.exports={
         {
             "file": "lib/addons/p5.sound.js",
             "line": 470,
-            "description": "<p>List the SoundFile formats that you will include. LoadSound\nwill search your directory for these extensions, and will pick\na format that is compatable with the client&#39;s web browser.\n<a href=\"http://media.io/\">Here</a> is a free online file\nconverter.</p>\n",
+            "description": "<p>List the SoundFile formats that you will include. LoadSound\nwill search your directory for these extensions, and will pick\na format that is compatable with the client&#39;s web browser.\n<a href=\"https://media.io/\">Here</a> is a free online file\nconverter.</p>\n",
             "itemtype": "method",
             "name": "soundFormats",
             "params": [
@@ -49096,7 +49096,7 @@ module.exports={
         {
             "file": "lib/addons/p5.sound.js",
             "line": 2803,
-            "description": "<p>Returns the\n<a href=\"http://en.wikipedia.org/wiki/Spectral_centroid\" target=\"_blank\">\nspectral centroid</a> of the input signal.\n<em>NOTE: analyze() must be called prior to getCentroid(). Analyze()\ntells the FFT to analyze frequency data, and getCentroid() uses\nthe results determine the spectral centroid.</em></p></p>\n",
+            "description": "<p>Returns the\n<a href=\"https://en.wikipedia.org/wiki/Spectral_centroid\" target=\"_blank\">\nspectral centroid</a> of the input signal.\n<em>NOTE: analyze() must be called prior to getCentroid(). Analyze()\ntells the FFT to analyze frequency data, and getCentroid() uses\nthe results determine the spectral centroid.</em></p></p>\n",
             "itemtype": "method",
             "name": "getCentroid",
             "return": {
@@ -49922,7 +49922,7 @@ module.exports={
         {
             "file": "lib/addons/p5.sound.js",
             "line": 6267,
-            "description": "<p>Play tells the envelope to start acting on a given input.\nIf the input is a p5.sound object (i.e. AudioIn, Oscillator,\nSoundFile), then Env will control its output volume.\nEnvelopes can also be used to control any <a href=\"\nhttp://docs.webplatform.org/wiki/apis/webaudio/AudioParam\">\nWeb Audio Audio Param.</a></p>\n",
+            "description": "<p>Play tells the envelope to start acting on a given input.\nIf the input is a p5.sound object (i.e. AudioIn, Oscillator,\nSoundFile), then Env will control its output volume.\nEnvelopes can also be used to control any <a href=\"\nhttps://docs.webplatform.org/wiki/apis/webaudio/AudioParam\">\nWeb Audio Audio Param.</a></p>\n",
             "itemtype": "method",
             "name": "play",
             "params": [
@@ -49954,7 +49954,7 @@ module.exports={
         {
             "file": "lib/addons/p5.sound.js",
             "line": 6328,
-            "description": "<p>Trigger the Attack, and Decay portion of the Envelope.\nSimilar to holding down a key on a piano, but it will\nhold the sustain level until you let go. Input can be\nany p5.sound object, or a <a href=\"\nhttp://docs.webplatform.org/wiki/apis/webaudio/AudioParam\">\nWeb Audio Param</a>.</p>\n",
+            "description": "<p>Trigger the Attack, and Decay portion of the Envelope.\nSimilar to holding down a key on a piano, but it will\nhold the sustain level until you let go. Input can be\nany p5.sound object, or a <a href=\"\nhttps://docs.webplatform.org/wiki/apis/webaudio/AudioParam\">\nWeb Audio Param</a>.</p>\n",
             "itemtype": "method",
             "name": "triggerAttack",
             "params": [
@@ -50596,7 +50596,7 @@ module.exports={
         {
             "file": "lib/addons/p5.sound.js",
             "line": 8181,
-            "description": "<p>The p5.Filter is built with a\n<a href=\"http://www.w3.org/TR/webaudio/#BiquadFilterNode\">\nWeb Audio BiquadFilter Node</a>.</p>\n",
+            "description": "<p>The p5.Filter is built with a\n<a href=\"https://www.w3.org/TR/webaudio/#BiquadFilterNode\">\nWeb Audio BiquadFilter Node</a>.</p>\n",
             "itemtype": "property",
             "name": "biquadFilter",
             "type": "DelayNode",
@@ -51050,7 +51050,7 @@ module.exports={
         {
             "file": "lib/addons/p5.sound.js",
             "line": 9128,
-            "description": "<p>The p5.Delay is built with two\n<a href=\"http://www.w3.org/TR/webaudio/#DelayNode\">\nWeb Audio Delay Nodes</a>, one for each stereo channel.</p>\n",
+            "description": "<p>The p5.Delay is built with two\n<a href=\"https://www.w3.org/TR/webaudio/#DelayNode\">\nWeb Audio Delay Nodes</a>, one for each stereo channel.</p>\n",
             "itemtype": "property",
             "name": "leftDelay",
             "type": "DelayNode",
@@ -51061,7 +51061,7 @@ module.exports={
         {
             "file": "lib/addons/p5.sound.js",
             "line": 9136,
-            "description": "<p>The p5.Delay is built with two\n<a href=\"http://www.w3.org/TR/webaudio/#DelayNode\">\nWeb Audio Delay Nodes</a>, one for each stereo channel.</p>\n",
+            "description": "<p>The p5.Delay is built with two\n<a href=\"https://www.w3.org/TR/webaudio/#DelayNode\">\nWeb Audio Delay Nodes</a>, one for each stereo channel.</p>\n",
             "itemtype": "property",
             "name": "rightDelay",
             "type": "DelayNode",
@@ -51361,7 +51361,7 @@ module.exports={
         {
             "file": "lib/addons/p5.sound.js",
             "line": 9560,
-            "description": "<p>Internally, the p5.Convolver uses the a\n<a href=\"http://www.w3.org/TR/webaudio/#ConvolverNode\">\nWeb Audio Convolver Node</a>.</p>\n",
+            "description": "<p>Internally, the p5.Convolver uses the a\n<a href=\"https://www.w3.org/TR/webaudio/#ConvolverNode\">\nWeb Audio Convolver Node</a>.</p>\n",
             "itemtype": "property",
             "name": "convolverNod",
             "type": "ConvolverNode",
@@ -51493,7 +51493,7 @@ module.exports={
         {
             "file": "lib/addons/p5.sound.js",
             "line": 9777,
-            "description": "<p>If you have used <code>.addImpulse()</code> to add multiple impulses\nto a p5.Convolver, then you can use this method to toggle between\nthe items in the <code>.impulses</code> Array. Accepts a parameter\nto identify which impulse you wish to use, identified either by its\noriginal filename (String) or by its position in the <code>.impulses\n</code> Array (Number).<br/>\nYou can access the objects in the .impulses Array directly. Each\nObject has two attributes: an <code>.audioBuffer</code> (type:\nWeb Audio <a href=\"\nhttp://webaudio.github.io/web-audio-api/#the-audiobuffer-interface\">\nAudioBuffer)</a> and a <code>.name</code>, a String that corresponds\nwith the original filename.</p>\n",
+            "description": "<p>If you have used <code>.addImpulse()</code> to add multiple impulses\nto a p5.Convolver, then you can use this method to toggle between\nthe items in the <code>.impulses</code> Array. Accepts a parameter\nto identify which impulse you wish to use, identified either by its\noriginal filename (String) or by its position in the <code>.impulses\n</code> Array (Number).<br/>\nYou can access the objects in the .impulses Array directly. Each\nObject has two attributes: an <code>.audioBuffer</code> (type:\nWeb Audio <a href=\"\nhttps://webaudio.github.io/web-audio-api/#the-audiobuffer-interface\">\nAudioBuffer)</a> and a <code>.name</code>, a String that corresponds\nwith the original filename.</p>\n",
             "itemtype": "method",
             "name": "toggleImpulse",
             "params": [
@@ -52920,7 +52920,7 @@ module.exports={
         {
             "file": "lib/addons/p5.sound.js",
             "line": 12276,
-            "description": "<p>The p5.Distortion is built with a\n<a href=\"http://www.w3.org/TR/webaudio/#WaveShaperNode\">\nWeb Audio WaveShaper Node</a>.</p>\n",
+            "description": "<p>The p5.Distortion is built with a\n<a href=\"https://www.w3.org/TR/webaudio/#WaveShaperNode\">\nWeb Audio WaveShaper Node</a>.</p>\n",
             "itemtype": "property",
             "name": "WaveShaperNode",
             "type": "AudioNode",
@@ -54235,7 +54235,7 @@ module.exports={
             "line": " lib/addons/p5.sound.js:9222"
         },
         {
-            "message": "Missing item type\nConversions adapted from <http://www.easyrgb.com/en/math.php>.\n\nIn these functions, hue is always in the range [0,1); all other components\nare in the range [0,1]. 'Brightness' and 'value' are used interchangeably.",
+            "message": "Missing item type\nConversions adapted from <https://www.easyrgb.com/en/math.php>.\n\nIn these functions, hue is always in the range [0,1); all other components\nare in the range [0,1]. 'Brightness' and 'value' are used interchangeably.",
             "line": " src/color/color_conversion.js:10"
         },
         {
@@ -54335,7 +54335,7 @@ module.exports={
             "line": " src/core/p5.Renderer.js:182"
         },
         {
-            "message": "Missing item type\nHelper fxn to measure ascent and descent.\nAdapted from http://stackoverflow.com/a/25355178",
+            "message": "Missing item type\nHelper fxn to measure ascent and descent.\nAdapted from https://stackoverflow.com/a/25355178",
             "line": " src/core/p5.Renderer.js:235"
         },
         {
@@ -54347,7 +54347,7 @@ module.exports={
             "line": " src/core/p5.Renderer2D.js:395"
         },
         {
-            "message": "Missing item type\nshim for Uint8ClampedArray.slice\n(allows arrayCopy to work with pixels[])\nwith thanks to http://halfpapstudios.com/blog/tag/html5-canvas/\nEnumerable set to false to protect for...in from\nUint8ClampedArray.prototype pollution.",
+            "message": "Missing item type\nshim for Uint8ClampedArray.slice\n(allows arrayCopy to work with pixels[])\nwith thanks to https://halfpapstudios.com/blog/tag/html5-canvas/\nEnumerable set to false to protect for...in from\nUint8ClampedArray.prototype pollution.",
             "line": " src/core/shim.js:70"
         },
         {
@@ -54387,7 +54387,7 @@ module.exports={
             "line": " src/events/keyboard.js:370"
         },
         {
-            "message": "Missing item type\nThis module defines the filters for use with image buffers.\n\nThis module is basically a collection of functions stored in an object\nas opposed to modules. The functions are destructive, modifying\nthe passed in canvas rather than creating a copy.\n\nGenerally speaking users of this module will use the Filters.apply method\non a canvas to create an effect.\n\nA number of functions are borrowed/adapted from\nhttp://www.html5rocks.com/en/tutorials/canvas/imagefilters/\nor the java processing implementation.",
+            "message": "Missing item type\nThis module defines the filters for use with image buffers.\n\nThis module is basically a collection of functions stored in an object\nas opposed to modules. The functions are destructive, modifying\nthe passed in canvas rather than creating a copy.\n\nGenerally speaking users of this module will use the Filters.apply method\non a canvas to create an effect.\n\nA number of functions are borrowed/adapted from\nhttps://www.html5rocks.com/en/tutorials/canvas/imagefilters/\nor the java processing implementation.",
             "line": " src/image/filters.js:3"
         },
         {
@@ -54415,11 +54415,11 @@ module.exports={
             "line": " src/image/filters.js:122"
         },
         {
-            "message": "Missing item type\nConverts the image to black and white pixels depending if they are above or\nbelow the threshold defined by the level parameter. The parameter must be\nbetween 0.0 (black) and 1.0 (white). If no level is specified, 0.5 is used.\n\nBorrowed from http://www.html5rocks.com/en/tutorials/canvas/imagefilters/",
+            "message": "Missing item type\nConverts the image to black and white pixels depending if they are above or\nbelow the threshold defined by the level parameter. The parameter must be\nbetween 0.0 (black) and 1.0 (white). If no level is specified, 0.5 is used.\n\nBorrowed from https://www.html5rocks.com/en/tutorials/canvas/imagefilters/",
             "line": " src/image/filters.js:159"
         },
         {
-            "message": "Missing item type\nConverts any colors in the image to grayscale equivalents.\nNo parameter is used.\n\nBorrowed from http://www.html5rocks.com/en/tutorials/canvas/imagefilters/",
+            "message": "Missing item type\nConverts any colors in the image to grayscale equivalents.\nNo parameter is used.\n\nBorrowed from https://www.html5rocks.com/en/tutorials/canvas/imagefilters/",
             "line": " src/image/filters.js:193"
         },
         {
@@ -54479,7 +54479,7 @@ module.exports={
             "line": " src/io/files.js:1811"
         },
         {
-            "message": "Missing item type\nTable Options\n<p>Generic class for handling tabular data, typically from a\nCSV, TSV, or other sort of spreadsheet file.</p>\n<p>CSV files are\n<a href=\"http://en.wikipedia.org/wiki/Comma-separated_values\">\ncomma separated values</a>, often with the data in quotes. TSV\nfiles use tabs as separators, and usually don't bother with the\nquotes.</p>\n<p>File names should end with .csv if they're comma separated.</p>\n<p>A rough \"spec\" for CSV can be found\n<a href=\"http://tools.ietf.org/html/rfc4180\">here</a>.</p>\n<p>To load files, use the loadTable method.</p>\n<p>To save tables to your computer, use the save method\n or the saveTable method.</p>\n\nPossible options include:\n<ul>\n<li>csv - parse the table as comma-separated values\n<li>tsv - parse the table as tab-separated values\n<li>header - this table has a header (title) row\n</ul>",
+            "message": "Missing item type\nTable Options\n<p>Generic class for handling tabular data, typically from a\nCSV, TSV, or other sort of spreadsheet file.</p>\n<p>CSV files are\n<a href=\"https://en.wikipedia.org/wiki/Comma-separated_values\">\ncomma separated values</a>, often with the data in quotes. TSV\nfiles use tabs as separators, and usually don't bother with the\nquotes.</p>\n<p>File names should end with .csv if they're comma separated.</p>\n<p>A rough \"spec\" for CSV can be found\n<a href=\"https://tools.ietf.org/html/rfc4180\">here</a>.</p>\n<p>To load files, use the loadTable method.</p>\n<p>To save tables to your computer, use the save method\n or the saveTable method.</p>\n\nPossible options include:\n<ul>\n<li>csv - parse the table as comma-separated values\n<li>tsv - parse the table as tab-separated values\n<li>header - this table has a header (title) row\n</ul>",
             "line": " src/io/p5.Table.js:11"
         },
         {
@@ -54655,7 +54655,7 @@ module.exports={
             "line": " lib/addons/p5.dom.js:2709"
         },
         {
-            "message": "Missing item type\np5.sound\nhttps://p5js.org/reference/#/libraries/p5.sound\n\nFrom the Processing Foundation and contributors\nhttps://github.com/processing/p5.js-sound/graphs/contributors\n\nMIT License (MIT)\nhttps://github.com/processing/p5.js-sound/blob/master/LICENSE\n\nSome of the many audio libraries & resources that inspire p5.sound:\n - TONE.js (c) Yotam Mann. Licensed under The MIT License (MIT). https://github.com/TONEnoTONE/Tone.js\n - buzz.js (c) Jay Salvat. Licensed under The MIT License (MIT). http://buzz.jaysalvat.com/\n - Boris Smus Web Audio API book, 2013. Licensed under the Apache License http://www.apache.org/licenses/LICENSE-2.0\n - wavesurfer.js https://github.com/katspaugh/wavesurfer.js\n - Web Audio Components by Jordan Santell https://github.com/web-audio-components\n - Wilm Thoben's Sound library for Processing https://github.com/processing/processing/tree/master/java/libraries/sound\n\n Web Audio API: http://w3.org/TR/webaudio/",
+            "message": "Missing item type\np5.sound\nhttps://p5js.org/reference/#/libraries/p5.sound\n\nFrom the Processing Foundation and contributors\nhttps://github.com/processing/p5.js-sound/graphs/contributors\n\nMIT License (MIT)\nhttps://github.com/processing/p5.js-sound/blob/master/LICENSE\n\nSome of the many audio libraries & resources that inspire p5.sound:\n - TONE.js (c) Yotam Mann. Licensed under The MIT License (MIT). https://github.com/TONEnoTONE/Tone.js\n - buzz.js (c) Jay Salvat. Licensed under The MIT License (MIT). https://buzz.jaysalvat.com/\n - Boris Smus Web Audio API book, 2013. Licensed under the Apache License https://www.apache.org/licenses/LICENSE-2.0\n - wavesurfer.js https://github.com/katspaugh/wavesurfer.js\n - Web Audio Components by Jordan Santell https://github.com/web-audio-components\n - Wilm Thoben's Sound library for Processing https://github.com/processing/processing/tree/master/java/libraries/sound\n\n Web Audio API: https://w3.org/TR/webaudio/",
             "line": " lib/addons/p5.sound.js:46"
         },
         {
@@ -54859,7 +54859,7 @@ module.exports={
             "line": " lib/addons/p5.sound.js:12142"
         },
         {
-            "message": "Missing item type\np5.sound\nhttps://p5js.org/reference/#/libraries/p5.sound\n\nFrom the Processing Foundation and contributors\nhttps://github.com/processing/p5.js-sound/graphs/contributors\n\nMIT License (MIT)\nhttps://github.com/processing/p5.js-sound/blob/master/LICENSE\n\nSome of the many audio libraries & resources that inspire p5.sound:\n - TONE.js (c) Yotam Mann. Licensed under The MIT License (MIT). https://github.com/TONEnoTONE/Tone.js\n - buzz.js (c) Jay Salvat. Licensed under The MIT License (MIT). http://buzz.jaysalvat.com/\n - Boris Smus Web Audio API book, 2013. Licensed under the Apache License http://www.apache.org/licenses/LICENSE-2.0\n - wavesurfer.js https://github.com/katspaugh/wavesurfer.js\n - Web Audio Components by Jordan Santell https://github.com/web-audio-components\n - Wilm Thoben's Sound library for Processing https://github.com/processing/processing/tree/master/java/libraries/sound\n\n Web Audio API: http://w3.org/TR/webaudio/",
+            "message": "Missing item type\np5.sound\nhttps://p5js.org/reference/#/libraries/p5.sound\n\nFrom the Processing Foundation and contributors\nhttps://github.com/processing/p5.js-sound/graphs/contributors\n\nMIT License (MIT)\nhttps://github.com/processing/p5.js-sound/blob/master/LICENSE\n\nSome of the many audio libraries & resources that inspire p5.sound:\n - TONE.js (c) Yotam Mann. Licensed under The MIT License (MIT). https://github.com/TONEnoTONE/Tone.js\n - buzz.js (c) Jay Salvat. Licensed under The MIT License (MIT). https://buzz.jaysalvat.com/\n - Boris Smus Web Audio API book, 2013. Licensed under the Apache License https://www.apache.org/licenses/LICENSE-2.0\n - wavesurfer.js https://github.com/katspaugh/wavesurfer.js\n - Web Audio Components by Jordan Santell https://github.com/web-audio-components\n - Wilm Thoben's Sound library for Processing https://github.com/processing/processing/tree/master/java/libraries/sound\n\n Web Audio API: https://w3.org/TR/webaudio/",
             "line": " lib/addons/p5.sound.min.js:3"
         }
     ],
@@ -55247,7 +55247,7 @@ var lookup = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
 /*!
  * The buffer module from node.js, for the browser.
  *
- * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
+ * @author   Feross Aboukhadijeh <feross@feross.org> <https://feross.org>
  * @license  MIT
  */
 /* eslint-disable no-proto */
@@ -55956,7 +55956,7 @@ function utf8Slice (buf, start, end) {
   return decodeCodePointsArray(res)
 }
 
-// Based on http://stackoverflow.com/a/22747272/680742, the browser with
+// Based on https://stackoverflow.com/a/22747272/680742, the browser with
 // the lowest limit is Chrome, with 0x10000 args.
 // We go 1 magnitude less, for safety
 var MAX_ARGUMENTS_LENGTH = 0x1000
@@ -57983,7 +57983,7 @@ return Promise$2;
 
   function clearFunction(functionName) {
     // IE8 throws an exception when you try to delete a property on window
-    // http://stackoverflow.com/a/1824228/751089
+    // https://stackoverflow.com/a/1824228/751089
     try {
       delete window[functionName];
     } catch (e) {
@@ -58085,7 +58085,7 @@ return Promise$2;
  * 1.3.2
  * 2016-06-16 18:25:19
  *
- * By Eli Grey, http://eligrey.com
+ * By Eli Grey, https://eligrey.com
  * License: MIT
  *   See https://github.com/eligrey/FileSaver.js/blob/master/LICENSE.md
  */
@@ -58093,7 +58093,7 @@ return Promise$2;
 /*global self */
 /*jslint bitwise: true, indent: 4, laxbreak: true, laxcomma: true, smarttabs: true, plusplus: true */
 
-/*! @source http://purl.eligrey.com/github/FileSaver.js/blob/master/FileSaver.js */
+/*! @source https://purl.eligrey.com/github/FileSaver.js/blob/master/FileSaver.js */
 
 var saveAs = saveAs || (function(view) {
 	"use strict";
@@ -58107,7 +58107,7 @@ var saveAs = saveAs || (function(view) {
 		, get_URL = function() {
 			return view.URL || view.webkitURL || view;
 		}
-		, save_link = doc.createElementNS("http://www.w3.org/1999/xhtml", "a")
+		, save_link = doc.createElementNS("https://www.w3.org/1999/xhtml", "a")
 		, can_use_save_link = "download" in save_link
 		, click = function(node) {
 			var event = new MouseEvent("click");
@@ -58850,7 +58850,7 @@ BoundingBox.prototype.addY = function(y) {
 BoundingBox.prototype.addBezier = function(x0, y0, x1, y1, x2, y2, x, y) {
     var this$1 = this;
 
-    // This code is based on http://nishiohirokazu.blogspot.com/2009/06/how-to-calculate-bezier-curves-bounding.html
+    // This code is based on https://nishiohirokazu.blogspot.com/2009/06/how-to-calculate-bezier-curves-bounding.html
     // and https://github.com/icons8/svg-path-bounding-box
 
     var p0 = [x0, y0];
@@ -59142,7 +59142,7 @@ Path.prototype.draw = function(ctx) {
 
 /**
  * Convert the Path to a string of path data instructions
- * See http://www.w3.org/TR/SVG/paths.html#PathData
+ * See https://www.w3.org/TR/SVG/paths.html#PathData
  * @param  {number} [decimalPlaces=2] - The amount of decimal places for floating-point values
  * @return {string}
  */
@@ -59226,7 +59226,7 @@ Path.prototype.toSVG = function(decimalPlaces) {
  */
 Path.prototype.toDOMElement = function(decimalPlaces) {
     var temporaryPath = this.toPathData(decimalPlaces);
-    var newPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    var newPath = document.createElementNS('https://www.w3.org/2000/svg', 'path');
 
     newPath.setAttribute('d', temporaryPath);
 
@@ -59665,7 +59665,7 @@ var eightBitMacEncodings = {
     'x-mac-cyrillic':  // Python: 'mac_cyrillic'
     'АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ†°Ґ£§•¶І®©™Ђђ≠Ѓѓ∞±≤≥іµґЈЄєЇїЉљЊњ' +
     'јЅ¬√ƒ≈∆«»… ЋћЌќѕ–—“”‘’÷„ЎўЏџ№Ёёяабвгдежзийклмнопрстуфхцчшщъыьэю',
-    'x-mac-gaelic': // http://unicode.org/Public/MAPPINGS/VENDORS/APPLE/GAELIC.TXT
+    'x-mac-gaelic': // https://unicode.org/Public/MAPPINGS/VENDORS/APPLE/GAELIC.TXT
     'ÄÅÇÉÑÖÜáàâäãåçéèêëíìîïñóòôöõúùûü†°¢£§•¶ß®©™´¨≠ÆØḂ±≤≥ḃĊċḊḋḞḟĠġṀæø' +
     'ṁṖṗɼƒſṠ«»… ÀÃÕŒœ–—“”‘’ṡẛÿŸṪ€‹›Ŷŷṫ·Ỳỳ⁊ÂÊÁËÈÍÎÏÌÓÔ♣ÒÚÛÙıÝýŴŵẄẅẀẁẂẃ',
     'x-mac-greek':  // Python: 'mac_greek'
@@ -59674,7 +59674,7 @@ var eightBitMacEncodings = {
     'x-mac-icelandic':  // Python: 'mac_iceland'
     'ÄÅÇÉÑÖÜáàâäãåçéèêëíìîïñóòôöõúùûüÝ°¢£§•¶ß®©™´¨≠ÆØ∞±≤≥¥µ∂∑∏π∫ªºΩæø' +
     '¿¡¬√ƒ≈∆«»… ÀÃÕŒœ–—“”‘’÷◊ÿŸ⁄€ÐðÞþý·‚„‰ÂÊÁËÈÍÎÏÌÓÔÒÚÛÙıˆ˜¯˘˙˚¸˝˛ˇ',
-    'x-mac-inuit': // http://unicode.org/Public/MAPPINGS/VENDORS/APPLE/INUIT.TXT
+    'x-mac-inuit': // https://unicode.org/Public/MAPPINGS/VENDORS/APPLE/INUIT.TXT
     'ᐃᐄᐅᐆᐊᐋᐱᐲᐳᐴᐸᐹᑉᑎᑏᑐᑑᑕᑖᑦᑭᑮᑯᑰᑲᑳᒃᒋᒌᒍᒎᒐᒑ°ᒡᒥᒦ•¶ᒧ®©™ᒨᒪᒫᒻᓂᓃᓄᓅᓇᓈᓐᓯᓰᓱᓲᓴᓵᔅᓕᓖᓗ' +
     'ᓘᓚᓛᓪᔨᔩᔪᔫᔭ… ᔮᔾᕕᕖᕗ–—“”‘’ᕘᕙᕚᕝᕆᕇᕈᕉᕋᕌᕐᕿᖀᖁᖂᖃᖄᖅᖏᖐᖑᖒᖓᖔᖕᙱᙲᙳᙴᙵᙶᖖᖠᖡᖢᖣᖤᖥᖦᕼŁł',
     'x-mac-ce':  // Python: 'mac_latin2'
@@ -61405,7 +61405,7 @@ function line(ctx, x1, y1, x2, y2) {
 var draw = { line: line };
 
 // The `glyf` table describes the glyphs in TrueType outline format.
-// http://www.microsoft.com/typography/otspec/glyf.htm
+// https://www.microsoft.com/typography/otspec/glyf.htm
 
 // Parse the coordinate data for a glyph.
 function parseGlyphCoordinate(p, flag, previousValue, shortVectorBitMask, sameBitMask) {
@@ -62215,8 +62215,8 @@ var glyphset = { GlyphSet: GlyphSet, glyphLoader: glyphLoader, ttfGlyphLoader: t
 
 // The `CFF` table contains the glyph outlines in PostScript format.
 // https://www.microsoft.com/typography/OTSPEC/cff.htm
-// http://download.microsoft.com/download/8/0/1/801a191c-029d-4af3-9642-555f6fe514ee/cff.pdf
-// http://download.microsoft.com/download/8/0/1/801a191c-029d-4af3-9642-555f6fe514ee/type2.pdf
+// https://download.microsoft.com/download/8/0/1/801a191c-029d-4af3-9642-555f6fe514ee/cff.pdf
+// https://download.microsoft.com/download/8/0/1/801a191c-029d-4af3-9642-555f6fe514ee/type2.pdf
 
 // Custom equals function that can also check lists.
 function equals(a, b) {
@@ -63621,8 +63621,8 @@ var hmtx = { parse: parseHmtxTable, make: makeHmtxTable };
 // The `ltag` table stores IETF BCP-47 language tags. It allows supporting
 // languages for which TrueType does not assign a numeric code.
 // https://developer.apple.com/fonts/TrueType-Reference-Manual/RM06/Chap6ltag.html
-// http://www.w3.org/International/articles/language-tags/
-// http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
+// https://www.w3.org/International/articles/language-tags/
+// https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
 
 function makeLtagTable(tags) {
     var result = new table.Table('ltag', [
@@ -63874,7 +63874,7 @@ var macLanguages = {
 // Syllables but MacOS had run out of available script codes, so this was
 // done as a (pretty radical) "modification" of Ethiopic.
 //
-// http://unicode.org/Public/MAPPINGS/VENDORS/APPLE/Readme.txt
+// https://unicode.org/Public/MAPPINGS/VENDORS/APPLE/Readme.txt
 var macLanguageToScript = {
     0: 0,  // langEnglish → smRoman
     1: 0,  // langFrench → smRoman
@@ -64011,8 +64011,8 @@ var macLanguageToScript = {
 // this to 'hr-BA' and not 'hr-Latn-BA' because Latin is the default script
 // for the Croatian language, according to IANA.
 //
-// http://www.unicode.org/cldr/charts/latest/supplemental/likely_subtags.html
-// http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
+// https://www.unicode.org/cldr/charts/latest/supplemental/likely_subtags.html
+// https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
 var windowsLanguages = {
     0x0436: 'af',
     0x041C: 'sq',
@@ -64294,7 +64294,7 @@ var macScriptEncodings = {
 // tables, we need to emit a MacOS script ID. Therefore, we cannot
 // merge macScriptEncodings into macLanguageEncodings.
 //
-// http://unicode.org/Public/MAPPINGS/VENDORS/APPLE/Readme.txt
+// https://unicode.org/Public/MAPPINGS/VENDORS/APPLE/Readme.txt
 var macLanguageEncodings = {
     15: 'x-mac-icelandic',    // langIcelandic
     17: 'x-mac-turkish',      // langTurkish
@@ -65161,7 +65161,7 @@ var meta = { parse: parseMetaTable, make: makeMetaTable };
 // It is the top-level data structure in a font.
 // https://www.microsoft.com/typography/OTSPEC/otff.htm
 // Recommendations for creating OpenType Fonts:
-// http://www.microsoft.com/typography/otspec140/recom.htm
+// https://www.microsoft.com/typography/otspec140/recom.htm
 
 function log2(v) {
     return Math.log(v) / Math.log(2) | 0;
@@ -65378,7 +65378,7 @@ function fontToSfntTable(font) {
         ulUnicodeRange3: ulUnicodeRange3,
         ulUnicodeRange4: ulUnicodeRange4,
         fsSelection: font.tables.os2.fsSelection, // REGULAR
-        // See http://typophile.com/node/13081 for more info on vertical metrics.
+        // See https://typophile.com/node/13081 for more info on vertical metrics.
         // We get metrics for typical characters (such as "x" for xHeight).
         // We provide some fallback characters if characters are unavailable: their
         // ordering was chosen experimentally.
@@ -66211,7 +66211,7 @@ var roundSuper = function (v) {
 
     v += phase;
 
-    // according to http://xgridfit.sourceforge.net/round.html
+    // according to https://xgridfit.sourceforge.net/round.html
     if (sign > 0 && v < 0) { return phase; }
     if (sign < 0 && v > 0) { return -phase; }
 
@@ -71263,7 +71263,7 @@ module.exports = p5;
 'use strict';
 
 /**
- * Conversions adapted from <http://www.easyrgb.com/en/math.php>.
+ * Conversions adapted from <https://www.easyrgb.com/en/math.php>.
  *
  * In these functions, hue is always in the range [0,1); all other components
  * are in the range [0,1]. 'Brightness' and 'value' are used interchangeably.
@@ -75287,7 +75287,7 @@ var p5 = function(sketch, node, sync) {
    * <br><br>
    * By default the text "loading..." will be displayed. To make your own
    * loading page, include an HTML element with id "p5_loading" in your
-   * page. More information <a href="http://bit.ly/2kQ6Nio">here</a>.
+   * page. More information <a href="https://bit.ly/2kQ6Nio">here</a>.
    *
    * @method preload
    * @example
@@ -76637,7 +76637,7 @@ p5.prototype.cursor = function(type, x, y) {
       coords = x + ' ' + y;
     }
     if (
-      type.substring(0, 7) === 'http://' ||
+      type.substring(0, 7) === 'https://' ||
       type.substring(0, 8) === 'https://'
     ) {
       // Image (absolute url)
@@ -77099,7 +77099,7 @@ function exitFullscreen() {
  * </div>
  *
  * @alt
- * current url (http://p5js.org/reference/#/p5/getURL) moves right to left.
+ * current url (https://p5js.org/reference/#/p5/getURL) moves right to left.
  *
  */
 p5.prototype.getURL = function() {
@@ -77135,7 +77135,7 @@ p5.prototype.getURLPath = function() {
  * @example
  * <div class='norender notest'>
  * <code>
- * // Example: http://p5js.org?year=2014&month=May&day=15
+ * // Example: https://p5js.org?year=2014&month=May&day=15
  *
  * function setup() {
  *   var params = getURLParams();
@@ -77266,7 +77266,7 @@ if (typeof IS_MINIFIED !== 'undefined') {
       console.log(
         '> p5.js says: ' +
           message +
-          ' [http://p5js.org/reference/#p5/' +
+          ' [https://p5js.org/reference/#p5/' +
           func +
           ']'
       );
@@ -77827,7 +77827,7 @@ var p5 = _dereq_('./core');
  * Base class for all elements added to a sketch, including canvas,
  * graphics buffers, and other HTML elements. Methods in blue are
  * included in the core functionality, methods in brown are added
- * with the <a href="http://p5js.org/reference/#/libraries/p5.dom">p5.dom
+ * with the <a href="https://p5js.org/reference/#/libraries/p5.dom">p5.dom
  * library</a>.
  * It is not called directly, but p5.Element
  * objects are created by calling createCanvas, createGraphics,
@@ -79211,7 +79211,7 @@ p5.Renderer.prototype._updateTextMetrics = function() {
     return this;
   }
 
-  // Adapted from http://stackoverflow.com/a/25355178
+  // Adapted from https://stackoverflow.com/a/25355178
   var text = document.createElement('span');
   text.style.fontFamily = this._textFont;
   text.style.fontSize = this._textSize + 'px';
@@ -79251,7 +79251,7 @@ p5.Renderer.prototype._updateTextMetrics = function() {
 
 /**
  * Helper fxn to measure ascent and descent.
- * Adapted from http://stackoverflow.com/a/25355178
+ * Adapted from https://stackoverflow.com/a/25355178
  */
 function calculateOffset(object) {
   var currentLeft = 0,
@@ -81035,8 +81035,8 @@ window.performance.now = (function() {
 })();
 
 /*
-// http://paulirish.com/2011/requestanimationframe-for-smart-animating/
-// http://my.opera.com/emoller/blog/2011/12/20/
+// https://paulirish.com/2011/requestanimationframe-for-smart-animating/
+// https://my.opera.com/emoller/blog/2011/12/20/
 // requestanimationframe-for-smart-er-animating
 // requestAnimationFrame polyfill by Erik Möller
 // fixes from Paul Irish and Tino Zijdel
@@ -81073,7 +81073,7 @@ window.performance.now = (function() {
 /**
  * shim for Uint8ClampedArray.slice
  * (allows arrayCopy to work with pixels[])
- * with thanks to http://halfpapstudios.com/blog/tag/html5-canvas/
+ * with thanks to https://halfpapstudios.com/blog/tag/html5-canvas/
  * Enumerable set to false to protect for...in from
  * Uint8ClampedArray.prototype pollution.
  */
@@ -84117,7 +84117,7 @@ p5.prototype.key = '';
  * DELETE, ENTER, RETURN, TAB, ESCAPE, SHIFT, CONTROL, OPTION, ALT, UP_ARROW,
  * DOWN_ARROW, LEFT_ARROW, RIGHT_ARROW.
  * You can also check for custom keys by looking up the keyCode of any key
- * on a site like this: <a href="http://keycode.info/">keycode.info</a>.
+ * on a site like this: <a href="https://keycode.info/">keycode.info</a>.
  *
  * @property {Integer} keyCode
  * @readOnly
@@ -84362,7 +84362,7 @@ p5.prototype._onblur = function(e) {
  * to be able to affect its behaviour simultaneously, such as moving a
  * sprite diagonally. You can put in any number representing the keyCode of
  * the key, or use any of the variable keyCode names listed
- * <a href="http://p5js.org/reference/#p5/keyCode">here</a>.
+ * <a href="https://p5js.org/reference/#p5/keyCode">here</a>.
  *
  * @method keyIsDown
  * @param {Number}          code The key to check for.
@@ -85526,7 +85526,7 @@ module.exports = p5;
  * on a canvas to create an effect.
  *
  * A number of functions are borrowed/adapted from
- * http://www.html5rocks.com/en/tutorials/canvas/imagefilters/
+ * https://www.html5rocks.com/en/tutorials/canvas/imagefilters/
  * or the java processing implementation.
  */
 
@@ -85676,7 +85676,7 @@ Filters.apply = function(canvas, func, filterParam) {
  * below the threshold defined by the level parameter. The parameter must be
  * between 0.0 (black) and 1.0 (white). If no level is specified, 0.5 is used.
  *
- * Borrowed from http://www.html5rocks.com/en/tutorials/canvas/imagefilters/
+ * Borrowed from https://www.html5rocks.com/en/tutorials/canvas/imagefilters/
  *
  * @private
  * @param  {Canvas} canvas
@@ -85709,7 +85709,7 @@ Filters.threshold = function(canvas, level) {
  * Converts any colors in the image to grayscale equivalents.
  * No parameter is used.
  *
- * Borrowed from http://www.html5rocks.com/en/tutorials/canvas/imagefilters/
+ * Borrowed from https://www.html5rocks.com/en/tutorials/canvas/imagefilters/
  *
  * @private
  * @param {Canvas} canvas
@@ -87555,7 +87555,7 @@ p5.Image.prototype.copy = function() {
  * image of rocky mountains with white at right
  *
  *
- * http://blogs.adobe.com/webplatform/2013/01/28/blending-features-in-canvas/
+ * https://blogs.adobe.com/webplatform/2013/01/28/blending-features-in-canvas/
  *
  */
 // TODO: - Accept an array of alpha values.
@@ -87653,7 +87653,7 @@ p5.Image.prototype.filter = function(operation, value) {
  *            color | luminosity
  *
  *
- * http://blogs.adobe.com/webplatform/2013/01/28/blending-features-in-canvas/
+ * https://blogs.adobe.com/webplatform/2013/01/28/blending-features-in-canvas/
  * @example
  * <div><code>
  * var mountains;
@@ -88773,7 +88773,7 @@ p5.prototype.loadStrings = function() {
  *   //and has a header specifying the columns labels
  *   table = loadTable('assets/mammals.csv', 'csv', 'header');
  *   //the file can be remote
- *   //table = loadTable("http://p5js.org/reference/assets/mammals.csv",
+ *   //table = loadTable("https://p5js.org/reference/assets/mammals.csv",
  *   //                  "csv", "header");
  * }
  *
@@ -90279,13 +90279,13 @@ var p5 = _dereq_('../core/core');
  *  <p>Generic class for handling tabular data, typically from a
  *  CSV, TSV, or other sort of spreadsheet file.</p>
  *  <p>CSV files are
- *  <a href="http://en.wikipedia.org/wiki/Comma-separated_values">
+ *  <a href="https://en.wikipedia.org/wiki/Comma-separated_values">
  *  comma separated values</a>, often with the data in quotes. TSV
  *  files use tabs as separators, and usually don't bother with the
  *  quotes.</p>
  *  <p>File names should end with .csv if they're comma separated.</p>
  *  <p>A rough "spec" for CSV can be found
- *  <a href="http://tools.ietf.org/html/rfc4180">here</a>.</p>
+ *  <a href="https://tools.ietf.org/html/rfc4180">here</a>.</p>
  *  <p>To load files, use the loadTable method.</p>
  *  <p>To save tables to your computer, use the save method
  *   or the saveTable method.</p>
@@ -93685,14 +93685,14 @@ module.exports = p5;
 },{"../core/core":22}],52:[function(_dereq_,module,exports){
 //////////////////////////////////////////////////////////////
 
-// http://mrl.nyu.edu/~perlin/noise/
+// https://mrl.nyu.edu/~perlin/noise/
 // Adapting from PApplet.java
 // which was adapted from toxi
 // which was adapted from the german demo group farbrausch
-// as used in their demo "art": http://www.farb-rausch.de/fr010src.zip
+// as used in their demo "art": https://www.farb-rausch.de/fr010src.zip
 
 // someday we might consider using "improved noise"
-// http://mrl.nyu.edu/~perlin/paper445.pdf
+// https://mrl.nyu.edu/~perlin/paper445.pdf
 // See: https://github.com/shiffman/The-Nature-of-Code-Examples-p5.js/
 //      blob/master/introduction/Noise1D/noise.js
 
@@ -93968,7 +93968,7 @@ p5.prototype.noiseSeed = function(seed) {
   // Linear Congruential Generator
   // Variant of a Lehman Generator
   var lcg = (function() {
-    // Set to values from http://en.wikipedia.org/wiki/Numerical_Recipes
+    // Set to values from https://en.wikipedia.org/wiki/Numerical_Recipes
     // m is basically chosen to be large (as it is the max period)
     // and for its relationships to a and c
     var m = 4294967296;
@@ -95778,7 +95778,7 @@ var y2 = 0;
 // Linear Congruential Generator
 // Variant of a Lehman Generator
 var lcg = (function() {
-  // Set to values from http://en.wikipedia.org/wiki/Numerical_Recipes
+  // Set to values from https://en.wikipedia.org/wiki/Numerical_Recipes
   // m is basically chosen to be large (as it is the max period)
   // and for its relationships to a and c
   var m = 4294967296,
@@ -97222,7 +97222,7 @@ p5.Font.prototype._getPath = function(line, x, y, options) {
 
 /*
  * Creates an SVG-formatted path-data string
- * (See http://www.w3.org/TR/SVG/paths.html#PathData)
+ * (See https://www.w3.org/TR/SVG/paths.html#PathData)
  * from the given opentype path or string/position
  *
  * @param  {Object} path    an opentype path, OR the following:
@@ -97889,7 +97889,7 @@ function path2curve(path, path2) {
 
 function a2c(x1, y1, rx, ry, angle, lac, sweep_flag, x2, y2, recursive) {
   // for more information of where this Math came from visit:
-  // http://www.w3.org/TR/SVG11/implnote.html#ArcImplementationNotes
+  // https://www.w3.org/TR/SVG11/implnote.html#ArcImplementationNotes
   var PI = Math.PI,
     _120 = PI * 120 / 180,
     f1,
@@ -98003,7 +98003,7 @@ function a2c(x1, y1, rx, ry, angle, lac, sweep_flag, x2, y2, recursive) {
   }
 }
 
-// http://schepers.cc/getting-to-the-point
+// https://schepers.cc/getting-to-the-point
 function catmullRom2bezier(crp, z) {
   var d = [];
   for (var i = 0, iLen = crp.length; iLen - 2 * !z > i; i += 2) {
@@ -98361,7 +98361,7 @@ p5.prototype.shorten = function(list) {
 
 /**
  * Randomizes the order of the elements of an array. Implements
- * <a href='http://Bost.Ocks.org/mike/shuffle/' target=_blank>
+ * <a href='https://Bost.Ocks.org/mike/shuffle/' target=_blank>
  * Fisher-Yates Shuffle Algorithm</a>.
  *
  * @method shuffle
@@ -100912,7 +100912,7 @@ p5.RendererGL.prototype._applyColorBlend = function(colors) {
 module.exports = p5;
 
 },{"../core/constants":21,"../core/core":22,"./p5.Texture":74}],68:[function(_dereq_,module,exports){
-//some of the functions are adjusted from Three.js(http://threejs.org)
+//some of the functions are adjusted from Three.js(https://threejs.org)
 
 'use strict';
 
@@ -102601,7 +102601,7 @@ var defaultShaders = {
   lightTextureFrag: "precision mediump float;\n\nuniform vec4 uMaterialColor;\nuniform sampler2D uSampler;\nuniform bool isTexture;\nuniform bool uUseLighting;\n\nvarying vec3 vLightWeighting;\nvarying highp vec2 vVertTexCoord;\n\nvoid main(void) {\n  gl_FragColor = isTexture ? texture2D(uSampler, vVertTexCoord) : uMaterialColor;\n  if (uUseLighting)\n    gl_FragColor.rgb *= vLightWeighting;\n}",
   phongVert: "precision mediump float;\n\nattribute vec3 aPosition;\nattribute vec3 aNormal;\nattribute vec2 aTexCoord;\n\nuniform vec3 uAmbientColor[8];\n\nuniform mat4 uModelViewMatrix;\nuniform mat4 uProjectionMatrix;\nuniform mat3 uNormalMatrix;\nuniform int uAmbientLightCount;\n\nvarying vec3 vNormal;\nvarying vec2 vTexCoord;\nvarying vec3 vViewPosition;\nvarying vec3 vAmbientColor;\n\nvoid main(void){\n\n  vec4 viewModelPosition = uModelViewMatrix * vec4(aPosition, 1.0);\n\n  // Pass varyings to fragment shader\n  vViewPosition = viewModelPosition.xyz;\n  gl_Position = uProjectionMatrix * viewModelPosition;  \n\n  vNormal = normalize(uNormalMatrix * normalize(aNormal));\n  vTexCoord = aTexCoord;\n\n  vAmbientColor = vec3(0.0);\n  for (int i = 0; i < 8; i++) {\n    if (uAmbientLightCount == i) break;\n    vAmbientColor += uAmbientColor[i];\n  }\n}\n",
   phongFrag: "precision mediump float;\n\n//uniform mat4 uModelViewMatrix;\nuniform mat4 uViewMatrix;\n\nuniform vec4 uMaterialColor;\nuniform sampler2D uSampler;\nuniform bool isTexture;\nuniform bool uUseLighting;\n\nuniform vec3 uLightingDirection[8];\nuniform vec3 uDirectionalColor[8];\nuniform vec3 uPointLightLocation[8];\nuniform vec3 uPointLightColor[8];\nuniform bool uSpecular;\n\nuniform int uDirectionalLightCount;\nuniform int uPointLightCount;\n\nvarying vec3 vNormal;\nvarying vec2 vTexCoord;\nvarying vec3 vViewPosition;\nvarying vec3 vAmbientColor;\n\nvec3 V;\nvec3 N;\n\nconst float shininess = 32.0;\nconst float specularFactor = 2.0;\nconst float diffuseFactor = 0.73;\n\nstruct LightResult {\n\tfloat specular;\n\tfloat diffuse;\n};\n\nfloat phongSpecular(\n  vec3 lightDirection,\n  vec3 viewDirection,\n  vec3 surfaceNormal,\n  float shininess) {\n\n  vec3 R = normalize(reflect(-lightDirection, surfaceNormal));  \n  return pow(max(0.0, dot(R, viewDirection)), shininess);\n}\n\nfloat lambertDiffuse(\n  vec3 lightDirection,\n  vec3 surfaceNormal) {\n  return max(0.0, dot(-lightDirection, surfaceNormal));\n}\n\nLightResult light(vec3 lightVector) {\n\n  vec3 L = normalize(lightVector);\n\n  //compute our diffuse & specular terms\n  LightResult lr;\n  if (uSpecular)\n    lr.specular = phongSpecular(L, V, N, shininess);\n  lr.diffuse = lambertDiffuse(L, N);\n  return lr;\n}\n\nvoid main(void) {\n\n  V = normalize(vViewPosition);\n  N = vNormal;\n\n  vec3 diffuse = vec3(0.0);\n  float specular = 0.0;\n\n  for (int j = 0; j < 8; j++) {\n    if (uDirectionalLightCount == j) break;\n\n    LightResult result = light(uLightingDirection[j]);\n    diffuse += result.diffuse * uDirectionalColor[j];\n    specular += result.specular;\n  }\n\n  for (int k = 0; k < 8; k++) {\n    if (uPointLightCount == k) break;\n\n    vec3 lightPosition = (uViewMatrix * vec4(uPointLightLocation[k], 1.0)).xyz;\n    vec3 lightVector = vViewPosition - lightPosition;\n\t\n    //calculate attenuation\n    float lightDistance = length(lightVector);\n    float falloff = 500.0 / (lightDistance + 500.0);\n\n    LightResult result = light(lightVector);\n    diffuse += result.diffuse * falloff * uPointLightColor[k];\n    specular += result.specular * falloff;\n  }\n\n  gl_FragColor = isTexture ? texture2D(uSampler, vTexCoord) : uMaterialColor;\n  gl_FragColor.rgb = gl_FragColor.rgb * (diffuse * diffuseFactor + vAmbientColor) + specular * specularFactor;\n}",
-  lineVert: "/*\n  Part of the Processing project - http://processing.org\n  Copyright (c) 2012-15 The Processing Foundation\n  Copyright (c) 2004-12 Ben Fry and Casey Reas\n  Copyright (c) 2001-04 Massachusetts Institute of Technology\n  This library is free software; you can redistribute it and/or\n  modify it under the terms of the GNU Lesser General Public\n  License as published by the Free Software Foundation, version 2.1.\n  This library is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n  Lesser General Public License for more details.\n  You should have received a copy of the GNU Lesser General\n  Public License along with this library; if not, write to the\n  Free Software Foundation, Inc., 59 Temple Place, Suite 330,\n  Boston, MA  02111-1307  USA\n*/\n\n#define PROCESSING_LINE_SHADER\n\nuniform mat4 uModelViewMatrix;\nuniform mat4 uProjectionMatrix;\nuniform float uStrokeWeight;\n\nuniform vec4 uViewport;\nvec3 scale = vec3(1.0);\n\nattribute vec4 aPosition;\nattribute vec4 aDirection;\n  \nvoid main() {\n  vec4 posp = uModelViewMatrix * aPosition;\n  vec4 posq = uModelViewMatrix * (aPosition + vec4(aDirection.xyz, 0));\n\n  // Moving vertices slightly toward the camera\n  // to avoid depth-fighting with the fill triangles.\n  // Discussed here:\n  // http://www.opengl.org/discussion_boards/ubbthreads.php?ubb=showflat&Number=252848  \n  posp.xyz = posp.xyz * scale;\n  posq.xyz = posq.xyz * scale;\n\n  vec4 p = uProjectionMatrix * posp;\n  vec4 q = uProjectionMatrix * posq;\n\n  // formula to convert from clip space (range -1..1) to screen space (range 0..[width or height])\n  // screen_p = (p.xy/p.w + <1,1>) * 0.5 * uViewport.zw\n\n  // prevent division by W by transforming the tangent formula (div by 0 causes\n  // the line to disappear, see https://github.com/processing/processing/issues/5183)\n  // t = screen_q - screen_p\n  //\n  // tangent is normalized and we don't care which aDirection it points to (+-)\n  // t = +- normalize( screen_q - screen_p )\n  // t = +- normalize( (q.xy/q.w+<1,1>)*0.5*uViewport.zw - (p.xy/p.w+<1,1>)*0.5*uViewport.zw )\n  //\n  // extract common factor, <1,1> - <1,1> cancels out\n  // t = +- normalize( (q.xy/q.w - p.xy/p.w) * 0.5 * uViewport.zw )\n  //\n  // convert to common divisor\n  // t = +- normalize( ((q.xy*p.w - p.xy*q.w) / (p.w*q.w)) * 0.5 * uViewport.zw )\n  //\n  // remove the common scalar divisor/factor, not needed due to normalize and +-\n  // (keep uViewport - can't remove because it has different components for x and y\n  //  and corrects for aspect ratio, see https://github.com/processing/processing/issues/5181)\n  // t = +- normalize( (q.xy*p.w - p.xy*q.w) * uViewport.zw )\n\n  vec2 tangent = normalize((q.xy*p.w - p.xy*q.w) * uViewport.zw);\n\n  // flip tangent to normal (it's already normalized)\n  vec2 normal = vec2(-tangent.y, tangent.x);\n\n  float thickness = aDirection.w * uStrokeWeight;\n  vec2 offset = normal * thickness / 2.0;\n\n  // Perspective ---\n  // convert from world to clip by multiplying with projection scaling factor\n  // to get the right thickness (see https://github.com/processing/processing/issues/5182)\n  // invert Y, projections in Processing invert Y\n  vec2 perspScale = (uProjectionMatrix * vec4(1, -1, 0, 0)).xy;\n\n  // No Perspective ---\n  // multiply by W (to cancel out division by W later in the pipeline) and\n  // convert from screen to clip (derived from clip to screen above)\n  vec2 noPerspScale = p.w / (0.5 * uViewport.zw);\n\n  //gl_Position.xy = p.xy + offset.xy * mix(noPerspScale, perspScale, float(perspective > 0));\n  gl_Position.xy = p.xy + offset.xy * perspScale;\n  gl_Position.zw = p.zw;\n}\n",
+  lineVert: "/*\n  Part of the Processing project - https://processing.org\n  Copyright (c) 2012-15 The Processing Foundation\n  Copyright (c) 2004-12 Ben Fry and Casey Reas\n  Copyright (c) 2001-04 Massachusetts Institute of Technology\n  This library is free software; you can redistribute it and/or\n  modify it under the terms of the GNU Lesser General Public\n  License as published by the Free Software Foundation, version 2.1.\n  This library is distributed in the hope that it will be useful,\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n  Lesser General Public License for more details.\n  You should have received a copy of the GNU Lesser General\n  Public License along with this library; if not, write to the\n  Free Software Foundation, Inc., 59 Temple Place, Suite 330,\n  Boston, MA  02111-1307  USA\n*/\n\n#define PROCESSING_LINE_SHADER\n\nuniform mat4 uModelViewMatrix;\nuniform mat4 uProjectionMatrix;\nuniform float uStrokeWeight;\n\nuniform vec4 uViewport;\nvec3 scale = vec3(1.0);\n\nattribute vec4 aPosition;\nattribute vec4 aDirection;\n  \nvoid main() {\n  vec4 posp = uModelViewMatrix * aPosition;\n  vec4 posq = uModelViewMatrix * (aPosition + vec4(aDirection.xyz, 0));\n\n  // Moving vertices slightly toward the camera\n  // to avoid depth-fighting with the fill triangles.\n  // Discussed here:\n  // https://www.opengl.org/discussion_boards/ubbthreads.php?ubb=showflat&Number=252848  \n  posp.xyz = posp.xyz * scale;\n  posq.xyz = posq.xyz * scale;\n\n  vec4 p = uProjectionMatrix * posp;\n  vec4 q = uProjectionMatrix * posq;\n\n  // formula to convert from clip space (range -1..1) to screen space (range 0..[width or height])\n  // screen_p = (p.xy/p.w + <1,1>) * 0.5 * uViewport.zw\n\n  // prevent division by W by transforming the tangent formula (div by 0 causes\n  // the line to disappear, see https://github.com/processing/processing/issues/5183)\n  // t = screen_q - screen_p\n  //\n  // tangent is normalized and we don't care which aDirection it points to (+-)\n  // t = +- normalize( screen_q - screen_p )\n  // t = +- normalize( (q.xy/q.w+<1,1>)*0.5*uViewport.zw - (p.xy/p.w+<1,1>)*0.5*uViewport.zw )\n  //\n  // extract common factor, <1,1> - <1,1> cancels out\n  // t = +- normalize( (q.xy/q.w - p.xy/p.w) * 0.5 * uViewport.zw )\n  //\n  // convert to common divisor\n  // t = +- normalize( ((q.xy*p.w - p.xy*q.w) / (p.w*q.w)) * 0.5 * uViewport.zw )\n  //\n  // remove the common scalar divisor/factor, not needed due to normalize and +-\n  // (keep uViewport - can't remove because it has different components for x and y\n  //  and corrects for aspect ratio, see https://github.com/processing/processing/issues/5181)\n  // t = +- normalize( (q.xy*p.w - p.xy*q.w) * uViewport.zw )\n\n  vec2 tangent = normalize((q.xy*p.w - p.xy*q.w) * uViewport.zw);\n\n  // flip tangent to normal (it's already normalized)\n  vec2 normal = vec2(-tangent.y, tangent.x);\n\n  float thickness = aDirection.w * uStrokeWeight;\n  vec2 offset = normal * thickness / 2.0;\n\n  // Perspective ---\n  // convert from world to clip by multiplying with projection scaling factor\n  // to get the right thickness (see https://github.com/processing/processing/issues/5182)\n  // invert Y, projections in Processing invert Y\n  vec2 perspScale = (uProjectionMatrix * vec4(1, -1, 0, 0)).xy;\n\n  // No Perspective ---\n  // multiply by W (to cancel out division by W later in the pipeline) and\n  // convert from screen to clip (derived from clip to screen above)\n  vec2 noPerspScale = p.w / (0.5 * uViewport.zw);\n\n  //gl_Position.xy = p.xy + offset.xy * mix(noPerspScale, perspScale, float(perspective > 0));\n  gl_Position.xy = p.xy + offset.xy * perspScale;\n  gl_Position.zw = p.zw;\n}\n",
   lineFrag: "precision mediump float;\nprecision mediump int;\n\nuniform vec4 uMaterialColor;\n\nvoid main() {\n  gl_FragColor = uMaterialColor;\n}"
 };
 
@@ -108185,7 +108185,7 @@ b.index)).concat(ia(b[1])).concat(ia(a.substr(b.index+b[0].length)));b=a.split("
 (e=a.getBoundingClientRect(),b=e.right-e.left,e=e.bottom-e.top);g.width=c*b;g.height=c*e;E(g.style,{width:b+"px",height:e+"px"})}var g=document.createElement("canvas");E(g.style,{border:0,margin:0,padding:0,top:0,left:0});a.appendChild(g);a===document.body&&(g.style.position="absolute",E(a.style,{margin:0,padding:0}));window.addEventListener("resize",e,!1);e();return{canvas:g,onDestroy:function(){window.removeEventListener("resize",e);a.removeChild(g)}}}function Db(a,b){function c(c){try{return a.getContext(c,
 b)}catch(g){return null}}return c("webgl")||c("experimental-webgl")||c("webgl-experimental")}function $a(a){return"string"===typeof a?a.split():a}function ab(a){return"string"===typeof a?document.querySelector(a):a}function Eb(a){var b=a||{},c,e,g,d;a={};var n=[],f=[],r="undefined"===typeof window?1:window.devicePixelRatio,q=!1,t=function(a){},m=function(){};"string"===typeof b?c=document.querySelector(b):"object"===typeof b&&("string"===typeof b.nodeName&&"function"===typeof b.appendChild&&"function"===
 typeof b.getBoundingClientRect?c=b:"function"===typeof b.drawArrays||"function"===typeof b.drawElements?(d=b,g=d.canvas):("gl"in b?d=b.gl:"canvas"in b?g=ab(b.canvas):"container"in b&&(e=ab(b.container)),"attributes"in b&&(a=b.attributes),"extensions"in b&&(n=$a(b.extensions)),"optionalExtensions"in b&&(f=$a(b.optionalExtensions)),"onDone"in b&&(t=b.onDone),"profile"in b&&(q=!!b.profile),"pixelRatio"in b&&(r=+b.pixelRatio)));c&&("canvas"===c.nodeName.toLowerCase()?g=c:e=c);if(!d){if(!g){c=Cb(e||document.body,
-t,r);if(!c)return null;g=c.canvas;m=c.onDestroy}d=Db(g,a)}return d?{gl:d,canvas:g,container:e,extensions:n,optionalExtensions:f,pixelRatio:r,profile:q,onDone:t,onDestroy:m}:(m(),t("webgl not supported, try upgrading your browser or graphics drivers http://get.webgl.org"),null)}function Fb(a,b){function c(b){b=b.toLowerCase();var c;try{c=e[b]=a.getExtension(b)}catch(g){}return!!c}for(var e={},g=0;g<b.extensions.length;++g){var d=b.extensions[g];if(!c(d))return b.onDestroy(),b.onDone('"'+d+'" extension is not supported by the current WebGL context, try upgrading your system or a different browser'),
+t,r);if(!c)return null;g=c.canvas;m=c.onDestroy}d=Db(g,a)}return d?{gl:d,canvas:g,container:e,extensions:n,optionalExtensions:f,pixelRatio:r,profile:q,onDone:t,onDestroy:m}:(m(),t("webgl not supported, try upgrading your browser or graphics drivers https://get.webgl.org"),null)}function Fb(a,b){function c(b){b=b.toLowerCase();var c;try{c=e[b]=a.getExtension(b)}catch(g){}return!!c}for(var e={},g=0;g<b.extensions.length;++g){var d=b.extensions[g];if(!c(d))return b.onDestroy(),b.onDone('"'+d+'" extension is not supported by the current WebGL context, try upgrading your system or a different browser'),
 null}b.optionalExtensions.forEach(c);return{extensions:e,restore:function(){Object.keys(e).forEach(function(a){if(e[a]&&!c(a))throw Error("(regl): error restoring extension "+a);})}}}function J(a,b){for(var c=Array(a),e=0;e<a;++e)c[e]=b(e);return c}function bb(a){var b,c;b=(65535<a)<<4;a>>>=b;c=(255<a)<<3;a>>>=c;b|=c;c=(15<a)<<2;a>>>=c;b|=c;c=(3<a)<<1;return b|c|a>>>c>>1}function cb(){function a(a){a:{for(var b=16;268435456>=b;b*=16)if(a<=b){a=b;break a}a=0}b=c[bb(a)>>2];return 0<b.length?b.pop():
 new ArrayBuffer(a)}function b(a){c[bb(a.byteLength)>>2].push(a)}var c=J(8,function(){return[]});return{alloc:a,free:b,allocType:function(b,c){var d=null;switch(b){case 5120:d=new Int8Array(a(c),0,c);break;case 5121:d=new Uint8Array(a(c),0,c);break;case 5122:d=new Int16Array(a(2*c),0,c);break;case 5123:d=new Uint16Array(a(2*c),0,c);break;case 5124:d=new Int32Array(a(4*c),0,c);break;case 5125:d=new Uint32Array(a(4*c),0,c);break;case 5126:d=new Float32Array(a(4*c),0,c);break;default:return null}return d.length!==
 c?d.subarray(0,c):d},freeType:function(a){b(a.buffer)}}}function ma(a){return!!a&&"object"===typeof a&&Array.isArray(a.shape)&&Array.isArray(a.stride)&&"number"===typeof a.offset&&a.shape.length===a.stride.length&&(Array.isArray(a.data)||M(a.data))}function db(a,b,c,e,g,d){for(var n=0;n<b;++n)for(var f=a[n],r=0;r<c;++r)for(var q=f[r],t=0;t<e;++t)g[d++]=q[t]}function eb(a,b,c,e,g){for(var d=1,n=c+1;n<b.length;++n)d*=b[n];var f=b[c];if(4===b.length-c){var r=b[c+1],q=b[c+2];b=b[c+3];for(n=0;n<f;++n)db(a[n],
@@ -109384,7 +109384,7 @@ module.exports = function(window, edgeVersion) {
           ssrc: (2 * sdpMLineIndex + 2) * 1001
         }];
 
-        // TODO: rewrite to use http://w3c.github.io/webrtc-pc/#set-associated-remote-streams
+        // TODO: rewrite to use https://w3c.github.io/webrtc-pc/#set-associated-remote-streams
         var isNewTrack = false;
         if (direction === 'sendrecv' || direction === 'sendonly') {
           isNewTrack = !transceiver.rtpReceiver;
@@ -109488,7 +109488,7 @@ module.exports = function(window, edgeVersion) {
             direction === 'sendrecv' || direction === 'recvonly',
             direction === 'sendrecv' || direction === 'sendonly');
 
-        // TODO: rewrite to use http://w3c.github.io/webrtc-pc/#set-associated-remote-streams
+        // TODO: rewrite to use https://w3c.github.io/webrtc-pc/#set-associated-remote-streams
         if (rtpReceiver &&
             (direction === 'sendrecv' || direction === 'sendonly')) {
           track = rtpReceiver.track;
@@ -110734,7 +110734,7 @@ SDPUtils.parseRtpEncodingParameters = function(mediaSection) {
   return encodingParameters;
 };
 
-// parses http://draft.ortc.org/#rtcrtcpparameters*
+// parses https://draft.ortc.org/#rtcrtcpparameters*
 SDPUtils.parseRtcpParameters = function(mediaSection) {
   var rtcpParameters = {};
 
@@ -112225,8 +112225,8 @@ var cache = exports.managers = {};
  * Looks up an existing `Manager` for multiplexing.
  * If the user summons:
  *
- *   `io('http://localhost/a');`
- *   `io('http://localhost/b');`
+ *   `io('https://localhost/a');`
+ *   `io('https://localhost/b');`
  *
  * We reuse the existing instance based on same scheme/port/host,
  * and we initialize sockets for each namespace.
@@ -114561,7 +114561,7 @@ function Response(req) {
      : null;
   this.statusText = this.req.xhr.statusText;
   var status = this.xhr.status;
-  // handle IE9 bug: http://stackoverflow.com/questions/10046972/msie-returns-status-code-of-1223-for-ajax-request
+  // handle IE9 bug: https://stackoverflow.com/questions/10046972/msie-returns-status-code-of-1223-for-ajax-request
   if (status === 1223) {
     status = 204;
   }
@@ -117905,7 +117905,7 @@ module.exports = {
       });
     }
     // Edge currently only implements the RTCDtmfSender, not the
-    // RTCDTMFSender alias. See http://draft.ortc.org/#rtcdtmfsender2*
+    // RTCDTMFSender alias. See https://draft.ortc.org/#rtcdtmfsender2*
     if (window.RTCDtmfSender && !window.RTCDTMFSender) {
       window.RTCDTMFSender = window.RTCDtmfSender;
     }
@@ -118454,7 +118454,7 @@ module.exports = function(window) {
       };
 
   if (browserDetails.version < 41) {
-    // Work around http://bugzil.la/1169665
+    // Work around https://bugzil.la/1169665
     var orgEnumerateDevices =
         navigator.mediaDevices.enumerateDevices.bind(navigator.mediaDevices);
     navigator.mediaDevices.enumerateDevices = function() {

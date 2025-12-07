@@ -78,7 +78,7 @@ Quaternion - Implementation of a quaternion
 
     Sets this quaternion from rotation specified by axis and angle
 
-    Adapted from: http://www.euclideanspace.com/maths/geometry/rotations/conversions/angleToQuaternion/index.htm
+    Adapted from: https://www.euclideanspace.com/maths/geometry/rotations/conversions/angleToQuaternion/index.htm
 
     Axis have to be normalized, angle is in radians
 
@@ -91,7 +91,7 @@ Quaternion - Implementation of a quaternion
 
     Sets this quaternion from rotation specified by matrix
 
-    Adapted from: http://www.euclideanspace.com/maths/geometry/rotations/conversions/matrixToQuaternion/index.htm
+    Adapted from: https://www.euclideanspace.com/maths/geometry/rotations/conversions/matrixToQuaternion/index.htm
 
     :param Matrix4 m: rotation matrix
     :returns: This quaternion
@@ -137,7 +137,7 @@ Quaternion - Implementation of a quaternion
 
     Sets this quaternion to ``q1 * q2``
 
-    Adapted from: http://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/code/index.htm
+    Adapted from: https://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/code/index.htm
 
     :param Quaternion q1: quaternion 1
     :param Quaternion q2: quaternion 2
