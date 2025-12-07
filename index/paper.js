@@ -3,11 +3,11 @@
  *
  * This file is part of Paper.js, a JavaScript Vector Graphics Library,
  * based on Scriptographer.org and designed to be largely API compatible.
- * http://paperjs.org/
- * http://scriptographer.org/
+ * https://paperjs.org/
+ * https://scriptographer.org/
  *
  * Copyright (c) 2011, Juerg Lehni & Jonathan Puckey
- * http://lehni.org/ & http://jonathanpuckey.com/
+ * https://lehni.org/ & https://jonathanpuckey.com/
  *
  * Distributed under the MIT license. See LICENSE file for details.
  *
@@ -18,10 +18,10 @@
  ***
  *
  * Bootstrap.js JavaScript Framework.
- * http://bootstrapjs.org/
+ * https://bootstrapjs.org/
  *
  * Copyright (c) 2006 - 2011 Juerg Lehni
- * http://lehni.org/
+ * https://lehni.org/
  *
  * Distributed under the MIT license.
  *
@@ -31,14 +31,14 @@
  *
  * A JavaScript tokenizer / parser / generator, originally written in Lisp.
  * Copyright (c) Marijn Haverbeke <marijnh@gmail.com>
- * http://marijn.haverbeke.nl/parse-js/
+ * https://marijn.haverbeke.nl/parse-js/
  *
  * Ported by to JavaScript by Mihai Bazon
  * Copyright (c) 2010, Mihai Bazon <mihai.bazon@gmail.com>
- * http://mihai.bazon.net/blog/
+ * https://mihai.bazon.net/blog/
  *
  * Modifications and adaptions to browser (c) 2011, Juerg Lehni
- * http://lehni.org/
+ * https://lehni.org/
  *
  * Distributed under the BSD license.
  */

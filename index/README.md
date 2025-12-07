@@ -1,6 +1,6 @@
 # reveal.js
 
-A framework for easily creating beautiful presentations using HTML. [Check out the live demo](http://lab.hakim.se/reveal-js/).
+A framework for easily creating beautiful presentations using HTML. [Check out the live demo](https://lab.hakim.se/reveal-js/).
 
 reveal.js comes with a broad range of features including [nested slides](https://github.com/hakimel/reveal.js#markup), [markdown contents](https://github.com/hakimel/reveal.js#markdown), [PDF export](https://github.com/hakimel/reveal.js#pdf-export), [speaker notes](https://github.com/hakimel/reveal.js#speaker-notes) and a [JavaScript API](https://github.com/hakimel/reveal.js#api). It's best viewed in a browser with support for CSS 3D transforms but [fallbacks](https://github.com/hakimel/reveal.js/wiki/Browser-Support) are available to make sure your presentation can still be viewed elsewhere.
 
@@ -12,11 +12,11 @@ reveal.js comes with a broad range of features including [nested slides](https:/
 
 The framework is and will remain free. Donations are available as an optional way of supporting the project. Proceeds go towards futher development, hosting and domain costs for reveal.js and rvl.io.
 
-[![Click here to lend your support to: reveal.js and make a donation at www.pledgie.com !](http://www.pledgie.com/campaigns/18182.png?skin_name=chrome)](http://www.pledgie.com/campaigns/18182)
+[![Click here to lend your support to: reveal.js and make a donation at www.pledgie.com !](https://www.pledgie.com/campaigns/18182.png?skin_name=chrome)](https://www.pledgie.com/campaigns/18182)
 
 ## rvl.io
 
-Slides are written using HTML or markdown but there's also an online editor for those of you who prefer a more traditional user interface. Give it a try at [www.rvl.io](http://www.rvl.io).
+Slides are written using HTML or markdown but there's also an online editor for those of you who prefer a more traditional user interface. Give it a try at [www.rvl.io](https://www.rvl.io).
 
 
 ## Instructions
@@ -47,7 +47,7 @@ This is based on [data-markdown](https://gist.github.com/1343518) from [Paul Iri
 <section data-markdown>
 	## Page title
 	
-	A paragraph with some text and a [link](http://hakim.se).
+	A paragraph with some text and a [link](https://hakim.se).
 </section>
 ```
 
@@ -187,10 +187,10 @@ It's easy to link between slides. The first example below targets the index of a
 
 ## PDF Export
 
-Presentations can be exported to PDF via a special print stylesheet. This feature requires that you use [Google Chrome](http://google.com/chrome). 
-Here's an example of an exported presentation that's been uploaded to SlideShare: http://www.slideshare.net/hakimel/revealjs-13872948.
+Presentations can be exported to PDF via a special print stylesheet. This feature requires that you use [Google Chrome](https://google.com/chrome). 
+Here's an example of an exported presentation that's been uploaded to SlideShare: https://www.slideshare.net/hakimel/revealjs-13872948.
 
-1. Open your presentation with [css/print/pdf.css](https://github.com/hakimel/reveal.js/blob/master/css/print/pdf.css) included on the page. The default index HTML lets you add *print-pdf* anywhere in the query to include the stylesheet, for example: [lab.hakim.se/reveal-js?print-pdf](http://lab.hakim.se/reveal-js?print-pdf).
+1. Open your presentation with [css/print/pdf.css](https://github.com/hakimel/reveal.js/blob/master/css/print/pdf.css) included on the page. The default index HTML lets you add *print-pdf* anywhere in the query to include the stylesheet, for example: [lab.hakim.se/reveal-js?print-pdf](https://lab.hakim.se/reveal-js?print-pdf).
 2. Open the in-browser print dialog (CMD+P).
 3. Change the **Destination** setting to **Save as PDF**.
 4. Change the **Layout** to **Landscape**.
@@ -207,13 +207,13 @@ To include speaker notes in your presentation, simply add an `<aside class="note
 
 It's also possible to write your notes with Markdown. To enable Markdown, add the ```data-markdown``` attribute to your note ```<aside>``` elements.
 
-You'll also need to [install Node.js](http://nodejs.org/); then, install the server dependencies by running `npm install`.
+You'll also need to [install Node.js](https://nodejs.org/); then, install the server dependencies by running `npm install`.
 
 Once Node.js and the dependencies are installed, run the following command from the root directory:
 
 		node plugin/speakernotes
 
-By default, the slides will be served at [localhost:1947](http://localhost:1947).
+By default, the slides will be served at [localhost:1947](https://localhost:1947).
 
 You can change the appearance of the speaker notes by editing the file at `plugin/speakernotes/notes.html`.	
 
@@ -231,4 +231,4 @@ You can change the appearance of the speaker notes by editing the file at `plugi
 
 MIT licensed
 
-Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+Copyright (C) 2011-2012 Hakim El Hattab, https://hakim.se

@@ -13,22 +13,22 @@ args = parser.parse_args()
 tree = ElementTree()
 tree.parse(file(args.filename, "r"))
 
-# tree.find("{http://graphml.graphdrawing.org/xmlns}graph/{http://graphml.graphdrawing.org/xmlns}node")
+# tree.find("{https://graphml.graphdrawing.org/xmlns}graph/{https://graphml.graphdrawing.org/xmlns}node")
 
 graphml = {
-	"graph": "{http://graphml.graphdrawing.org/xmlns}graph",
-	"node": "{http://graphml.graphdrawing.org/xmlns}node",
-	"edge": "{http://graphml.graphdrawing.org/xmlns}edge",
-	"data": "{http://graphml.graphdrawing.org/xmlns}data",
-	"label": "{http://graphml.graphdrawing.org/xmlns}data[@key='label']",
-	"x": "{http://graphml.graphdrawing.org/xmlns}data[@key='x']",
-	"y": "{http://graphml.graphdrawing.org/xmlns}data[@key='y']",
-	"size": "{http://graphml.graphdrawing.org/xmlns}data[@key='size']",
-	"r": "{http://graphml.graphdrawing.org/xmlns}data[@key='r']",
-	"g": "{http://graphml.graphdrawing.org/xmlns}data[@key='g']",
-	"b": "{http://graphml.graphdrawing.org/xmlns}data[@key='b']",
-	"weight": "{http://graphml.graphdrawing.org/xmlns}data[@key='weight']",
-	"edgeid": "{http://graphml.graphdrawing.org/xmlns}data[@key='edgeid']"
+	"graph": "{https://graphml.graphdrawing.org/xmlns}graph",
+	"node": "{https://graphml.graphdrawing.org/xmlns}node",
+	"edge": "{https://graphml.graphdrawing.org/xmlns}edge",
+	"data": "{https://graphml.graphdrawing.org/xmlns}data",
+	"label": "{https://graphml.graphdrawing.org/xmlns}data[@key='label']",
+	"x": "{https://graphml.graphdrawing.org/xmlns}data[@key='x']",
+	"y": "{https://graphml.graphdrawing.org/xmlns}data[@key='y']",
+	"size": "{https://graphml.graphdrawing.org/xmlns}data[@key='size']",
+	"r": "{https://graphml.graphdrawing.org/xmlns}data[@key='r']",
+	"g": "{https://graphml.graphdrawing.org/xmlns}data[@key='g']",
+	"b": "{https://graphml.graphdrawing.org/xmlns}data[@key='b']",
+	"weight": "{https://graphml.graphdrawing.org/xmlns}data[@key='weight']",
+	"edgeid": "{https://graphml.graphdrawing.org/xmlns}data[@key='edgeid']"
 }
 
 # print dir(graphml)

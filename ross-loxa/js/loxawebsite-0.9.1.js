@@ -177,7 +177,7 @@ function configView(valor){
   onSelectChange();
 }
 
-//Based on http://gnutiez.de/wp/2012/12/19/animated-node-highlighting-with-sigma-js
+//Based on https://gnutiez.de/wp/2012/12/19/animated-node-highlighting-with-sigma-js
 function search(nodeName) {   
   var output =  new Array();
   //Loop all nodes
@@ -190,7 +190,7 @@ function search(nodeName) {
   return output;
 }
 
-//Based on http://gnutiez.de/wp/2012/12/19/animated-node-highlighting-with-sigma-js
+//Based on https://gnutiez.de/wp/2012/12/19/animated-node-highlighting-with-sigma-js
 function highlight(nodeName) {
   var data =  new Array();
   if(nodeName != "") {  

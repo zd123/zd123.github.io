@@ -910,7 +910,7 @@ nv.models.historicalBar = function() {
 
 // Chart design based on the recommendations of Stephen Few. Implementation
 // based on the work of Clint Ivy, Jamie Love, and Jason Davies.
-// http://projects.instantcognition.com/protovis/bulletchart/
+// https://projects.instantcognition.com/protovis/bulletchart/
 
 nv.models.bullet = function() {
 
@@ -1160,7 +1160,7 @@ nv.models.bullet = function() {
 
 // Chart design based on the recommendations of Stephen Few. Implementation
 // based on the work of Clint Ivy, Jamie Love, and Jason Davies.
-// http://projects.instantcognition.com/protovis/bulletchart/
+// https://projects.instantcognition.com/protovis/bulletchart/
 nv.models.bulletChart = function() {
 
   //============================================================
@@ -4605,7 +4605,7 @@ nv.models.lineWithFocusChart = function() {
       // Functions
       //------------------------------------------------------------
 
-      // Taken from crossfilter (http://square.github.com/crossfilter/)
+      // Taken from crossfilter (https://square.github.com/crossfilter/)
       function resizePath(d) {
         var e = +(d == 'e'),
             x = e ? 1 : -1,

@@ -13,7 +13,7 @@ sigma.publicPrototype.parseGexf = function(gexfPath) {
   gexfhttp.send();
   gexf = gexfhttp.responseXML;
 
-  var viz='http://www.gexf.net/1.2draft/viz'; // Vis namespace
+  var viz='https://www.gexf.net/1.2draft/viz'; // Vis namespace
   var i, j, k;
 
   // Parse Attributes

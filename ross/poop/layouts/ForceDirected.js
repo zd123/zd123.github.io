@@ -14,7 +14,7 @@ console.nodes = function(graph) {
 	});
 }
 
-// Fast data structures: http://blog.jcoglan.com/2010/10/18/i-am-a-fast-loop/
+// Fast data structures: https://blog.jcoglan.com/2010/10/18/i-am-a-fast-loop/
 Table = function() {
 	this._keys = [];
 	this._data = {};

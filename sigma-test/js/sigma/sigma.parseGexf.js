@@ -1,4 +1,4 @@
-// Mathieu Jacomy @ Sciences Po Médialab & WebAtlas
+// Mathieu Jacomy @ Sciences Po Mï¿½dialab & WebAtlas
 // (requires sigma.js to be loaded)
 sigma.publicPrototype.parseGexf = function(gexfPath,callback) {
   // Load XML file:
@@ -13,7 +13,7 @@ sigma.publicPrototype.parseGexf = function(gexfPath,callback) {
   gexfhttp.send();
   gexf = gexfhttp.responseXML;
 
-  var viz='http://www.gexf.net/1.2draft/viz'; // Vis namespace
+  var viz='https://www.gexf.net/1.2draft/viz'; // Vis namespace
   var i, j, k;
 
   // Parse Attributes

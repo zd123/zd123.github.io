@@ -1,5 +1,5 @@
 Template provided by InteractiveVis project
-http://blogs.oii.ox.ac.uk/vis/
+https://blogs.oii.ox.ac.uk/vis/
 https://github.com/oxfordinternetinstitute/InteractiveVis/
 
 Important. The files must be uploaded to a webserver (or run one locally) in order to be viewed. JavaScript security prevents running the pages locally without a webserver.

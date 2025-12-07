@@ -14,23 +14,23 @@ Gexf-JS now speaks 7 languages: English, French, Italian, Spanish, Finnish, Turk
 
 #### Raphaël Velt (main developer, french and english versions)
 
-* http://raphaelve.lt/
-* Twitter: [@raphv](http://twitter.com/raphv)
+* https://raphaelve.lt/
+* Twitter: [@raphv](https://twitter.com/raphv)
 
 #### Vicenzo Cosenza (italian translation)
 
-* http://www.vincos.it/
-* Twitter: [@vincos](http://twitter.com/vincos)
+* https://www.vincos.it/
+* Twitter: [@vincos](https://twitter.com/vincos)
 
 #### Eduardo Ramos Ibáñez (spanish translation)
 
 * https://github.com/eduramiba
-* Twitter: [@eduramiba](http://twitter.com/eduramiba)
+* Twitter: [@eduramiba](https://twitter.com/eduramiba)
 
 #### Jaakko Salonen (finnish translation and hyperlink replacement)
 
 * https://github.com/jsalonen
-* Twitter: [@jsalonen](http://twitter.com/jsalonen)
+* Twitter: [@jsalonen](https://twitter.com/jsalonen)
 
 #### Zeynep Akata (turkish translation)
 

@@ -146,7 +146,7 @@ Matrix4 - A 4x4 Matrix
 
     Computes determinant of this matrix
 
-    Based on http://www.euclideanspace.com/maths/algebra/matrix/functions/inverse/fourD/index.htm
+    Based on https://www.euclideanspace.com/maths/algebra/matrix/functions/inverse/fourD/index.htm
 
     :returns: Determinant
     :rtype: float
@@ -230,7 +230,7 @@ Matrix4 - A 4x4 Matrix
 
     Sets this matrix as rotation transform around ``axis`` by ``angle`` radians
 
-    Based on http://www.gamedev.net/reference/articles/article1199.asp
+    Based on https://www.gamedev.net/reference/articles/article1199.asp
 
     :param Vector3 axis: Rotation axis
     :param float angle: Rotation angle in radians
@@ -285,7 +285,7 @@ Matrix4 - A 4x4 Matrix
 
     Sets this matrix to inverse of matrix ``m``
 
-    Based on http://www.euclideanspace.com/maths/algebra/matrix/functions/inverse/fourD/index.htm
+    Based on https://www.euclideanspace.com/maths/algebra/matrix/functions/inverse/fourD/index.htm
 
     :param Matrix4 m: source matrix
     :returns: This matrix
@@ -407,7 +407,7 @@ Matrix4 - A 4x4 Matrix
 
     Note: this method returns a reference to internal 3x3 matrix, make copy or clone if you don't use it right away.
 
-    Based on http://code.google.com/p/webgl-mjs/
+    Based on https://code.google.com/p/webgl-mjs/
 
     :param Matrix4 m: source matrix
     :returns: inverted submatrix

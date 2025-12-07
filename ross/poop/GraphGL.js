@@ -1,4 +1,4 @@
-// @see http://paulirish.com/2011/requestanimationframe-for-smart-animating/
+// @see https://paulirish.com/2011/requestanimationframe-for-smart-animating/
 window.requestAnimFrame = (function(){
   return  window.requestAnimationFrame       || 
           window.webkitRequestAnimationFrame || 

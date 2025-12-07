@@ -3,7 +3,7 @@ ipython compatability module for nvd3-python
 This adds simple ipython compatibility to the nvd3-python package, without making any
 major modifications to how the main package is structured.  It utilizes the IPython
 display-formatter functionality, as described at:
-http://nbviewer.ipython.org/github/ipython/ipython/blob/master/examples/notebooks/Custom%20Display%20Logic.ipynb
+https://nbviewer.ipython.org/github/ipython/ipython/blob/master/examples/notebooks/Custom%20Display%20Logic.ipynb
 For additional examples, see:
 https://github.com/sympy/sympy/blob/master/sympy/interactive/printing.py
 '''
@@ -40,9 +40,9 @@ if _ip and _ip.__module__.startswith('IPython'):
             for chart_type in nvd3_all:
                 html_formatter.for_type_by_name('nvd3.' + chart_type, chart_type, _print_html)
 
-    def initialize_javascript(d3_js_url='http://nvd3.org/assets/lib/d3.v3.js',
-                              nvd3_js_url='http://nvd3.org/assets/js/nv.d3.js',
-                              nvd3_css_url='http://nvd3.org/assets/css/nv.d3.css',
+    def initialize_javascript(d3_js_url='https://nvd3.org/assets/lib/d3.v3.js',
+                              nvd3_js_url='https://nvd3.org/assets/js/nv.d3.js',
+                              nvd3_css_url='https://nvd3.org/assets/css/nv.d3.css',
                               use_remote=False):
         '''Initialize the ipython notebook to be able to display nvd3 results.
         by instructing IPython to load the nvd3 JS and css files, and the d3 JS file.
@@ -53,9 +53,9 @@ if _ip and _ip.__module__.startswith('IPython'):
 
         use_remote: use remote hosts for d3.js, nvd3.js, and nv.d3.css (default False)
         * Note:  the following options are ignored if use_remote is False:
-        nvd3_css_url: location of nvd3 css file (default http://nvd3.org/assets/css/nv.d3.css)
-        nvd3_js_url: location of nvd3 javascript file (default  http://nvd3.org/assets/js/nv.d3.js)
-        nvds_url: location of d3 javascript file (default http://nvd3.org/assets/lib/d3.v3.js)
+        nvd3_css_url: location of nvd3 css file (default https://nvd3.org/assets/css/nv.d3.css)
+        nvd3_js_url: location of nvd3 javascript file (default  https://nvd3.org/assets/js/nv.d3.js)
+        nvds_url: location of d3 javascript file (default https://nvd3.org/assets/lib/d3.v3.js)
         '''
         from IPython.display import display, Javascript, HTML
 

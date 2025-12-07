@@ -14,7 +14,7 @@ console.nodes = function(graph) {
 	});
 }
 
-// Fast data structures: http://blog.jcoglan.com/2010/10/18/i-am-a-fast-loop/
+// Fast data structures: https://blog.jcoglan.com/2010/10/18/i-am-a-fast-loop/
 Table = function() {
 	this._keys = [];
 	this._data = {};
@@ -117,7 +117,7 @@ Vector.prototype.normalize = function() {
 
 /* Extend Math */
 Math.hypot = function(v1, v2) {
-	// Since Javascript is stupid regarding numbers, we implement it (by wikipedia: http://en.wikipedia.org/wiki/Hypot)
+	// Since Javascript is stupid regarding numbers, we implement it (by wikipedia: https://en.wikipedia.org/wiki/Hypot)
 	
 	var x = v1.x - v2.x;
 	var y = v1.y - v2.y;

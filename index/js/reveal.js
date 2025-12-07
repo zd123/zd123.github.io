@@ -1,9 +1,9 @@
 /*!
  * reveal.js 2.1 r25
- * http://lab.hakim.se/reveal-js
+ * https://lab.hakim.se/reveal-js
  * MIT licensed
  * 
- * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ * Copyright (C) 2011-2012 Hakim El Hattab, https://hakim.se
  */
 var Reveal = (function(){
 
